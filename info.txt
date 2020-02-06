@@ -1,0 +1,176 @@
+what-does-enumerable-mean - https://stackoverflow.com/questions/17893718/what-does-enumerable-mean
+
+Copying an array of objects into another array in javascript
+https://stackoverflow.com/questions/16232915/copying-an-array-of-objects-into-another-array-in-javascript/28482916
+If the destination array doesn't exist yet...
+...you can use slice() or concat(). slice() is probably more idiomatic (you'll also see slice(0), but the default is 0, so...):
+
+var destinationArray = sourceArray.slice(); // Probably more idiomatic
+// or
+var destinationArray = sourceArray.concat();
+As of ES2015 (aka ES6), there's also Array.from, which creates a new array from any array-like thing (including an actual array):
+
+var destinationArray = Array.from(sourceArray);
+(Array.from can be shimmed/polyfilled for older JavaScript engines.)
+
+Also as of ES2015, you can use array spread notation and an array literal with any iterable (including an actual array):
+
+var destinationArray = [...sourceArray];
+After that, both arrays will have the same contents. Changing one array will not change the other. Naturally, if an array entry is an object, the entry for that object in both arrays will point to the same object; this isn't a "deep" copy.
+
+If the destination array exists...
+...and you want to append the contents of the source array to it, you can use push:
+
+destinationArray.push.apply(destinationArray, sourceArray);
+That works by calling push on the destination array using the apply feature of JavaScript functions, which lets you specify the arguments for the function call as an array. push will push as many elements as it has arguments, so it ends up copying the elements from the source array to the destination array.
+
+In ES2015 and later, you can make that cleaner with spread notation (...):
+
+destinationArray.push(...sourceArray);
+Note that in both cases, the call is limited by the JavaScript engine's maximum number of function arguments (as of this writing, that's at least in the thousands for all major engines [and not in the hundreds of thousands, at least not for Chrome's V8]).
+
+var cloneArray = JSON.parse(JSON.stringify(originalArray));
+
+
+
+
+Loop through an array in JavaScript
+https://stackoverflow.com/questions/3010840/loop-through-an-array-in-javascript
+
+var myStringArray = ["Hello","World"];
+var arrayLength = myStringArray.length;
+for (var i = 0; i < arrayLength; i++) {
+    alert(myStringArray[i]);
+    //Do something
+}
+
+for...in statement, but for iterating arrays for-in should be avoided, that statement is meant to enumerate object properties.
+It shouldn't be used for array-like objects because:
+
+The order of iteration is not guaranteed, the array indexes may not be visited in numeric order.
+Inherited properties are also enumerated.
+The second point is that it can give you a lot of problems, for example, if you extend the Array.prototype object to include a method there, that property will be also enumerated.
+
+For example:
+
+Array.prototype.foo = "foo!";
+var array = ['a', 'b', 'c'];
+
+for (var i in array) {
+  alert(array[i]);
+}
+The above code will alert, "a", "b", "c" and "foo!".
+
+The for-in statement as I said before is there to enumerate object properties, for example:
+
+var obj = {
+  "a": 1,
+  "b": 2,
+  "c": 3
+};
+
+for (var prop in obj) {
+  if (obj.hasOwnProperty(prop)) { 
+  // or if (Object.prototype.hasOwnProperty.call(obj,prop)) for safety...
+    alert("prop: " + prop + " value: " + obj[prop])
+  }
+}
+In the above example the hasOwnProperty method allows you to enumerate only own properties, that's it, only the properties that the object physically has, no inherited properties.
+
+I would recommend you to read the following article:
+
+Enumeration VS Iteration
+
+for...of feature introduced in ECMAScript 2015 (the "Harmony" release)... which is a pretty safe assumption these days.
+
+It works like this:
+
+// REQUIRES ECMASCRIPT 2015+
+var s, myStringArray = ["Hello", "World"];
+for (s of myStringArray) {
+  // ... do something with s ...
+}
+Or better yet, since ECMAScript 2015 also provides block-scoped variables via let and const:
+
+// REQUIRES ECMASCRIPT 2015+
+const myStringArray = ["Hello", "World"];
+for (const s of myStringArray) {
+  // ... do something with s ...
+}
+// s is no longer defined here
+Some JavaScript developers are still working in an environment that's not there yet, however - especially if writing code to run in web browsers, where the site developers often can't be sure what browser/version their clients will be using.
+
+forEach iterator method instead of a loop. In that case, you pass a function to be called on each item in the array:
+
+var myStringArray = [ "Hello", "World" ];
+myStringArray.forEach( function(s) { 
+     // ... do something with s ...
+} );
+
+You can use map, which is a functional programming technique that's also available in other languages like Python and Haskell.
+
+[1,2,3,4].map( function(item) {
+     alert(item);
+})
+
+filter returns an array of items that satisfy some condition or test.
+
+every returns true if every array member passes the test.
+
+some returns true if any pass the test.
+
+forEach runs a function on each array member and doesn't return anything.
+
+map is like forEach, but it returns an array of the results of the operation for each element.
+
+These methods all take a function for their first argument and have an optional second argument, which is an object whose scope you want to impose on the array members as they loop through the function.
+
+Ignore it until you need it.
+
+indexOf and lastIndexOf find the appropriate position of the first or last element that matches its argument exactly.
+
+
+
+
+
+remove a particular element from an array in JavaScript
+https://stackoverflow.com/questions/5767325/how-do-i-remove-a-particular-element-from-an-array-in-javascript
+
+The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
+
+var array = [2, 5, 9];
+console.log(array)
+var index = array.indexOf(5);
+if (index > -1) {
+  array.splice(index, 1);
+}
+// array = [2, 9]
+console.log(array);
+
+The second parameter of splice is the number of elements to remove. Note that splice modifies the array in place and returns a new array containing the elements that have been removed.
+
+If you just want to make the element at index i no longer exist, but you don't want the indexes of the other elements to change:
+
+delete array[i];
+
+
+
+
+
+how to copy object - clone object
+OK, imagine you have this object below and you want to clone it:
+
+let obj = {a:1, b:2, c:3}; //ES6
+or
+
+var obj = {a:1, b:2, c:3}; //ES5
+The answer is mainly depeneds on which ECMAscript you using, in ES6+, you can simply use Object.assign to do the clone:
+
+let cloned = Object.assign({}, obj); //new {a:1, b:2, c:3};
+or using spread operator like this:
+
+let cloned = {...obj}; //new {a:1, b:2, c:3};
+But if you using ES5, you can use few methods, but the JSON.stringify, just make sure you not using for a big chunk of data to copy, but it could be one line handy way in many cases, something like this:
+
+let cloned = JSON.parse(JSON.stringify(obj)); 
+//new {a:1, b:2, c:3};, can be handy, but avoid using on big chunk of data over and over

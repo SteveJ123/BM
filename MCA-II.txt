@@ -1,0 +1,111 @@
+Data Structure
+Introduction to Linked List in Data Structures ( very easy) - https://www.youtube.com/watch?v=Rs1KPyb9fHY
+https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html
+Data structures: Introduction to graphs - https://www.youtube.com/watch?v=gXgEDyodOJU
+07- Lower Bound And Upper Bound In One Dimensional Array In C Programming Language In HINDI - https://www.youtube.com/watch?v=8EGbuu5lbGE
+Array Operation:(Traversing,Deletion,Inserting) - https://www.youtube.com/watch?v=hx_xwRl74Vw
+Array Operations – Traversal, Inserting Data and Deleting Data from Array in Hindi and English - https://www.youtube.com/watch?v=mWttNkcjnHM
+Linear Search Algorithm with Example in Hindi, English - https://www.youtube.com/watch?v=liTdX1KTWcU
+What is binary search | Binary Search Algorithm with example | Data structures - https://www.youtube.com/watch?v=V_T5NuccwRA
+Algorithms lecture 2 -- Time complexity Analysis of iterative programs - https://www.youtube.com/watch?v=FEnwM-iDb2g
+Time complexity analysis - some general rules - https://www.youtube.com/watch?v=PFd5s0bHgAQ
+Time complexity analysis: asymptotic notations - big oh, theta ,omega - https://www.youtube.com/watch?v=OpebHLAf99Y
+Time complexity analysis - How to calculate running time? - https://www.youtube.com/watch?v=8syQKTdgdzc
+Binary Search Algorithm with Example in Hindi, English - https://www.youtube.com/watch?v=1HIFzve0zCM
+Introduction to Two-Dimensional (2D) Arrays - https://www.youtube.com/watch?v=J1aQ9JN4vZY
+Address calculation in two dimensional array- lecture 24 - https://www.youtube.com/watch?v=HIufoBnsCuw
+Introduction to Three-Dimensional (3D) Arrays - https://www.youtube.com/watch?v=bbkdiUbou74
+multi dimensional array and address calculation - https://www.youtube.com/watch?reload=9&v=UFeOE2NcMw8
+Dimensional array address calculation-Row Major Order - https://www.youtube.com/watch?v=e_KyrZgalHw
+Using Array Name as a Pointer- https://www.youtube.com/watch?v=gv-y9hIhvq4
+Record Structures - https://www.youtube.com/watch?v=sUuqYMJxXM0
+Sparse Matrices in Data Structure (Hindi) - https://www.youtube.com/watch?v=eUcDnqepHYA
+sparse matrix | array representation | |data structures |by bhanu priya - https://www.youtube.com/watch?v=V3TAtTtC4Xs
+Sparse Matrix In Data Structure - https://www.youtube.com/watch?v=p5-2PZAEvsE
+matrices multiplication algorithm | DAA | - https://www.youtube.com/watch?v=mN5DDvgjdXI
+array of pointers in c programming - https://www.youtube.com/watch?v=X4XkMrmyb0c
+Stack, heap, value types, reference types, boxing, and unboxing - https://www.codeproject.com/Articles/76153/Six-important-NET-concepts-Stack-heap-value-types
+BoxingandUnboxing - https://www.screencast.com/users/Questpond/folders/Default/media/6b813f11-8055-4031-9e51-599237fe97b9
+list - https://www.codeproject.com/script/Membership/View.aspx?mid=1335831
+Representation of Linked List in Memory - https://www.youtube.com/watch?v=gaZpfIL6UuQ
+Traversing algorithm on singly linked list- in HINDI - https://www.youtube.com/watch?v=gaZpfIL6UuQ
+Data Structures Using C++: Inserting a Node into a Linked List (Sorted Linked List) - https://www.youtube.com/watch?v=tta6BIiIIFI
+Singly Linked List Insertion Algorithm [Part 2] - https://www.youtube.com/watch?v=2NuSBvD927Q    -   Sanketkumar Raval
+Programming Interviews: Linked List: Sorted Insert - https://www.youtube.com/watch?v=-Wt88_rkWaE
+Algorithm for inserting a node before the given value (singly lisked list)- In hindi - https://www.youtube.com/watch?v=U7TvV-18Qow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c++
+21:Everything u need 2 know about pointers -Richard Buckland - https://www.youtube.com/watch?reload=9&v=Rxvv9krECNw
+
+
+
+
+
+
+
+
+
+JAVA
+Object-oriented Programming in 7 minutes | Mosh - https://www.youtube.com/watch?v=pTB0EiLXUC8
+Java Applet Tutorial #1 Introduction - https://www.youtube.com/watch?v=44QcWqc0zEg
+04 Java Byte Code, JVM, JRE - Learn Java Programming Tutorials by Sanjay Gupta - https://www.youtube.com/watch?v=N4mbCUh65_4
+1. Java Byte Code | OOC 15CS45 VTU - https://www.youtube.com/watch?v=srdsqLl_itw
+[Day 2] Java Byte Code for Class XII Information Practices by Tech Shubham - https://www.youtube.com/watch?v=cMajXgkN7-Q
+[Day 3] Java Tokens , Keywords and Identifiers for Class XII Information Practices by Tech Shubham - https://www.youtube.com/watch?v=Sdz8iBGW7j8
+[Day 5] Java Tokens And Literals in JAVA for Class XII Information Practices by Tech Shubham - https://www.youtube.com/watch?v=s5Om7svpIsA
+05 Java First Program - How to Read and Print Values - Learn Java Programming by Sanjay Gupta - https://www.youtube.com/watch?v=SylRU5-t9Jo
+22 - Short Circuit Logical Operators (&&) (||) in Java (Hindi/Urdu) - https://www.youtube.com/watch?v=t4P9zvsm40
+Java Garbage Collection, Use of finalize and gc Method in Java - https://www.youtube.com/watch?v=ekzIzJbPW4
+Member Access Modifier(Default, Public, Protected, Private) in Java Inheritance - https://www.youtube.com/watch?v=JE8xPVkIYKI
+Java Inner Classes - 1 Introduction to Inner classes - Inner classes Tutorials | Java9s.com - https://www.youtube.com/watch?v=b79bkdrrK3M
+54 Java SuperClass Reference Variable | - https://www.youtube.com/watch?v=kqeN_i62UrE
+dynamic method dispatch-java programming - https://www.youtube.com/watch?v=7OJNfhy0PRo
+148. Create and Save Package for notepad user in Java Programming (Hindi) - https://www.youtube.com/watch?v=in8oVJbJkh0
+23 - Access Modifiers in Packages | When to use Private Public and Protected in Java - https://www.youtube.com/watch?v=5w0NQex4uII
+158. Protected Access Modifier with Package in Java Programming (Hindi) - https://www.youtube.com/watch?v=NlmKAJXJNro
+Java Programming Tutorial - 1 - Installing JDK and Writing Your First Java Program - https://www.youtube.com/watch?v=Y5iUfodednY
+Java Programming Tutorial - 82 - Exception Handling - https://www.youtube.com/watch?v=K_-3OLkXkzY
+#9.2 Exception Handling | Multiple Catch blocks - https://www.youtube.com/watch?v=X5urP793On8
+NESTED TRY BLOCKS IN JAVA EXCEPTION HANDLING - https://www.youtube.com/watch?v=BYY5qas0kAs
+Throw Keyword in Java Exception Handling with Example in Hindi and English - https://www.youtube.com/watch?v=j9M69wdEU-0
+Java Threads Tutorial 3 - Creating Java Threads by implementing Runnable Interface - https://www.youtube.com/watch?v=UXW5a-iHjso
+Java Inter thread communication - Producer Consumer Problem, Wait, Notify and NotifyAll Method - https://www.youtube.com/watch?v=J7-JuD5oDK4
+Inter-thread communication in Java - https://www.youtube.com/watch?v=cB12pjNtSjY
+InterThreadCommunication - Method 1 - https://www.youtube.com/watch?v=x8EvhusbGBY
+Java Multithreading Introduction (1) - https://www.youtube.com/watch?v=bCZ1pC2jufY
+Suspending And Resuming a Thread in JAVA - https://www.youtube.com/watch?v=q_PvxbLJgks
+java tutorial Reading and Writing Byte Streams - https://www.youtube.com/watch?v=nfXp0yZdP94
+
+
+
+system software
+Introduction to System Software - https://www.youtube.com/watch?v=Ory-rwJ230c
+System Programming - Lecture 1: Introduction -https://www.youtube.com/watch?v=MylrhAMmNRY
+2 Assembler Directives - https://www.youtube.com/watch?v=fR0-P96_QuU&list=PLOT9lpHcz1hGnx7k4Upg8Om_sXvBRp25x&index=2
+SYMBOL TABLE DATA STRUCTURE IN COMPILER - https://www.youtube.com/watch?v=gxorCOk0YPw
+Symbol table | Compiler Design | Lec-45 | bhanu Priya - https://www.youtube.com/watch?v=QPs6Vkt8C5I
+
+
+stasitics
+Introduction to Conditional Probability Hindi - https://www.youtube.com/watch?v=lEni2--XK_A
+Addition theorem of Probability and its examples - https://www.youtube.com/watch?v=QqqrmTepxnc

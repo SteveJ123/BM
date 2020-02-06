@@ -1,0 +1,189 @@
+check for prime number
+
+
+
+https://stackoverflow.com/questions/40200089/javascript-number-prime-test
+
+function isPrime(num) {
+  for(var i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num !== 1 && num !== 0;
+}
+With the ES6 syntax:
+
+const isPrime = num => {
+  for(let i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num !== 1 && num !== 0;
+}
+You can also decrease complexity of the algorithm from O(n) to O(sqrt(n)) if you run the loop until square root of number:
+
+const isPrime = num => {
+    for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+        if(num % i === 0) return false; 
+    return num !== 1 && num !== 0;
+}
+
+isPrime(0) returns true, which is not the case. For the function to be mathematically correct, you need to add another condition to the return statement: return num !== 1 && num !== 0;
+
+
+
+
+A small suggestion here, why do you want to run the loop for whole n numbers?
+
+If a number is prime it will have 2 factors (1 and number itself). If it's not a prime they will have 1, number itself and more, you need not run the loop till the number, may be you can consider running it till the square root of the number.
+
+You can either do it by euler's prime logic. Check following snippet:
+
+function isPrime(num) {
+  var sqrtnum=Math.floor(Math.sqrt(num));
+    var prime = num != 1;
+    for(var i=2; i<sqrtnum+1; i++) { // sqrtnum+1
+        if(num % i == 0) {
+            prime = false;
+            break;
+        }
+    }
+    return prime;
+}
+Now the complexity is O(sqrt(n))
+
+For more information Why do we check up to the square root of a prime number to determine if it is prime?
+
+
+function isPrimeNumber(n) {
+  for (var i = 2; i < n; i++) { // i will always be less than the parameter so the condition below will never allow parameter to be divisible by itself ex. (7 % 7 = 0) which would return true
+    if(n % i === 0) return false; // when parameter is divisible by i, it's not a prime number so return false
+  }
+  return n > 1; // otherwise it's a prime number so return true (it also must be greater than 1, reason for the n > 1 instead of true)
+}
+
+console.log(isPrimeNumber(1));  // returns false
+console.log(isPrimeNumber(2));  // returns true
+console.log(isPrimeNumber(9));  // returns false
+console.log(isPrimeNumber(11)); // returns true
+
+
+
+
+
+
+function isPrime(num) {
+  if (num <= 1) return false; // negatives
+  if (num % 2 == 0 && num > 2) return false; // even numbers
+  let s = Math.sqrt(num); // store the square to loop faster
+  for(let i = 3; i < s; i++) { // start from 3, stop at the square, increment
+      if(num % i === 0) return false; // modulo shows a divisor was found
+  }
+  return num !== 1; // if its not 1 its prime
+}
+
+
+
+
+var p=prompt("input numeric value","10"); // input your number 
+for(j=2;j<p;j++){ 
+  if(isPrimes(j)){ 
+    document.write(j+", "); // for output the value
+  } // end if
+}// end for loop
+function isPrimes(n) {
+  var primes = true;// let prime is true
+  for (i=2;i<n;i++) {
+    if(n%i==0) {
+      primes= false; // return prime is false
+      break; // break the loop
+    }// end if inner 
+  }// end inner loop
+  return primes; // return the prime true or false
+}// end the function
+
+
+
+
+
+
+
+I think this question is lacking a recursive solution:
+
+// Preliminary screen to save our beloved CPUs from unneccessary labour
+
+const isPrime = n => {
+  if (n === 2 || n === 3) return true;
+  if (n < 2 || n % 2 === 0) return false;
+
+  return isPrimeRecursive(n);
+}
+
+// The recursive function itself, tail-call optimized.
+// Iterate only over odd divisors (there's no point to iterate over even ones).
+ 
+const isPrimeRecursive = (n, i = 3, limit = Math.floor(Math.sqrt(n))) => {	
+  if (n % i === 0) return false;
+  if (i >= limit) return true; // Heureka, we have a prime here!
+  return isPrimeRecursive(n, i += 2, limit);
+}
+
+// Usage example
+
+for (i = 0; i <= 50; i++) {
+  console.log(`${i} is ${isPrime(i) ? `a` : `not a` } prime`);
+}
+
+
+const isPrime = num => {
+  for (var i = 2; i < num; i++) if (num % i == 0) return false;
+  return num >= 2; 
+}
+
+
+
+how to copy object - clone object
+
+
+OK, imagine you have this object below and you want to clone it:
+
+let obj = {a:1, b:2, c:3}; //ES6
+or
+
+var obj = {a:1, b:2, c:3}; //ES5
+The answer is mainly depeneds on which ECMAscript you using, in ES6+, you can simply use Object.assign to do the clone:
+
+let cloned = Object.assign({}, obj); //new {a:1, b:2, c:3};
+or using spread operator like this:
+
+let cloned = {...obj}; //new {a:1, b:2, c:3};
+But if you using ES5, you can use few methods, but the JSON.stringify, just make sure you not using for a big chunk of data to copy, but it could be one line handy way in many cases, something like this:
+
+let cloned = JSON.parse(JSON.stringify(obj)); 
+//new {a:1, b:2, c:3};, can be handy, but avoid using on big chunk of data over and over
+
+
+html javascript
+javascript-addeventlistener on all created li elements
+
+
+
+document.getElementById("list").addEventListener("click",function(e) {
+  if (e.target && e.target.matches("li.item")) {
+    e.target.className = "foo"; // new class name here
+    }
+});
+
+
+multiple classes
+const breakdownButton = document.querySelectorAll('.breakdown');
+breakdownButton.forEach(function(i) {
+  i.addEventListener('click', function() {
+    console.log();
+  });
+   });
+
+
+child nodes
+your div would normally be <div id="items"> or <div id="items" class="items"> since a div with id is unique on a page.
+firstLi = document.getElementById("items").firstChild.firstChild;
+
+var importantLi = document.querySelector('.list .items li');
+
+

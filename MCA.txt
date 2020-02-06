@@ -1,0 +1,449 @@
+﻿Digital principles
+Lesson 1 - Basic Logic Gates - https://www.youtube.com/watch?v=eJHmVlzH_9Q&list=PLWvPPQj7v_jfo38q7DClTKyW0ZC2Wy9v2
+Complements 1's, 2's', 9's, 10's(Binary & Decimal Complements) - https://www.youtube.com/watch?v=mzGYu5qBFSE
+Introduction to Gray Code - https://www.youtube.com/watch?v=0dPN4gh0CKI
+Gray Code to Binary & Binary to Gray Code conversions (Old) - https://www.youtube.com/watch?v=gycwsaUbzMI
+Binary to Gray Code Conversion - https://www.youtube.com/watch?v=cF-Q5j7RUEw
+Introduction to Integrated Circuits - https://www.youtube.com/watch?v=sIQ2vSwGB2E
+Canonical form and standard form. Sum of minterms and product of maxterms - https://www.youtube.com/watch?v=KsDJ4LIYyiI
+Boolean Expression Representation using Canonical Form - https://www.youtube.com/watch?v=smKUO7ZGxg4
+Karnaugh map (K-Map) by Raj Kumar Thenua (Hindi / Urdu) - https://www.youtube.com/watch?v=ld7R2MoUIPs
+Karnaugh Maps – Introduction - https://www.youtube.com/watch?reload=9&v=3vkMgTmieZI
+Karnaugh Maps – Simplify Boolean Expressions - https://www.youtube.com/watch?v=UfZKvPQku8w
+Grouping K Map Table (Hindi) - https://www.youtube.com/watch?v=4ZEo-2Fo5Xg
+Fill SOP expression 2 Variable K Map Table (Hindi) - https://www.youtube.com/watch?v=HpOH2SCO7KU
+Simplify 4 Variable expression in SOP Term using K Map (Hindi) - https://www.youtube.com/watch?v=Nd-ktzl8rNI
+Mc-Cluskey Method (Tabular Form)(हिन्दी ) - Mc-Cluskey Method (Tabular Form)(हिन्दी )
+Half Adder (Hindi) - https://www.youtube.com/watch?v=3Rw6NIN02Ro
+Half Subtractor - https://www.youtube.com/watch?v=V9IaH4_LrQI
+Full Adder (Hindi) - https://www.youtube.com/watch?v=FT0H6D6MAZs
+BCD Adder - https://www.youtube.com/watch?v=wLHFJEQWEng&t=786s
+Introduction to Computer Engineering - Part 6 BCD Basics - https://www.youtube.com/watch?v=VrpdeJNInyA
+Code converter Binary to BCD - https://www.youtube.com/watch?v=2bcWI9zCMj4
+Binary to Gray Code Converter - https://www.youtube.com/watch?v=yrFm_EuDy50
+Introduction to Combinational Circuits - https://www.youtube.com/watch?v=_yHo2qq82P0
+Designing Steps for a Combinational Circuit - https://www.youtube.com/watch?v=Pjw8t-bGSBo
+MULTIPLEXER | |very easy - https://www.youtube.com/watch?v=41WI-fKVgeU
+Properties of EX-OR Gate - https://www.youtube.com/watch?v=moatqHyNyes
+Decimal Adder or BCD Adder | Digital Electronics Tutorial [Hindi] - https://www.youtube.com/watch?v=1OmIoRvTOiY
+Decimal to Binary Conversion Fractional Part Explanation (Hindi) - https://www.youtube.com/watch?v=j2wAhUxZL0I
+Fraction Binary To Decimal Conversation in Hindi and Fraction Decimal to Binary Conversation In Hind - https://www.youtube.com/watch?v=JNFA5JRNk-o
+10's complement subtraction - https://www.youtube.com/watch?v=cT3odd4xwKw
+binary subtraction using 1' s complement - https://www.youtube.com/watch?v=xVN7kMSfFNY
+2's complement subtraction| very easy - https://www.youtube.com/watch?v=JKXs4qjVkWw
+Introduction to Registers - https://www.youtube.com/watch?v=-paFaxtTCkI
+Data Formats and Classification of Registers - https://www.youtube.com/watch?v=b43_I4r1R2c
+Lec1 Register Transfer and Representation| Computer Architecture and Organisation(in HINDI) - https://www.youtube.com/watch?v=d3y7wx-tHTE
+Lec2 Microoperations | Computer Architecture and Organisation (in HINDI) - https://www.youtube.com/watch?v=8G7JanYtLRU
+Karnaugh Map (K Map) - 4 | SOP and POS (Digital Electronics-16) by SAHAV SINGH YADAV - https://www.youtube.com/watch?v=GP7QMyMAwkg
+Converting SOP to SSOP - https://www.youtube.com/watch?v=PKH2CzGxXx4
+Difference Between Prime implicant, Essential PI, Redundant PI and Selective PI in Hindi - https://www.youtube.com/watch?v=Egopo2qGNGY
+Prime Implicant and Essential Prime Implicant | GATE (EE, ECE) | Digital Electronics - https://www.youtube.com/watch?v=SyTGG2TeJJw
+Ep - 04 | Digital Electronics | K- Map | Redundant Prime Implicant (RPI) | Definition with Example . - https://www.youtube.com/watch?v=7e2YrWj9HVc
+Ep - 05 | Digital Electronics | K-Map | Selective Prime Implicants | Definition with Example . - https://www.youtube.com/watch?v=fKLkqfVUwIM
+PRIME IMPLICANTS OF A BOOLEAN FUNCTION(DIGITAL SYSTEM -26) - https://www.youtube.com/watch?v=Y7nC4XDH1QE
+Quine-McCluskey Minimization Technique (Tabular Method) - https://www.youtube.com/watch?v=l1jgq0R5EwQ
+Lecture 19: Minimization Using Tabular Method (Part I) - https://www.youtube.com/watch?v=S6ZVUXWsVPc
+Lecture 20:Minimization Using Tabular Method (Part II) - https://www.youtube.com/watch?v=QIs7YbV6htg
+Quine Mc-Cluskey or Tabulation Method with don't care conditions - https://www.youtube.com/watch?v=EpPTy1qt6KE
+Lecture 21: Design of Adders (Part I) - https://www.youtube.com/watch?v=85XxQZqBNlg
+Half subtractor - https://www.youtube.com/watch?v=x2Hlyoo8PDw
+Introduction to Sequential Circuits | Important - https://www.youtube.com/watch?v=AaN72s5WfOM&list=PLuYnCh-Sh1XdvuSGjQRi2jgUH9_CiVR8J&index=1
+Basic Flip Flop or Latch | Digital Electronics by Raj Kumar Thenua | Hindi / Urdu - https://www.youtube.com/watch?v=O5SWZ9i6ySc
+SR Flip flop in Hindi | Digital Electronics by Raj Kumar Thenua | Hindi / Urdu - https://www.youtube.com/watch?v=QkbnOga09Vg
+SR Flip Flop || Truth Table || Characteristic Table || waveform - https://www.youtube.com/watch?v=ceqWOZXCE6s
+J k flip flop - https://www.youtube.com/watch?v=9irx0ldRMsA
+JK Flip flop in Hindi | Digital Electronics by Raj Kumar Thenua | Hindi / Urdu - https://www.youtube.com/watch?v=ksjND4Bh-UE
+D flip flop | Digital Electronics by Raj Kumar Thenua | Hindi / Urdu - https://www.youtube.com/watch?v=0R59T9W7eGY
+Master Slave JK flip flop | Digital Electronics by Raj Kumar Thenua | Hindi / Urdu - https://www.youtube.com/watch?v=3X1IK1xiiY0
+bus architecture in computer organization - https://www.youtube.com/watch?v=TgYAj7mlRT8
+Floating Point Representation - https://www.youtube.com/watch?v=iqMG00tGht0
+Triggering of Flip Flop | Level and Edge Triggering (Digital Electronics-36) by SAHAV SINGH YADAV - https://www.youtube.com/watch?v=1LB_PyBxH1U
+Difference between Flip Flops and Latches (Digital Electronics-37) by SAHAV SINGH YADAV - https://www.youtube.com/watch?v=7KyXrvUsu20
+Introduction to State Table, State Diagram & State Equation - https://www.youtube.com/watch?v=NNOSWnTHakY&list=PLHcdEpXwRO0qtWzq67PKTnACkdDvj7YUj
+Lesson 40: State Diagrams - https://www.youtube.com/watch?v=PGtGnnocnOg
+Excitation Table for S-R Flip Flop - https://www.youtube.com/watch?reload=9&v=utjjhrLIkX4
+What is Multiplexer Design 4 x 1 MUX - https://www.youtube.com/watch?v=DW2s22Iu03A
+What is De-multiplexer Design 1 x 4 De-MUX (Hindi) - https://www.youtube.com/watch?v=PyEhIwCp8vE
+Decoder (Hindi) - https://www.youtube.com/watch?v=3per0Uq3BnA
+Binary Division(हिन्दी ) - https://www.youtube.com/watch?v=WpnbtYVTK0Y
+Binary to decimal conversion | very easy - https://www.youtube.com/watch?v=a7djc9L2SIA
+Octal Addition / Octal Arithmetic - Digital Electronics | TECH GURUKUL - https://www.youtube.com/watch?v=pNOQC1G9sQ8
+Hexadecimal Addition / Hexadecimal Arithmetic - Digital Electronics | TECH GURUKUL - https://www.youtube.com/watch?v=ZZqT_hPshsM
+Gray to Binary Conversion - https://www.youtube.com/watch?v=fxBEB8i7ToM
+Self Compliment Code | Reflective Code (Digital Electronics-8) by SAHAV SINGH YADAV - https://www.youtube.com/watch?v=qz1HyEkuU6w
+Differentiation of sinx - https://www.youtube.com/watch?v=_UsaDPg-LD0
+Digital Design 4: Grouping K-maps and simplified Boolean Expressions (correction @ 4:35 see below) - https://www.youtube.com/watch?v=8XrkL78Snng
+Redundancy Theorem (Boolean Algebra Trick) - https://www.youtube.com/watch?v=3pbH9IhxwOg
+5 variables K' Map - https://www.youtube.com/watch?v=1_cxX2pxf10
+Tabulation method- digital electronics- https://www.youtube.com/watch?v=gZ5kp1cBDYE&t=111s
+Serial in Serial Out, Serial in Parallel Out, Bi-Directional Shift Registers - Digital Electronics - https://www.youtube.com/watch?v=IeXu_nMIrmc
+Shift Register (SISO & SIPO Mode) using D Flip Flop || on board Experiment - https://www.youtube.com/watch?v=OfoXcIymMvI
+Bidirectional Shift Register(हिन्दी ) - https://www.youtube.com/watch?v=FBxafcbesao
+Ripple Up Counter, Ripple Down Counter and Bi-directional Counter - Digital Eletronics - https://www.youtube.com/watch?v=a_5zKZPvjsE
+preset and clear | mod 5 asynchronous counter | very easy - https://www.youtube.com/watch?v=oDY_GZ2x87M
+Ring Counters and Twisted Ring Counters - Digital Electronics - https://www.youtube.com/watch?v=-xfAZcmiAps
+Lecture 20 - UP/DOWN COUNTERS - https://www.youtube.com/watch?v=PnwYW3RWARw&list=PL803563859BF7ED8C&index=20
+Excitation Table Of Jk Or Master Slave Flip Flop(हिन्दी ) - https://www.youtube.com/watch?v=0KBZI02upbM
+Logical Shift, Circular Shift and Arithmetic Shift in Computer Architecture - https://www.youtube.com/watch?v=WDpNeInFAmc
+Lesson 45b - Adders Carry and Overflow - https://www.youtube.com/watch?v=9cXe_T99nL4
+Lesson 59 - Arithmetic/Logic Unit ALU - https://www.youtube.com/watch?v=wefPosRKgCc
+http://service.scs.carleton.ca/sivarama/asm_book_web/Student_copies/ch6_arithmetic.pdf
+CPU interaction with Memory, Endianess, Byte & Word addressable - https://www.youtube.com/watch?v=HE8MCxW0uss
+Gate Computer Organization-12 | Byte and Word Addressing - https://www.youtube.com/watch?v=QOrAFDZABsM
+Wilkes Design on Micro Programed Control Unit - https://www.youtube.com/watch?v=WsGAo-_rHSo
+Introduction to Control Unit - https://www.youtube.com/watch?v=oO0dDHh7efQ
+Control Unit Example - https://www.youtube.com/watch?v=Q9ykDwyKAwI
+ALU Design(COA KTU Syllabus) - https://www.youtube.com/watch?v=V-KJ2ocK19I
+Design Procedure for Clocked Sequential Circuits - https://www.youtube.com/watch?v=NNOSWnTHakY
+Equation for J-K Flip Flop - https://www.youtube.com/watch?v=xQgLFK0Jv2g
+Subroutine Call and Return in Computer Organization | Computer Organization GATE Lectures - https://www.youtube.com/watch?v=vXBvjYTi6BY
+Memory Stack Subroutine Call and return in Computer Organization | Computer Organization GATE - https://www.youtube.com/watch?v=CovZ2xAovro
+INTERRUPT in Computer Organization and Architecture | Computer organization GATE Lectures - https://www.youtube.com/watch?v=lxBfuyOagS8
+Accumulator in Computer organization and architecture | Types of Organizations | well academy - https://www.youtube.com/watch?v=FovkoLq9F40
+Flag registers of 8085 microprocessor - https://www.youtube.com/watch?v=ORx6Ow7HqYc
+Fetch Decode Execute Cycle in more detail - https://www.youtube.com/watch?v=jFDMZpkUWCw
+Lec4 - 4-bit Arithmetic Circuit | Computer Architecture and Organisation(in HINDI) - https://www.youtube.com/watch?v=VNQtjzGmdWA
+Effect Of Output Carry - https://www.youtube.com/watch?v=GvXb7pNqoV0
+Combinational logic shifter(COA KTU syllabus) - https://www.youtube.com/watch?v=_ZA9HQrL86o
+Microprocessor Interfacing Input Output Ports to the 8086 - https://www.youtube.com/watch?v=xY0lQR_wGUY
+
+
+
+
+Mathematics for computer science
+Motivation & Introduction to Propositional Logic - https://www.youtube.com/watch?v=IZpvlR5J7FQ
+
+
+
+Discrete Mathematics
+Logical equivalence without truth tables (Screencast 2.2.4) - https://www.youtube.com/watch?v=iPbLzl2kMHA
+problems on DNF and PDNF - https://www.youtube.com/watch?v=H6Ir3Br1UVQ
+Logical Operators - Biconditional Operator - https://www.youtube.com/watch?v=ehKd3KmIRSw
+conditional statement - if then else - https://en.wikipedia.org/wiki/Conditional_(computer_programming)
+Bisection Method in Hindi - https://www.youtube.com/watch?v=DMZj48icYnE
+Tautology without truth table(Hindi)#8 || Artificial Intelligence || MCSE-003 - https://www.youtube.com/watch?v=5ZtyRpDPZpo
+Differentiation - Derivative of sinx, cosx, e^x, logx by first Principle in Hindi(Lecture 2) - https://www.youtube.com/watch?v=ShllNZSZ-PY
+Derivative of sin x and cos x | MIT Highlights of Calculus - https://www.youtube.com/watch?v=FtQl1gAo12E
+Calculator degrees radians conversion casio fx-83GT PLUS - https://www.youtube.com/watch?v=2QbCvw8oFPQ
+Newton-Raphson Method: Example - https://www.youtube.com/watch?v=lFYzdOemDj8
+Newton Raphson Method: Derivation - https://www.youtube.com/watch?v=nRbsfnUftT4
+Newton Raphson Method Derivation from Taylor Series - https://www.youtube.com/watch?v=OR9DgzkB4Ag
+Newton Raphson Derivation - https://www.youtube.com/watch?v=lDTZr6MFuCU
+The derivative & tangent line equations - https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-1/v/derivative-as-slope-of-tangent-line
+Newton Raphson method example - https://www.showme.com/sh/?h=mxDIsgS
+newton raphson method - https://www.slideshare.net/ybhargawa/ypgesh
+Iteration Method in Hindi | CBNST | By- Harendra Sharma - https://www.youtube.com/watch?v=nf-lfN4AT7k
+How to differentiate the exponential function easily - https://www.youtube.com/watch?v=i0nATC3kllI
+PRODUCT RULE/ QUOTIENT RULE/ CHAIN RULE CONTINUITY AND DIFFERENTIABILITY PART-2 - https://www.youtube.com/watch?v=8Kvg6BPokk0
+DM-12-Propositional Logic-Basics - https://www.youtube.com/watch?v=pzUBrJLIESU
+Propositional Logic- Truth Table(Hindi) #4 || Artificial Intelligence || MCSE-033 - https://www.youtube.com/watch?v=m-riSTK7Ha8
+Normal Forms DNF and CNF with Examples Lecture 13.3 - https://www.youtube.com/watch?v=GDxwi0qiIiE
+PL to CNF and DNF with TEE solved examples in Hindi | ARTIFICIAL INTELLIGENCE | MCSE-003 -  https://www.youtube.com/watch?v=BQriSkg3YKk
+15. Learn easy steps to Convert FOL to CNF - https://www.youtube.com/watch?v=P47SztSXCxY
+Examples to solve predicate logic Question in Artificial Intelligence --P2 - https://www.youtube.com/watch?v=OQuKK-rI-x8
+http://flolac.iis.sinica.edu.tw/flolac15/_media/download:normal-form-boolean.pdf
+Propositional Logic 8: Negation normal form - https://www.youtube.com/watch?v=XMoGOOYa2Yw
+Differentiation formulas !!Easily : Derivative Formulas:Calculus 1 [ IIT JEE Maths Tricks in Hindi ]
+Minterm and Maxterm (Hindi) - https://www.youtube.com/watch?v=_HQWwzuotPU
+inference rule - https://www.youtube.com/watch?v=7Tfmv0faoYI
+Logical Implication and Equivalence - https://www.youtube.com/watch?v=yotVB16ZE4U
+Logical Rules and Equivalences day 2 - Introduction - https://www.youtube.com/watch?v=V2Bk9u0iUsY
+Forward and Backward Chaining in Artificial Intelligence - https://www.youtube.com/watch?v=Dso6EKzvXHo
+Proving a compound proposition is a tautology part 1 of 2 - https://www.youtube.com/watch?v=MRooF9a1juA
+DM-17-Propositional Logic - Validity, Satisfiability, Logical implication, Inference system - https://www.youtube.com/watch?v=q6GR31lR1PM
+DM-18-First Order logic -Learn To write statements - https://www.youtube.com/watch?v=2juspgYR7as
+Set Theory In Hindi (Lecture 1) - https://www.youtube.com/watch?v=qlhdA2Axvxk
+Set Theory - Concept of Subset, Power Set, Intervals & Universal Set in Hindi(Lecture 2) - https://www.youtube.com/watch?v=iiRE4uvEk7A
+Set Theory - Union, Intersection, Difference & Compliment operation on Sets in Hindi(Lecture 4) - https://www.youtube.com/watch?v=tC7q0oc-Axk&t=10s
+Set Theory - Practical Use of Union & intersection in Hindi(Lecture 5) - https://www.youtube.com/watch?v=9qqcarEgjcI
+Relation - Definition, Domain & Range, Arrow Diagram of Relation in hindi(Lecture 3) - https://www.youtube.com/watch?v=QBTnYKrEAB0
+EQUIVALENCE RELATIONS- REFLEXIVE, SYMMETRIC, TRANSITIVE (RELATIONS AND FUNCTIONS CLASS XII 12th) - https://www.youtube.com/watch?v=WauEBdi1HHg&t=246s
+Relations and Functions: Composition of Relations - https://www.youtube.com/watch?v=u5RcCPqhVjc
+CALCULUS: COMPOSITION OF FUNCTIONS (CBSE CLASS XII 12th Maths) - https://www.youtube.com/watch?v=OyacAbQ6e8I
+[Discrete Math 1] Partial Orders - https://www.youtube.com/watch?v=R36F8CWAi2k
+DM-30-Posets hasse Diagram - https://www.youtube.com/watch?v=oevgJULV6p0&t=145s
+Derivative of a Function (Part 1) - https://www.youtube.com/watch?v=lowavG2SXsQ
+Calculus - Derivative of a Function - Part 2 - https://www.youtube.com/watch?v=AOkn9-UK5AU
+Duality Law | Duality Law in Discrete Mathematics | Dual Of Boolean Expression | Law of Duality - https://www.youtube.com/watch?v=OXrRs2hcCNo
+23- What Is MODUS TOLLENS In Rules Of Inferences In Logic In Discrete Mathematics In HINDI - https://www.youtube.com/watch?v=V9sjoGDhO3U
+Relations and Functions: A Digraph of a Reflexive Relation - https://www.youtube.com/watch?v=H4_dTr635nY
+Composition of Relations for Discrete Math - https://www.youtube.com/watch?v=z0zuDLKL5P8
+Part -17 | Hasse Diagram in Discrete Mathematics in HINDI | how to draw Hasse Diagram in HINDI - https://www.youtube.com/watch?v=KVdzsIjLTQk
+L10 - Duality - Prepositional Logic - https://www.youtube.com/watch?reload=9&v=gP3Kd3Qz2o0
+14. Semigroups and Monoids - Groups - Gate - https://www.youtube.com/watch?v=OWm6Nw7mltA
+10. Functions Introduction - Gate - https://www.youtube.com/watch?v=v2qza_qG9F4
+One One Many one Into Onto Functions in Hindi - https://www.youtube.com/watch?v=I32MYMah0D0
+One One, Many one, Into and Onto Function in hindi- Example Part-1 - https://www.youtube.com/watch?v=izLioNLkycU
+Greatest Integer Function in Hindi - https://www.youtube.com/watch?v=4fZ0vYt4WnY&t=387s
+Composition of Functions & Invertible Functions | CBSE 12 Maths NCERT Ex 1.3 intro - https://www.youtube.com/watch?v=VZX1mAWlybo
+Binary Operations | CBSE 12 Maths NCERT Ex 1.4 intro ( Part 1) - https://www.youtube.com/watch?v=Cr79NhYUSfw
+Inverse of an element for Binary Op. | CBSE 12 Maths Ex 1.4 intro (Part 5) - https://www.youtube.com/watch?v=XRaA6IJVH2Y
+Class 12: Invertible Functions - https://www.youtube.com/watch?v=7fpjERVIhrA
+Finding the Inverse of a Function or Showing One Does Not Exist, Ex 1 - https://www.youtube.com/watch?v=Ec5YYVxyq44
+EXAMPLE: MONOID ,SEMIGROUP - https://www.youtube.com/watch?v=qNEudDe-BUE
+Set Theory - Introduction for Computer Science - https://www.youtube.com/watch?v=26dApdXzAvE
+Constant Function Class 11 Maths NCERT Syllabus 2019 Q8 - https://www.youtube.com/watch?v=kKPLldsmN4E
+Composition Table for Binary Operations - CBSE, ISC, Class 12, IIT-JEE - https://www.youtube.com/watch?v=yDopx3Qp-PE
+Homomorphisms, Isomorphisms, and Automorphisms - https://www.youtube.com/watch?v=uPnEgPCv7MI
+3. Infix to Postfix Conversion The Easy Way - https://www.youtube.com/watch?v=vXPL6UavUeA
+4. Simplifying Postfix Expression Evaluation - https://www.youtube.com/watch?v=QCnANUfgC-w
+Polish Notation(Prefix, Postfix) in Data Structure in Hindi - https://www.youtube.com/watch?v=UuIdI_WX-Zs
+CSC 226 Lecture 16: Binary Relations, Part 1 - https://www.youtube.com/watch?v=6MAnksyRKCM
+postfix to infix convertion example | data structures |by bhanu priya - https://www.youtube.com/watch?v=vS_lYbc6BUk
+how to convert infix to postfix expression | data structures | by bhanu priya - https://www.youtube.com/watch?v=2B52LZvGYok
+Muller's Method in Hindi | CBNST | By:- Harendra Sharma - https://www.youtube.com/watch?v=3C0PCeIGuRs
+groups
+Part - 1 | Group Theory Discrete Mathematics in HINDI algebraic structures semi group monoid group - https://www.youtube.com/watch?v=7ifHq5J58cE
+Part-2 | Closure property | Algebraic Structures in Discrete Mathematics in HINDI | Group theory - https://www.youtube.com/watch?v=cpYaUnqKXWc
+(Abstract Algebra 1) Definition of a Subgroup - https://www.youtube.com/watch?v=6Rhg9LTHfXk
+Basics of Group Theory - https://www.youtube.com/watch?v=m89tR-qO6JA
+Regular Grammar - https://www.youtube.com/watch?v=WgEsPTAL55Q
+Derivations from a Grammar - https://www.youtube.com/watch?reload=9&v=ejXgLRSIxsA
+Context Free Grammar & Context Free Language - https://www.youtube.com/watch?v=5_tfVe7ED3g
+22-Introduction to Context free grammar, Derivation, Parse tree, Ambiguity - https://www.youtube.com/watch?v=grZvMHn2sC4
+Euler's method in hindi - https://www.youtube.com/watch?v=LTKYiWuBuxU
+Euler's Method - Another Example #1 - https://www.youtube.com/watch?v=RsJ4m8n6H80
+Euler's method example #2: calculating error of the approximation - https://www.youtube.com/watch?v=l7qr4qaMCRY
+N M E Modified Euler's Method in Hindi - https://www.youtube.com/watch?v=ahmAzpj9nDM
+N M E Runge-Kutta Method in Hindi - https://www.youtube.com/watch?v=2v3S3LgRGi0
+Predictor-corrector method||most important||numerical methods||Bank On GATE - https://www.youtube.com/watch?v=92o4BwpoXXw
+1. Numerical Differentiation example | Numerical Differentiation in numerical Analysis - https://www.youtube.com/watch?v=hQvmLnyZDuE
+13. Numerical Differentiation - Introduction - https://www.youtube.com/watch?v=qhUIx096afA
+20. Euler's Method -- Detailed Explanation | Example | Practice Questions - https://www.youtube.com/watch?v=nHYocSRl4rU
+NEWTON GREGORY FORWARD INTERPOLATION PROOF - https://www.youtube.com/watch?v=iAA8UDgoF70
+NEWTON FORWARD INTERPOLATION - Secret tricks | NUMERICAL METHOD | Tutorial - 1 - https://www.youtube.com/watch?v=Lq19TwNc0nc
+Numerical Differentiation in hindi - https://www.youtube.com/watch?v=12KWLvSRNVw
+Forward, Backward, and Central Difference Method - https://www.youtube.com/watch?v=Jqa-aFE9-GI
+GAUSS ELIMINATION METHOD - Secret Tips & Tricks - |TUTORIAL - 8| - |Numerical Method| - https://www.youtube.com/watch?reload=9&v=0sgd_HwbD3k
+GAUSS JORDAN ELIMINATION METHOD - Secret Tips & Tricks - |Tutorial - 9| - |Numerical Method| - https://www.youtube.com/watch?v=LdxKdvBb8dI
+Gauss Jacobi Iteration Method - Secret Tips & Tricks - |TUTORIAL - 12| - https://www.youtube.com/watch?v=vfVFhi3QogU
+Gauss-Seidel Method of Solving Simultaneous Linear Equations: Example: Part 2 of 2 - https://www.youtube.com/watch?v=lE3nKRpNOdw
+LU Factorization of Matrix,Solve Linear Equations - Secret Tips & Tricks - |TUTORIAL - 11| - https://www.youtube.com/watch?v=LiJQos5B88Q&t=297s
+Quick Matrix Multiplication ALL Types Class 12 : CBSE - https://www.youtube.com/watch?v=PqobOjdYyBU
+Gauss-Jordan Elimination - https://www.youtube.com/watch?v=0fTSBIBD7Cs
+Regula Falsi Method - Secret tips & tricks - |Numerical Method| - Tutorial - 15 - https://www.youtube.com/watch?v=Twue3UspXKQ
+Fixed Point Iteration Method Solved example - Numerical Analysis - https://www.youtube.com/watch?v=5o6j5Hst864
+L6_Numerical analysis_Fixed point iteration method introduction - https://www.youtube.com/watch?v=DUD-_iWNKYo
+10. Newton Raphson Method | Problem#1 | Complete Concept - https://www.youtube.com/watch?v=rkcSoIPCTkM
+
+exercise
+3. Bisection Method | Problem#1 | Complete Concept - https://www.youtube.com/watch?v=R1BnCiTXG4U
+5. Regula Falsi Method | Problem#1 | Complete Concept - https://www.youtube.com/watch?v=TkZ0RqxJqu0
+10. Newton Raphson Method | Problem#1 | Complete Concept - https://www.youtube.com/watch?v=rkcSoIPCTkM
+muller method-solved problem - https://www.youtube.com/watch?v=0t_gixtgLa8
+----MULLER'S METHOD - https://www.youtube.com/watch?v=51O8Jj6NlvU
+----Muller's Method in Hindi | CBNST | By:- Harendra Sharma - https://www.youtube.com/watch?v=3C0PCeIGuRs
+32. Euler's Method | Problem#2 | Complete Concept 
+13. Gauss Elimination Method | Problem#1 | Complete Concept 
+
+
+Fixed Point iteration method / Simple iteration method
+Fixed Point Iteration Method Solved example - Numerical Analysis - https://www.youtube.com/watch?v=5o6j5Hst864
+Trapezoidal Rule - https://www.youtube.com/watch?v=o5R6cdINrr0
+Fixed Point Iteration - https://www.youtube.com/watch?v=OLqdJMjzib8
+LU Decomposition Method (Factorization Method) in Hindi | mswebtutor.com - https://www.youtube.com/watch?v=5t6uCeKJg1s
+Shortcut Method to Find A inverse of a 3x3 Matrix - https://www.youtube.com/watch?v=C7D36h_0Zlw
+VTU Engineering Maths 3 Newton's forward interpolation formula example(PART-4) - https://www.youtube.com/watch?v=amVLQSVUDa0
+Runge Kutta Method Numericals - https://www.youtube.com/watch?v=-FHaOcy6j60&t=441s
+
+
+
+Linux
+What is GNU + Linux? - https://www.youtube.com/watch?v=kb2T8hWRu8g
+Keyboard Shortcuts For Linux Bash Terminal - https://www.youtube.com/watch?v=qS0phIqRy8Y
+Linux Command Line Tutorial For Beginners 8 - cp command - https://www.youtube.com/watch?v=Bnx_GAHM0wo
+Linux Commands for Beginners: 31 - Standard Input Output and Error - https://www.youtube.com/watch?v=shFMEJJ_fpU
+Ubuntu Server Essentials Part 25 - Background and Foreground - https://www.youtube.com/watch?v=XQUreJ-ZWRE
+https://www.computerhope.com/issues/ch000795.htm
+Shell Scripting Crash Course - Beginner Level - https://www.youtube.com/watch?reload=9&v=v-F3YLd6oMw
+LINUX Understanding inodes - https://www.youtube.com/watch?v=_6VJ8WfWI4k
+SED Tutorial Basic Substitution Linux Shell BASH - https://www.youtube.com/watch?v=32waL1Z9XK0
+Linux Commands for Beginners: 17 - Changing Permissions - https://www.youtube.com/watch?v=zR_Ibd-ZOzo
+Integrate Git Bash With Vs Code | For Windows -  https://www.youtube.com/watch?v=VbC4ZCwu2_I
+Linux: "history" Command Explained - https://www.youtube.com/watch?v=MbXofShhMv8
+How to Use and Edit Your Bash Command History - https://www.youtube.com/watch?v=2Kp0nUKOvXM
+HakTip - Linux Terminal 101: Controlling Processes - https://www.youtube.com/watch?v=XUhGdORXL54
+Environment Variables : Linux Tutorial #11 - https://www.youtube.com/watch?v=pjh9rU9h22Q
+Linux Commands for Beginners: 21 - Creating Your Own Commands via Aliases - https://www.youtube.com/watch?v=3Dnkt-FcExg
+Quotation Marks | Double, Single and Reverse Quotes Explained - https://www.youtube.com/watch?v=9_fhRI-dos4
+03 - Unix Shell Scripts - Command Line Arguments - https://www.youtube.com/watch?v=b1fNMFwfIkQ&t=210s
+Export Command in Shell Scripting - https://www.youtube.com/watch?v=yUmml8BxlY8
+Shell Scripting Tutorial for Beginners 5 - If Statement ( If then , If then else, If elif else) - https://www.youtube.com/watch?v=OO2Avn1g5Tw
+Shell Scripting Tutorial-39: The 'while' Loop - https://www.youtube.com/watch?v=50UH6IPM1KE
+Shell Scripting Tutorial for Beginners 19 - FOR loop - https://www.youtube.com/watch?v=mhhAbETJpag
+Shell Scripting Tutorial for Beginners 21 - Select loop - https://www.youtube.com/watch?v=k3yTt0V01Mo
+Linux Commands for Beginners (Old Version): 28 - The File Command (And Easter Eggs) - https://www.youtube.com/watch?v=HVqGVVdUFag
+Absolute and Relative Paths - https://www.youtube.com/watch?v=ephId3mYu9o
+Hard vs Soft Links in Linux (Linux Links) - https://www.youtube.com/watch?v=4-vye3QFTFo
+Hard and Soft Links in Linux - https://www.youtube.com/watch?v=kYonC93SvpE
+Linux Archive, Backup And Compress Utility (tar, Gzip, Bzip2, 7zip, Zip etc.) Part - 1 - https://www.youtube.com/watch?v=pbclwytrH_k
+
+PHP
+How to setup localhost or web development environment using XAMPP (Hindi / Urdu) - https://www.youtube.com/watch?v=8q_m8pSLmsE
+PHP Tutorial 9 - Single Quotes vs Double Quotes (Not a Rap Battle) - https://www.youtube.com/watch?v=0uFVXAoHgNQ
+How to run php script in command prompt windows - https://www.youtube.com/watch?v=Ka44kcFSruk
+Here Document in PHP (Hindi) - https://www.youtube.com/watch?v=gtgfFFa1co8
+PHP Tutorial 17: var_dump and print_r - https://www.youtube.com/watch?v=aBPhdv3QjfM
+Learn PHP: Heredoc syntax - https://www.youtube.com/watch?v=iQFv-3jy9h4
+Learn PHP: Arrays - https://www.youtube.com/watch?v=cLUaBc8985g
+PHP Array To Object - https://www.youtube.com/watch?v=MQslKOOmpls
+PHP Object Oriented Programming (OOP): Introduction (1/13) - https://www.youtube.com/watch?v=ipp4WPDwwvk&list=PLfdtiltiRHWF0RicJb20da8nECQ1jFvla
+39 - PHP String Function - Remove blank extra space from string - https://www.youtube.com/watch?v=pJSbwDHXncg
+What is PHP sprintf - https://www.youtube.com/watch?v=Fv6nxyUzVic
+PHP beginners tutorial 11 - operator precedence - https://www.youtube.com/watch?v=63WTC6W1Efs
+
+
+
+Number
+Understanding ASCII and Unicode (GCSE) - https://www.youtube.com/watch?v=5aJKKgSEUnY
+Twos complement: Negative numbers in binary - https://www.youtube.com/watch?v=4qH4unVtJkE
+
+
+
+C programming
+C programming Pointers fully explained - https://www.youtube.com/watch?v=TFTpRjPcoUs
+Pointers in C - https://www.youtube.com/watch?v=mw1qsMieK5c
+C Programming Tutorial - 49 - Structures - https://www.youtube.com/watch?v=VMFKz7Klx7I
+139. Difference between Structure and Union in C Programming (Hindi) - https://www.youtube.com/watch?v=cWQagiCN0YI
+C Programming Tutorial - 71: Unions - https://www.youtube.com/watch?v=SzErnaKq8Zo
+Installing MinGW compiler and visual studio code - https://www.youtube.com/watch?v=4Jx6om-_7qc
+How to Compile and Run C Program using Visual Studio Code Tasks - https://www.youtube.com/watch?v=b_gCeFjBy7c
+https://www.lynxbee.com/understanding-compilation-stages-preprocessor-compiler-assembler-linker-loader/
+https://courses.cs.washington.edu/courses/cse378/97au/help/compilation.html
+storage classes in c programming | auto, external,register, static | - https://www.youtube.com/watch?v=lRRPO4C0suQ
+What are macro in C and C++ with examples. Mahajan Computers , Kurukshetra Since 1998. - https://www.youtube.com/watch?reload=9&v=34Eedse0wA4
+extern "C" In C++ - https://www.youtube.com/watch?v=m5Y3Ghv2PUE
+file opening modes in c | reading, writing and append modes | - https://www.youtube.com/watch?v=nHqkiSulF6Q&t=210s
+#10 Tuples || Learn Python Foundation in Tamil - https://www.youtube.com/watch?v=D9Cz0YHsCjg
+Precedence and Associativity of operators in C - https://www.youtube.com/watch?v=ZrkgsWDcspg
+C Programming Tutorial 45, Typedef Keyword - https://www.youtube.com/watch?v=xHn3p3mVsMw
+
+cpp
+Buckys C++ Programming Tutorials - 48 - friend - https://www.youtube.com/watch?v=WCFGNdXSzus
+Buckys C++ Programming Tutorials - 38 - Introduction to Pointers - https://www.youtube.com/watch?v=Fa6S8Pz924k
+Friend Function | CPP Object Oriented Programming Video Tutorial - https://www.youtube.com/watch?v=FErlySnTBWc
+Friend Class in C++ Programming with Program Example & Explanation - https://www.youtube.com/watch?v=YY5tb58yF0w
+Inline Functions & Default Parameters in C++ Programming - https://www.youtube.com/watch?v=fjHz9GPr6qM
+Constructors & Destructors in C++ Programming | Object Oriented Programming Concepts - https://www.youtube.com/watch?v=hAA8FBq2bA4
+C++ Static Variables and Members in Class | CPP Object Oriented Programming Video Tutorial - https://www.youtube.com/watch?v=-WRllQLW8RE
+static member function | Example | Hindi | Object oriented C++ | Lec-67 | Niharika panda - https://www.youtube.com/watch?v=zb5gDbqqLHw
+
+What is inline function :
+The inline functions are a C++ enhancement feature to increase the execution time of a program. Functions can be instructed to compiler to make them inline so that compiler can replace those function definition wherever those are being called. Compiler replaces the definition of inline functions at compile time instead of referring function definition at runtime. 
+NOTE- This is just a suggestion to compiler to make the function inline, if function is big (in term of executable instruction etc) then, compiler can ignore the “inline” request and treat the function as normal function.
+
+https://docs.microsoft.com/en-us/cpp/cpp/destructors-cpp?view=vs-2019
+
+In simple terms, what is the difference between int* and int *?
+
+In terms of language, nothing.
+
+In terms of readability, some younger programmers can confuse themselves if they mistakenly think the "int*" is a type specifier by itself and forget that the "*" belongs to the identifier, not the type.
+
+For example, in this declaration,
+
+int* p, q, r;
+
+the variable "p" is a pointer to an int, while q and r are "simple" ints.
+I've seen more than one developer think they are all int pointers
+if they see a declaration of this kind,
+which is why I like to put the "*" next to the identifier, not the type name, ie
+
+int *p, q, r;
+
+or for even more clarity,
+
+int q, r, *p;
+
+C++ Array of Objects with Complete Coding Example in Hindi | C++ Tutorial for Beginners - https://www.youtube.com/watch?v=CI0UHK1eNSc
+143. Example of Pointers to Object in C++ (Hindi) - https://www.youtube.com/watch?v=VaL--JFAoyM
+This Pointer In C++ - https://www.youtube.com/watch?v=70qXSmuqB2I
+145. Where use this pointer in C++ (Hindi) - https://www.youtube.com/watch?v=Tu_HXfOzlIU
+Pass by Value | Pass by Reference | Pass by Address in C++ Programming - https://www.youtube.com/watch?v=-NS3KfrSvU8
+C++ Part 52 - Reference Parameters - https://www.youtube.com/watch?v=X9-a-MiMwEI
+C++ Part 73 - Pointer Declaration and Initialization - https://www.youtube.com/watch?v=uxBWKY3ybHI
+C++ Part 74 - Pointer Operations - https://www.youtube.com/watch?v=lPCuS0tXlAg
+C++ Part 75 - Pointers and Arrays - https://www.youtube.com/watch?v=qRJUPN0NWRU
+159. One D Dynamic Memory Allocation New and Delete in C++ (Hindi) - https://www.youtube.com/watch?v=ZEuQCR_gfBM
+How to determine or get array length (size) in C/C++ - https://www.youtube.com/watch?v=IgPGwI1f29Q
+https://cmichel.io/cpp-guide-for-eos-development-iterators-lambda-expressions/
+copy constructor c++ in hindi | Object oriented C++ | Lec-81 | Niharika panda - https://www.youtube.com/watch?v=F8xDpxfq0VE
+Operator Overloading in C++ Programming | C++ Programming for Beginners - https://www.youtube.com/watch?v=BO2KagRMS3M
+https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm
+25 C++ | Operator Overloading using Friend Function in C++ | Learn Programming by Sanjay Gupta - https://www.youtube.com/watch?v=AlCYu_mc-T8
+106. Example of Single Inheritance Private Mode in C++ (Hindi) - https://www.youtube.com/watch?v=w46gk15leuE
+Overloading Increment and Decrement Operators in Prefix form | C++ Video Tutorial - https://www.youtube.com/watch?v=EwNfWrkOeXU
+Overloading Increment and Decrement Operators in Postfix form | C++ Video Tutorial - https://www.youtube.com/watch?v=XJbA1AjW1zw
+Increment & Decrement Operator Overloading in C++ | Unary Operator Overloading Program Example - https://www.youtube.com/watch?v=b3rmSbqpevk
+Protected Inheritance in C++ | Object Oriented Programming Video Tutorial - https://www.youtube.com/watch?v=ClUQXuwxyH8
+Private Inheritance in C++ | Cpp Video Tutorial - https://www.youtube.com/watch?v=reWA2RBdFAw
+115. Ambiguity Resolution in Inheritance in C++ (Hindi) - https://www.youtube.com/watch?v=b3qAFGJGxd8
+Multiple Inheritance in C++ with Ambiguity & Resolution | C++ programming for Beginners - https://www.youtube.com/watch?v=3XUXSiC-hPE
+Virtual Functions & Abstract Classes in C++ | C++ Programming Tutorials - https://www.youtube.com/watch?v=JU8DbwBvOWE
+VIRTUAL FUNCTION : C++ programming Concept - https://www.youtube.com/watch?v=HGE0V2uQ--U
+C++ Basic Skills: 34 - Virtual Functions - https://www.youtube.com/watch?v=9nqYpxKm26A
+C++ Pure Virtual Functions, Abstract Classes | Cpp Video Tutorial - https://www.youtube.com/watch?v=FA5bvYW4iUc
+Introduction to C++ Generic Classes | CPP Generic Programming Video Tutorial - https://www.youtube.com/watch?v=cki2wRkhAWQ
+Generic Functions with Multiple Generic Types | C++ Programming Video Tutorial - https://www.youtube.com/watch?v=8ugdVOpQztk
+Introduction to Exception Handling | try, catch and throw | C++ Tutorial - https://www.youtube.com/watch?v=P_Kx0i7yXhU
+Buckys C++ Programming Tutorials - 63 - More Exceptions Examples - https://www.youtube.com/watch?v=5369xtKS42s
+Creating Custom, User Defined Exception Class | C++ Video Tutorial - https://www.youtube.com/watch?v=Ix05fozWn0A
+Types of Inheritance in C++ | C++ Tutorials in हिंदी/English | Tutorial - 22 - https://www.youtube.com/watch?v=LTT6ynOGEs0
+How to open and close files in C++? fstream - https://www.youtube.com/watch?v=wL2fv9GHhMc
+File Handling in C++ Programming - https://www.youtube.com/watch?v=TF2-F2duY6c
+Buckys C++ Programming Tutorials - 55 - Introduction to Polymorphism - https://www.youtube.com/watch?v=R_PPA9eejDw
+Buckys C++ Programming Tutorials - 56 - virtual Functions - https://www.youtube.com/watch?v=DudHooleNVg
+Inline Functions & Default Parameters in C++ Programming - https://www.youtube.com/watch?v=fjHz9GPr6qM
+C++ Static Variables and Members in Class | CPP Object Oriented Programming Video Tutorial - https://www.youtube.com/watch?v=-WRllQLW8RE
+Static Data Members in C++ & Static Member Functions in C++|C++ programming tutorials for Beginners - https://www.youtube.com/watch?v=1QTZeeDL0bc
+Returning a reference from a function - https://www.youtube.com/watch?v=8v_laKU2tZs
+Pointers and Dynamic Memory in C++ (Memory Management) - https://www.youtube.com/watch?v=CSVRA4_xOkw
+Virtual Functions & Abstract Classes in C++ | C++ Programming Tutorials - https://www.youtube.com/watch?v=JU8DbwBvOWE
+
+
+
+
+
+
+
+
+Learn Palta/Alankar Basic Singing Lesson-1 How to play Sa Re Ga Ma Pa on Harmonium - https://www.youtube.com/watch?v=pihZjB_jsuY&list=PLCDy4OQZ6LcmD5gKUcVBj9HZhN_gHjIp0&index=2&t=0s
+This Canadian Genius Created Modern AI - https://www.youtube.com/watch?v=l9RWTMNnvi4
+How to Read Notes Fast - The Landmark System - https://www.youtube.com/watch?v=jSOU-J9KHbg
+How to sing with Taal Lesson 1 - https://www.youtube.com/watch?v=N5U02imzDzs
+A Beginner's Guide to Music Theory - https://www.youtube.com/watch?v=n2z02J4fJwg
+
+
+
+
+
+
+    Code Complete, 2nd edition. It’s about the construction of software and the design that goes in the small parts of the code you write. The book is huge, so reading it might take a while, but it’s still very relevant and useful.
+    The Clean series (Code, Coder, Architecture), those 3 books deal with different aspects of the profession, but I enjoyed all 3 and learned many important lessons from them.
+    The pragmatic programmer, a book full of important lessons and ideas, it’s a relatively quick read compared to the other books on the list, but the lessons are as valuable.
+    The mythical man-month, it might be the most important book on the list, full of important lessons about the lifecycle of a software project and the profession itself. I believe Fred Brooks said everything decades ago and we still make the same mistakes.
+    Design Patterns: Elements of Reusable Object-Oriented Software(GOF): It’s the original design-patterns book, a bit old but still an excellent reference. Being familiar with design patterns gives you a good toolbox for tackling most design challenges, even if the pattern doesn’t match your problem perfectly, you have a solid base for building a solution.
+    Head First Design Patterns(Robson and Freeman): I think this one is much easier to digest than the GOF book. Read both, maybe start with this one and when you become familiar with the contents use the GOF book as a reference.
+    Clean Architecture(Robert Martin): I like Uncle Bob’s books, and this one was not an exception. It exposes a lot of useful design principles, why they are important and where they fit in the design process. It’s relatively short, so it won’t take more than a couple of weeks to learn its contents.
+    Practical Object-Oriented Design: An Agile Primer in Ruby(Sandi Metz): It’s more hands-on than the other ones, full of examples and refactoring. It starts with an introduction to design thinking and why it’s important to spend time and effort on good architecture and design. Don’t let the ruby part discourage you from using it, the lessons you’ll learn are applicable to all other OO languages.
+    Domain Driven Design(Evans): DDD is a very useful approach, and it pays off to be familiar with it. Reading this one will go a long way in helping you devise solutions that match well the domain problem and are easy to evolve.
+
+
+
+React
+What is React Hooks ? Introduction with a simple example - https://www.youtube.com/watch?v=-9MvABBFdlw
+ReactJS Tutorial - 14 - Binding Event Handlers - https://www.youtube.com/watch?v=kVWpBtRjkCk
+Fetch Data from an API in React.js - Part 12 - https://www.youtube.com/watch?v=T3Px88x_PsA
+Introduction to TheMovieDB API - https://www.youtube.com/watch?v=bpHtxx_wmqw
+React Router Version 4: Link Components - https://www.youtube.com/watch?v=2drsTBFZTQE
+React Router Tutorial | React For Beginners - https://www.youtube.com/watch?v=Law7wfdg_ls
+M2L2.7 Adding font awesome to a React Web application - https://www.youtube.com/watch?v=3iUkh_72xMc
+https://piazza.com/northeastern/summer2018/cs56104550/resources
+11 - React.js - Axios(POST Form Data) - Hindi - 11 - React.js - Axios(POST Form Data) - Hindi
+ReactJS Tutorial - 43 - HTTP Post Request - https://www.youtube.com/watch?v=x9UEDRbLhJE
+https://stackoverflow.com/questions/47260216/reactjs-post-request-through-axios
+Learn AXIOS GET, PUT, POST, DELETE Request from Browser and Nodejs - https://www.youtube.com/watch?v=y9vJMHjKukQ
+SL 20: PUT vs POST vs PATCH - https://www.youtube.com/watch?v=-eo3OEW6z1Q
+https://stackoverflow.com/questions/43490793/arrow-function-in-javascript-object
+CSS how to: vertical-align - https://www.youtube.com/watch?reload=9&v=ihlC_dPvKtY

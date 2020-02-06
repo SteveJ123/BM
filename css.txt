@@ -1,0 +1,65 @@
+image transform
+"<div style=""transform: scale(0.75); position: relative; right: 28px; top: -65px;"">
+        <img id=""drimgexpertise"" src=""https://www.sunitamaternityhospital.com/wp-content/uploads/2019/11/dr-sunita-years-of-experience-updated.jpg"">
+        <p id=""drcredtionialexpertise"">Dr. Sunita Lodam, M.B.B.S., D.G.O, D.F.P</p>
+        <div id=""yourdrexpertise""><a href=""https://www.sunitamaternityhospital.com/best-lady-gynecologist-hadapsar-pune-sunita-lodam/"" style=""color:white;"">Know Your Doctor</a></div>
+        </div>
+"
+
+background-img: url()
+".travelingloan {
+    background-image: url(http://localhost/insurance/wp-content/uploads/2019/11/happiness-couple-1.jpg);
+    height: 650px;
+    width: 252px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+}
+"
+
+paragraph header tag
+margin: 0px
+padding:0px
+
+animation
+style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;"
+
+address
+"<div class=""footer-links"">
+                    <h4>Contact Us</h4>
+                    <p>
+                      A108 Adam Street <br>
+                      New York, NY 535022<br>
+                      United States <br>
+                      <strong>Phone:</strong> +1 5589 55488 55<br>
+                      <strong>Email:</strong> info@example.com<br>
+                    </p>
+                  </div>"
+
+/* header creating line above h tag */
+
+h1, h2:before {
+    opacity: 0;
+}
+
+h1:not(.site-title):before,
+
+h2:before {
+
+  background: none;
+
+  content: "\020";
+
+  display: block;
+
+  height: 2px;
+
+  margin: 1rem 0;
+
+  width: 1em;
+
+}
+
+
+
+

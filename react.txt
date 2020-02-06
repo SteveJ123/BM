@@ -1,0 +1,15 @@
+stateful class component
+stateless functional component
+
+if you want properties use props
+if you want content use props.children
+
+
+when button clicked it produces ()
+
+
+
+
+https://www.youtube.com/watch?v=Y2hgEGPzTZY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=4
+React JS State and Props | setState with Virtual DOM | React.JS tutorial Series Part 4 - https://www.youtube.com/watch?v=DJtI3Pogd88
+React Basics - Props, State and Stateful vs Stateless Components - Episode #4 - https://www.youtube.com/watch?v=wdXEtKtHFdw

@@ -1,0 +1,73 @@
+https://github.com/joshnh/Git-Commandgit diff --stage
+
+sync from different computer - http://www.deanbodenham.com/learn/using-git-to-sync-different-computers.html
+
+vscode
+Integrate Git Bash With Vs Code | For Windows - https://www.youtube.com/watch?reload=9&v=VbC4ZCwu2_I
+
+
+
+
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+
+How to add Existing project to a GitHub Repository? - https://www.youtube.com/watch?v=OVL7R0eT8jw
+
+
+git init
+git add .
+git commit -m ''
+git remote add origin -----
+git push origin master
+
+
+
+
+
+Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
+
+Open Git Bash.
+
+Change the current working directory to your local project.
+
+Initialize the local directory as a Git repository.
+
+$ git init
+
+Add the files in your new local repository. This stages them for the first commit.
+
+$ git add .
+# Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+
+Commit the files that you've staged in your local repository.
+
+$ git commit -m "First commit"
+# Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+Copy remote repository URL field
+At the top of your GitHub repository's Quick Setup page, click
+
+to copy the remote repository URL.
+
+In the Command prompt, add the URL for the remote repository where your local repository will be pushed.
+
+$ git remote add origin remote repository URL
+# Sets the new remote
+$ git remote -v
+# Verifies the new remote URL
+
+Push the changes in your local repository to GitHub.
+
+$ git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+
+
+
+Making a Pull Request - https://www.atlassian.com/git/tutorials/making-a-pull-request
+
+
+
+Create Your First GitHub Pages Website - https://www.youtube.com/watch?v=BA_c3bGQXlQ
+
+How to Add Files to a GitHub Repo You Don’t Own https://ardalis.com/how-to-add-files-to-a-github-repo-you-dont-own

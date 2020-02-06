@@ -1,0 +1,222 @@
+How to Make a Beautiful Website on Wordpress | (In Hindi) - https://www.youtube.com/watch?v=DdYf7eHI4Sg  
+How to Install Wordpress Locally on your PC (and practice making your website) - https://www.youtube.com/watch?v=wWVbiGc6XKk
+How To Add Javascript To WordPress - https://www.youtube.com/watch?v=t0swZkgTQnk
+How to Create an eCommerce Website with WordPress FREE – ONLINE STORE – 2018 NEW!! - https://www.youtube.com/watch?v=w0YxylKDMKw
+Install WordPress on localhost - xampp Step By Step | WordPress for Beginners | #1 -https://www.youtube.com/watch?v=Gknrbr2Ju8k&feature=youtu.be
+Tutorial #11: Creating Sub Menu Items (Drop Down Menu Items) in WordPress - https://www.youtube.com/watch?v=WoQ6pAu0iqo
+How to Add a Mega Menu on Your WordPress Site - https://www.youtube.com/watch?v=wCS2R5U9LCg
+WordPress Mega Menu Plugin - Max Mega Menu Tutorial | Best WordPress Plugins - https://www.youtube.com/watch?v=LG0Ww_Plw6M
+Elementor Mega Menu Tutorial: How To Create a Mega Menu In Elementor for FREE - https://www.youtube.com/watch?v=j5tgDDntBnk
+Getting Started with Image Hover Effects Addon for Elementor | Tutorial - https://www.youtube.com/watch?v=1XknWh0rtQY
+insert header and footer plugin - header setting - default navbar - megamenu - elementor
+Getting Started with Image Hover Effects Addon for Elementor | Tutorial - https://www.youtube.com/watch?v=1XknWh0rtQY
+how to add slider in wordpress homepage in hindi - https://www.youtube.com/watch?v=b8RYUiEPp1I
+blank slate plug in
+Easy Appointments WordPress Plugin - https://www.youtube.com/watch?v=QkG3bC73SQo
+How to Use the Counter Widget on Elementor Page Builder - https://www.youtube.com/watch?v=zP4YA7jcfl8
+How to Create a Slider in WordPress - 2019 - https://www.youtube.com/watch?v=p1LDgJu5Hkk
+How to add Bootstrap (CSS & JS) to Wordpress via functions.php - https://www.youtube.com/watch?v=mkN2TGx2Se4
+How to include Bootstrap into a WordPress theme - https://www.youtube.com/watch?v=GWnDBUQwgv8
+How to Add HTML to WordPress for Beginners [Simple] - https://www.youtube.com/watch?v=k4f2HjAhUXc
+How to Add a Free Contact Form Popup in WordPress - https://www.youtube.com/watch?v=0nOcpzsdDQg
+Responsive Website In WordPress #20 - https://www.youtube.com/watch?v=AIfmjbe3XGU
+How to Add Google Maps in WordPress - https://www.youtube.com/watch?v=mmWoKESLmlU
+Elementor - How To Duplicate Entire Page | Copy and Re-Use Whole Page - https://www.youtube.com/watch?v=UUDigRqBEZs
+How To Save and Display Contact Form Submissions in Wordpress - https://www.youtube.com/watch?v=a2Y_nuy_YSQ
+how to convert bullet points to star using unicode - https://howto-wordpress-tips.com/change-bullet-point-color-replace-shape-css/
+How to upload local wordpress website to 000webhost (or any virtual servers) - https://www.youtube.com/watch?v=vVqlYHdQHP4
+How to Add a Click to Call Button in WordPress - https://www.youtube.com/watch?time_continue=235&v=_9rHADrirpM&feature=emb_logo
+How to add a Whatsapp button in Wordpress with the Buttonizer plugin - https://www.youtube.com/watch?v=-2c2PaThkcA
+FIXED 500 Internal Server Error on WordPress - https://www.youtube.com/watch?v=OhWUvQU2diU
+Learn to upload files in godaddy cPanel manually 2019 - https://www.youtube.com/watch?v=EfRsb-Vu8wc
+Become a WordPress Developer: Unlocking Power with Code  - https://www.youtube.com/watch?v=FVqzKAUsM68
+Contact Form 7 auto added p tags - empty p tag - https://stackoverflow.com/questions/32539905/contact-form-7-auto-added-p-tags
+How to Install Let's Encrypt Free SSL Certificate 2017 - https://www.youtube.com/watch?v=KmrWypEY6LE
+Godaddy: How To Find .htaccess File (Easiest Way) - https://www.youtube.com/watch?v=z_gCLJ63c9Q
+https://mdbootstrap.com/docs/jquery/javascript/accordion/
+How to Edit & Customize Any WordPress Theme with CSS, HTML & PHP - https://www.youtube.com/watch?v=oZnzc0c8VB0
+Your Connection To This Site is Not Fully Secure: SSL Warning #100% Fixed - https://www.youtube.com/watch?v=O38zjOwMnDg
+Copy any HTML Website - Landing Page - Slider - Menu - in Hindi 27 - https://www.youtube.com/watch?v=jC5gINgm4xA
+How to CLONE any WEBSITE ? How to copy any website ? Web Development Tutorial - https://www.youtube.com/watch?v=-ZnmqvM4yyk
+How to Clone a Website  - https://www.youtube.com/watch?v=sePm-Bz1J34
+Search Results
+Web results
+How to link to CSS properly in WordPress header.php? - Stack Overflow - https://stackoverflow.com/questions/25196920/how-to-link-to-css-properly-in-wordpress-header-php
+How to display page content in a page template? - https://wordpress.stackexchange.com/questions/90392/how-to-display-page-content-in-a-page-template
+how to fix 404 page not found error in wordpress - https://www.youtube.com/watch?v=fnaTcVU-3wc
+How To Customize The Style Of Contact Form 7 To Match Your Website - https://www.youtube.com/watch?v=xQTmZaOxSw8
+Converting HTML Sites to WordPress Sites - https://www.youtube.com/watch?v=CZRgvAtwpxw&list=PLF17V-5878mUyQhpQDlx0T67nomEFwV9K&index=5
+Advanced CSS Selectors - https://www.youtube.com/watch?v=Bcr70LIJcOk
+Before and After pseudo elements explained - part one: how they work - https://www.youtube.com/watch?v=zGiirUiWslI
+How to Setup HTML Website into WordPress // Convert HTML to WordPress in Hindi - https://www.youtube.com/watch?v=2B2X4SMMk00
+Bootstrap Element 100% Width - https://stackoverflow.com/questions/11895476/bootstrap-element-100-width
+https://wordtohtml.net/
+CSS - Positioning 4 divs top, left/right, bottom - https://www.youtube.com/watch?v=GC48s4sAhdk
+Changing your WordPress admin username - https://www.youtube.com/watch?v=ESsysqgp6xw
+"Bootstrap Tabs with Table" - https://bootsnipp.com/snippets/AlZ7g
+Add Javascript To WordPress [Without Breaking It] - https://www.collectiveray.com/add-javascript-to-wordpress
+How to configure XAMPP to send mail from localhost? - https://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost
+How to Create a Custom Page in WordPress - https://www.wpbeginner.com/wp-themes/how-to-create-a-custom-page-in-wordpress/
+How to Create a Custom Page in WordPress - https://www.youtube.com/watch?v=1ZdHI8HuboA
+Create Complete Responsive Dynamic Website in HTML, PHP & MySQL in Hindi - https://www.youtube.com/watch?v=bmNmQfTBHLo
+How to Add A PHP Code to your Wordpress Posts, Pages and Widgets - https://www.youtube.com/watch?v=-CYe0q1K45I
+Develop Wordpress plugin - insert data from textbox to database table Part1 - https://www.youtube.com/watch?v=5DS3az1NVdA
+Wordpress Theme Development Part1 In Bangla - Basic Structure - https://www.youtube.com/watch?v=_bE-ZLgnNEg&list=PLrcmtUyqQbSXxdXeyXCK40orbVHJD5SrT
+000webhost Connect and files upload using filezilla FTP (3.25.1) - https://www.youtube.com/watch?v=7ALp6IVFgfo
+500 Error with Elementor - https://premiumaddons.com/docs/im-getting-a-blank-page-on-elementor-after-activating-premium-add-ons/
+Leverage browser caching - https://varvy.com/pagespeed/leverage-browser-caching.html
+How to increase Website speed with in 2 mins without plugins - https://www.youtube.com/watch?v=enDcj8TQBpc
+Fix Leverage Browser Cache in WordPress (2018) - https://www.youtube.com/watch?v=Up_K1SmiiZk
+Wordpress plugins to increase site speed by 400% - https://www.youtube.com/watch?v=PQjGiXCs8IE
+Can't "Edit With Elementor" Anymore #5585 - https://github.com/elementor/elementor/issues/5585
+How To Send eMail Using PHP In WordPress (4.7.5) HTML Contact Form - https://www.youtube.com/watch?v=GvGiumPW2Mg
+Storing WordPress Form Values into Database - https://www.youtube.com/watch?v=NAFwz8O51Zg
+WP create custom table and insert data in front end - https://www.youtube.com/watch?v=BeX1htpMGlQ
+Creating Tables with Plugins - https://codex.wordpress.org/Creating_Tables_with_Plugins
+wordpress basics - https://thethemefoundry.com/blog/html-wordpress/
+How to declare a global variable in PHP - https://www.geeksforgeeks.org/how-to-declare-a-global-variable-in-php/
+The $_POST variable is an array of variable names and values sent by the HTTP POST method. The $_POST variable is used to collect values from a form with method="post". Information sent from a form with the POST method is invisible to others and has no limits on the amount of information to send.
+How to Use $_POST and $_GET in PHP - https://www.youtube.com/watch?v=W4Jk_5---n4
+strip_tags() Function - https://www.geeksforgeeks.org/php-strip_tags-function/
+WordPress – How to create a database table and insert data with HTML forms - http://sitiwordpresspiemonte.it/wordpress-how-to-create-a-database-table-and-insert-data-with-html-forms/
+Class Reference/wpdb - https://codex.wordpress.org/Class_Reference/wpdb
+Understanding and using $wpdb object in WordPress - https://designmodo.com/wpdb-object-wordpress/
+How to make shapes in HTML and CSS - https://www.youtube.com/watch?v=VNX4K8iSHVo
+Line appears above H1 and H2 - https://wordpress.org/support/topic/line-appear-above-h1-and-h2/
+Removing small line above title (H1, H2..) - https://wordpress.org/support/topic/removing-small-line-above-title-h1-h2/
+Understand ‘+’, ‘>’ and ‘~’ symbols in CSS Selector - https://techbrij.com/css-selector-adjacent-child-sibling
+How to Insert data into database with PHP MySql | PHP Tutorials in Hindi - https://www.youtube.com/watch?v=gaEEBa52OWc
+Wordpress JSON REST API Tutorial for beginners(#4) Create WP Post by Simple HTML form and AJAX Call - https://www.youtube.com/watch?v=tjznOfpFS-0
+PHP Form Handling Tutorial - GET, POST & REQUEST Global Variables | Learn PHP Programming - https://www.youtube.com/watch?v=Z9aePaXve6s
+How to File Upload in Wordpress Frontend - https://www.youtube.com/watch?v=0zpAK1eiAt4
+1: How to Get Started With AJAX | AJAX Tutorial For Beginners | Learn AJAX | PHP | JavaScript - https://www.youtube.com/watch?v=tNKD0kfel6o
+3: Get data from a database without refreshing the browser using AJAX - Learn AJAX programming - https://www.youtube.com/watch?v=ejN-oAw9vC0
+jQuery Tutorials: Submitting a Form with AJAX - https://www.youtube.com/watch?v=GrycH6F-ksY
+Multiple File AJAX Upload: Uploading (Part 7/10) - https://www.youtube.com/watch?v=gmhVK1-wTL0&list=PLfdtiltiRHWHCzhdE0N1zmeFHlEuqxQvm&index=7
+Live Table Add Edit Delete using Ajax Jquery in PHP Mysql - https://www.youtube.com/watch?v=8mTIuuvOGbY
+JSON and AJAX Tutorial: With Real Examples - https://www.youtube.com/watch?v=rJesac0_Ftw
+AJAX XMLHTTPREQUEST - AJAX - https://www.wisdomjobs.com/e-university/ajax-tutorial-267/ajax-xmlhttprequest-15481.html
+INTRODUCING PHP - AJAX - https://www.wisdomjobs.com/e-university/ajax-tutorial-267/introducing-php-105.html
+How to implement jquery ajax in wordpress - https://www.youtube.com/watch?v=ipO3OrN6n2w
+How to create paginated posts in WordPress - https://www.youtube.com/watch?v=a2UPeLotlVU
+WordPress Pagination Tutorial (Custom Query & Template Integration) - https://www.youtube.com/watch?v=HMscydyViZw
+Adding a Blog to an Existing Business Website! (WordPress) - https://www.youtube.com/watch?v=axgMtt0qklA
+WordPress Pagination Breaks Your Posts Into Multiple Pages - https://www.youtube.com/watch?v=rL1VUtUFWkg
+php 1 how to upload image to folder and insert record to database - https://www.youtube.com/watch?v=aDWgEOhxbOo
+Upload Image without using Form Submit in PHP with Ajax - https://www.youtube.com/watch?v=ut-NcYgFRKI
+Using files from web applications - https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
+Using the File API on Upload Forms - JavaScript Tutorial - https://www.youtube.com/watch?v=lbb4FS_mjU0
+HTML iframe Example and Tutorial - https://www.youtube.com/watch?v=t2ByLmLnYJ8
+
+$("#add_product").click(function(e){
+    e.preventDefault();
+    var fdata = new FormData()
+    
+   fdata.append("product_name",$("product_name").val());
+  
+    if($("#file")[0].files.length>0)
+       fdata.append("file",$("#file")[0].files[0])
+    //d = $("#add_new_product").serialize();
+    $.ajax({
+        type: 'POST',
+        url: 'ajax.php',
+        data:fdata,
+        contentType: false,
+        processData: false, 
+        success: function(response)
+        {
+            //
+            alert(response);
+
+        }
+    })
+});
+
+HTML5 Tutorial - Reading Local Files - https://www.youtube.com/watch?v=7aCnXGrNrEY
+JavaScript FileReader - https://www.youtube.com/watch?v=-AR-6X_98rM - mulitple files
+                        https://www.youtube.com/watch?v=_wVSxjk-7j4
+Upload Multiple Files and Images in PHP - https://www.youtube.com/watch?v=KXyMpRp4d2Q
+How to Insert Images to MySQL and Display Them Using PHP - https://www.youtube.com/watch?v=1NiJcZrPHvA
+How to set up Google Search Console domain verification using a DNS TXT record entry - https://www.youtube.com/watch?v=gjW98darK2I
+How to Create a Sitemap for WordPress Site and Submit it to Google Search Console - https://www.youtube.com/watch?v=ExKynNMzxJY
+CSS FlexBox in 30 Minutes in Hindi 2019 - https://www.youtube.com/watch?v=6L-PAmZajfA
+Responsive Web Design Tutorial #5 - Media Queries - https://www.youtube.com/watch?v=5xzaGSYd7jM&list=PL4cUxeGkcC9g9Vh9MAA-XKnfJsWZnPZFw&index=5
+Responsive font size using html and css - https://www.youtube.com/watch?v=Dgnhj0oRCiM
+CSS em and rem explained #CSS #responsive - https://www.youtube.com/watch?v=_-aDOAMmDHI
+Default Arguments in PHP (Hindi) - https://www.youtube.com/watch?v=3BQ5nXNdi4Q
+How to set up Dynamik for Beaver Builder full width pages - https://www.youtube.com/watch?v=Gpwm3xnZuWQ
+how to make beaver builder full width row(Beaver Builder Bangla Tutorial) - https://www.youtube.com/watch?v=PjcssBWFFVE
+Convert Static HTML Template into WordPress Template || Wordpress Complete Course Free - https://www.youtube.com/watch?v=Dgclps_iYY0
+Pop up an image on click using jquery and css - https://www.youtube.com/watch?v=78_JYtp6MGY
+CSS White-Space Tutorial in Hindi / Urdu - https://www.youtube.com/watch?v=_AByq0-vKp8
+css div box responsive using flexbox | css flexbox tutorial - https://www.youtube.com/watch?v=0SktamdLLAQ
+How to write text on image - HTML and CSS
+HOW TO change the bootstrap 4 NAVBAR background color - https://www.youtube.com/watch?v=5h-IySVpxk0
+Login form using session and cookie with remember me in php - https://www.youtube.com/watch?v=3jfBOD5Mw0Q
+DiscordJS Tutorial - Create a Discord Bot from Scratch - https://www.youtube.com/watch?v=We2ijSkByw0
+Discord.JS Bot Development - Introduction - Episode 01 - https://www.youtube.com/watch?v=KZ7c0OXzg6k&list=PLdnyVeMcpY78Hz8fFD1vqhYliBmZKaa7N
+How do I open a PHP file in my browser? - https://www.youtube.com/watch?v=RwQW0Qy85jY&t=298s
+How to run php file - https://www.youtube.com/watch?v=ImZEwrHohRg
+
+
+
+
+
+
+
+
+Why Choose Sunita Maternity Hospital For Your ChildBirth
+ You get personalized care from a mother, not just a professional.
+ Your problems are overcome with genuine advice- value for money.
+ Smiling staff members relieve your stress- you'd want more of those.
+ Proper investigations are done to suggest you a pregnancy plan.
+ Healthy and protein rich diet is recommended- that will make your baby shine like Sun.
+ Don't let overweight or existing disease burden your mind- you can still have normal child birth.
+ You will be working closely with a veteran of 22 years in Obstetrician-Gynecologist and Infertility field.
+ You get lactation experts to help you learn latching techniques before and after your delivery.
+ You get arrangements for Yoga sessions to stay fit.
+ You get a tailored medication plan that tracks your previous medical history.
+ Don't just focus on state of the art infrastructure- machines without human touch are useless.
+ Are you worried about the rising cost of delivery in metros? Turn off the chatter, you get the most affordable maternity hospital in Hadapsar, Pune.
+
+
+
+
+
+Google Python Class Day 1 Part 1 - https://www.youtube.com/watch?v=tKTZoB2Vjuk
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.wp101.com/membership/
+https://www.udemy.com/course/complete-wordpress-course-for-beginners/
+https://yoast.com/academy/free-training-wordpress-for-beginners/
+https://www.ostraining.com/wordpress-training/
+https://wearehathway.com/careers/front-end-developer
+
+Hiring for web developer position location Madurai .
+One year experience in WordPress software , Location : Madurai.
+Qualification : computer science related any degree
+Experience in Php, .Net , word press. Contact 9842000996
+
+We are looking for a WordPress Developer. Who has good development experience in Visual Composer / Elementor.
+
+**Job specification:**
+
+A strong concept of Wordpress & Web development.
+
+Candidate must have expert knowledge on website speed and responsiveness as well as strong grip on front end tasks.
+
+Basic Qualification:
+
+Minimum 16 years of Education
+
+Contact:03040944104

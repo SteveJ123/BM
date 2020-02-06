@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="testing.css" media="screen" >
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+</head>
+
+<body id="gradient">
+
+<div class="container-fluid">
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px;">
+      method
+    </div>
+    <div class="col-lg-6 column-border" style="padding-left: 72px;">
+
+      <p>PHP</p>
+    </div>
+    <div class="col-lg-4" style="padding-left:68px; ">
+      Description
+    </div>
+  </div>
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      connect to table
+    </div>
+    <div class="col-lg-6 column-border">
+
+      <p>$DB_HOST = 'localhost';<br>
+        $DB_USER = 'root';<br>
+        $DB_PASSWORD = '';<br>
+        $DB_NAME = 'tables';<br>
+        $connect = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);<br>        
+      </p>
+    </div>
+    <div class="col-lg-4">
+
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      create table name
+    </div>
+    <div class="col-lg-6 column-border">
+
+      <p>$table_name = $wpdb->prefix . "my_tabletest";<br>
+      </p>
+    </div>
+    <div class="col-lg-4">
+
+    </div>
+  </div>
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      create table
+    </div>
+    <div class="col-lg-6 column-border">
+      <p>global $wpdb;<br>
+        // creates my_table in database if not exists<br>
+        $table = $wpdb->prefix . "my_table";<br>
+        $charset_collate = $wpdb->get_charset_collate();<br>
+        $sql = "CREATE TABLE IF NOT EXISTS $table (<br>
+            `id` mediumint(9) NOT NULL AUTO_INCREMENT,<br>
+            `name` text NOT NULL,<br>
+        UNIQUE (`id`)<br>
+        ) $charset_collate;";<br>
+        require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );<br>
+        dbDelta( $sql );<br>      
+      </p>
+    </div>
+    <div class="col-lg-4"> 
+      <p>Notes on the table above:</p>
+      <p>The data type specifies what type of data the column can hold.</p>
+      <p>For a complete reference of all the available data types, go to our Data Types reference.</p>                
+      <p>After the data type, you can specify other optional attributes for each column:</p>
+      <p>NOT NULL - Each row must contain a value for that column, null values are not allowed</p>
+      <p>DEFAULT value - Set a default value that is added when no other value is passed</p>
+      <p>UNSIGNED - Used for number types, limits the stored data to positive numbers and zero</p>
+      <p>AUTO INCREMENT - MySQL automatically increases the value of the field by 1 each time a new record is added</p>
+      <p>PRIMARY KEY - Used to uniquely identify the rows in a table. The column with PRIMARY KEY setting is often an ID number, and is often used with AUTO_INCREMENT</p>
+      <p>Each table should have a primary key column (in this case: the "id" column). Its value must be unique for each record in the table.</p>
+    </div> 
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      drop table
+    </div>
+    <div class="col-lg-6 column-border">
+      
+      <p>$wpdb->query("DROP TABLE IF EXISTS my_tabletest");<br>
+      </p>
+    </div>
+    <div class="col-lg-4">
+      wpdb->query( string $query)<br>
+      Perform a MySQL database query, using current database connection
+    </div>
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      insert data
+    </div>
+    <div class="col-lg-6 column-border">
+      
+      <p>$data = array('name' => 'data one');<br>
+        $format = array('%s');<br>
+        $wpdb->insert($table,$data,$format);<br>
+      </p>
+    </div>
+    <div class="col-lg-4">
+      Insert a row into a table
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      search data
+    </div>
+    <div class="col-lg-6 column-border">
+      $searchq = $_POST['name'];
+      <p>$querys = $wpdb->get_results("SELECT * FROM wp_my_table WHERE name = '$searchq'");
+      </p>
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      update data
+    </div>
+    <div class="col-lg-6 column-border">
+      
+      <p>wpdb->update( 'table', array( 'name' => 'foo', 'email' => 'bar' ), array( 'ID' => 1 ) )<br>
+        wpdb->update( 'table', array( 'name' => 'foo', 'number' => 1337 ), array( 'ID' => 1 ), array( '%s', '%d' ), array( '%d' ) )
+      </p>
+    </div>
+    <div class="col-lg-4">
+      Update a row in the table
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      get data
+    </div>
+    <div class="col-lg-6 column-border">
+      
+      <p>wpdb::get_results( string $query = null, string $output = OBJECT )<br>
+        $results = $wpdb->get_results("SELECT * FROM $table_name");
+      </p>
+    </div>
+    <div class="col-lg-4">
+      Retrieve an entire SQL result set from the database (i.e., many rows)
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      For upload image in frontend just create simple post form
+    </div>
+    <div class="col-lg-6 column-border">
+      
+      <textarea class="textarea-size"><form method="post" enctype="multipart/form-data">
+        <input type="file" name="imagefile" />
+        <input type="submit" name="Submit" value="Submit" />
+        </form></textarea>
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      After submit form upload image as attachment in wordpress media as below.
+    </div>
+    <div class="col-lg-6 column-border">
+      
+      if($_POST){
+        if (!function_exists('wp_generate_attachment_metadata')){<br>
+            require_once(ABSPATH . "wp-admin" . '/includes/image.php');<br>
+            require_once(ABSPATH . "wp-admin" . '/includes/file.php');<br>
+            require_once(ABSPATH . "wp-admin" . '/includes/media.php');<br>
+        }<br>
+        if($_FILES)<br>
+        {<br>
+            foreach ($_FILES as $file => $array)<br>
+            {<br>
+                if($_FILES[$file]['error'] !== UPLOAD_ERR_OK){return "upload error : " . $_FILES[$file]['error'];}//If upload error<br>
+                $attach_id = media_handle_upload($file,$new_post);<br>
+                echo wp_get_attachment_url($attach_id);//upload file URL<br>
+            }<br>
+        }<br>
+        }<br>
+      </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      add css to html template
+    </div>
+    <div class="col-lg-6 column-border">      
+      <textarea class="textarea-size"><link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css" /></textarea> 
+      </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      add js to html template
+    </div>
+    <div class="col-lg-6 column-border">      
+      <textarea class="textarea-size"><link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/style.css" /></textarea> 
+      </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      http://localhost/
+    </div>
+    <div class="col-lg-6 column-border">      
+      equal to C:\xampp\htdocs
+      </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      post method $wpdb error
+    </div>
+    <div class="col-lg-6 column-border">      
+    <textarea class="textarea-size">
+      <?php 
+    include 'dbconnect.php';  //file containg php connection to database
+    // require_once('localhost/tables/wp-load.php'); 
+    // include_once('wp-includes/wp-db.php');
+    // require_once( ABSPATH.'wp-admin/includes/upgrade.php' );
+    require_once('../../../wp-load.php');
+
+    </textarea>  
+    </div>
+    <div class="col-lg-4">
+      If you want to use WordPress functionality in a PHP file that exists outside of your WordPress installation then you need to include wp-load.php. Perhaps you could call this “hooking into WordPress”.
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      How to include wp-load.php from any location?
+    </div>
+    <div class="col-lg-6 column-border">      
+    <textarea class="textarea-size">
+      1.   require_once('../../../wp-load.php');
+
+      2. $path = preg_replace('/wp-content(?!.*wp-content).*/','',__DIR__);
+      3.  include($path.'wp-load.php');
+    </textarea>  
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      upload file
+    </div>
+    <div class="col-lg-6 column-border">      
+    <textarea class="textarea-size">
+      <?php print_r($_FILES);?>
+
+<form action="" method="post" enctype="multipart/form-data">    <div>
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" />
+    </div>
+    <div>
+        <label for="image">Image</label>
+        <input type="file" name="image" />
+    </div>
+    <input type="submit" value="Send" />
+</form>    
+    </textarea>  
+    </div>
+    <div class="col-lg-4">
+      In the form section make sure you have this code: <strong>enctype="multipart/form-data"</strong>
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      file api
+    </div>
+    <div class="col-lg-6 column-border">      
+      $("#bloodtest").on('change', function(e){<br>
+
+        var filetype = /image.*/;<br>
+  
+        if(!this.files[0].type.match(filetype)){<br>
+          alert("please select image file");<br>
+        }else{<br>
+          console.log('bloodtest', this.files[0], this.files[0].name, this.files[0].size, this.files[0].type);<br>
+
+          var reader = new FileReader();<br>
+        reader.onload = function(e){<br>
+            console.log("location", e.target.result);<br>          
+        }<br>
+
+        reader.readAsDataURL(this.files[0]);<br>
+        }<br>
+        
+  
+      })<br>
+      
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      PHP console log
+    </div>
+    <div class="col-lg-6 column-border">
+      <textarea class="textarea-size">
+      echo "<script>console.log(".json_encode(var_export($_FILES, true)).");</script>";<br>
+      echo "<script>console.log('" . json_encode($_POST['bloodtest']) . "');</script>";
+      </textarea>
+    </div>
+    <div class="col-lg-4">
+      CREATE TABLE wp_my_table ( id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY, First_Name VARCHAR(30) NOT NULL, Last_Name VARCHAR(30) NOT NULL, Client_Number VARCHAR(30) NOT NULL, Age VARCHAR(30) NOT NULL, Email VARCHAR(50), Primary_Phonenumber VARCHAR(30), Secondary_Phonenumber VARCHAR(30), Address VARCHAR(100), Major_Complaints VARCHAR(100), Diagnoses VARCHAR(100), Alert_Allergies VARCHAR(100), Special_Instruction VARCHAR(100), Blood_Test VARCHAR(3000), Prescription VARCHAR(200), Mri VARCHAR(3000), Future_Plan_Instruction VARCHAR(100), Exercise_File VARCHAR(3000), UNIQUE (`id`))
+    </div>
+  </div>
+
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      PHP create array, count length array, keys
+    </div>
+    <div class="col-lg-6 column-border">
+      $file_ary = array();    //create array $file_ary<br>
+  $file_count = count($file_post['name']);  //array containing name file names<br>
+  $file_keys = array_keys($file_post);   //array keys name - type - tmp_name, error - size<br>
+
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      replace string c:/xamp/htdocs with http://locahost
+    </div>
+    <div class="col-lg-6 column-border">
+      $database = 'C:\xampp\htdocs/fileupload/wp-content/2019/12/test/knowyourdoctorimage.JPG;C:\xampp\htdocs/fileupload/wp-content/2019/12/test/Shree_Samartha_Hospital_Name.jpg;';<br>
+      $split = explode(";",$database);<br>
+      $replacestring =  str_replace('C:\xampp\htdocs','http://localhost', $split[$i]);<br>
+      $replacestring =  str_replace('/storage/ssd4/151/11561151/public_html','https://gynohospital.000webhostapp.com/', $split[$i]);
+
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      Three different types of variable assignment
+    </div>
+    <div class="col-lg-6 column-border">
+      <textarea class="textarea-size">
+        <?php  $mycounter = 1; 
+          $mystring  = "Hello"; 
+          $myarray   = array("One", "Two", "Three");
+           ?> 
+      </textarea>
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      Defining a two-dimensional array
+    </div>
+    <div class="col-lg-6 column-border">
+      <textarea class="textarea-size">
+        <?php  $oxo = array(array('x', ' ', 'o'),
+                            array('o', 'o', 'x'),
+                            array('x', 'o', ' '));
+        ?>
+      </textarea>
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      The equality and identity operators
+    </div>
+    <div class="col-lg-6 column-border">
+      <textarea class="textarea-size">
+        <?php  $a = "1000";
+        $b = "+1000";
+        if ($a == $b)  echo "1";   //true
+        if ($a === $b) echo "2"; ?>  //false
+      </textarea>
+    </div>
+    <div class="col-lg-4">
+      This is because both strings were first converted to numbers, and 1000 is the same numerical value as +1000 <br>
+      <br>
+      the second if statement uses the identity operator—three equals signs in a row—which prevents PHP from automatically converting types. $a and $b are therefore compared as strings and are found to be different
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      include()<br>
+      include_once()<br>
+      require()<br>
+      require_Once()<br>
+    </div>
+    <div class="col-lg-6 column-border">
+      
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      Why do we need classes in object-oriented programming
+    </div>
+    <div class="col-lg-6 column-border">
+      I'll take a more simpler layman approach to answer this question.</br>
+Let us assume we have to write a program for a car factory. This factory has multiple production lines manufacturing cars.Cars have lot of individual components like engine, gear, exhaust, windows, steering system etc.</br>
+Imagine a 100 cars with 50 components each.If we have to describe this snap shot without OOP it will take 50x100 = 5000 variables and complex referencing.</br>
+With OOP, we can describe it easily with less code(100 objects) and nicely hierarchy wise referenced.</br>
+Also we gain more reusable,scalable and maintainable code.</br>
+Added benefits - easy conceptualized model close to real world which means less gap between functionality desired and functionality delivered.</br>
+      
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      How to change submit button style
+    </div>
+    <div class="col-lg-6 column-border">
+      .wpcf7 input[type=submit] {
+        background-color: #eee; /* Grey background */
+      width: 100%
+    }      
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      How to add fontawesome
+    </div>
+    <div class="col-lg-6 column-border">
+      wp_enqueue_style('fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');<br>
+      wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/all.css', array(), '4.0.0', 'all' );<br>
+      wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '2.1.1', true );<br>
+	    wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.0.0', 'all' );<br>
+    
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      white-space:nowrap
+    </div>
+    <div class="col-lg-6 column-border">
+      height: auto;
+      width: auto;
+      overflow: auto;    
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      div height dynamic
+    </div>
+    <div class="col-lg-6 column-border">
+      <textarea class="textarea-size">
+        .scrollingBox {
+          height:100px;
+          width:300px;
+          overflow:auto;
+          white-space: nowrap;
+      }
+      .item {
+          display: inline-block;
+          vertical-align: top;
+          height:60px;
+          width:100px;
+          background-color: gold;
+      }
+
+      <div class="scrollingBox">
+        <div class="container">
+             <div class="item">Item</div>
+             <div class="item">Item</div>
+             <div class="item">Item</div>
+             <div class="item">Item</div>
+        </div>
+      </div>
+      </textarea>
+    </div>
+    <div class="col-lg-4">
+      You can change their display type to inline-block too keep them in inline flow, and use white-space: nowrap; for the container (.scrollingBox) to keep the inline items beside each other
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="container-fluid" style="margin-top:40px; border-top: 1px solid gray">
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px">
+      method
+  </div>
+  <div class="col-lg-6 column-border" style="padding-left: 36px;">
+    CSS
+</div>
+<div class="col-lg-4" style="padding-left: 36px;">
+  description
+</div>
+
+  </div>
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      horizontal line appearing above h tag
+  </div>
+  <div class="col-lg-6 column-border">
+            "/* header creating line above h tag */<br>
+            h1:before, h2:before {<br>
+                opacity: 0;<br>
+            }<br>
+            h1:not(.site-title):before,<br>
+            h2:before {<br>
+              background: none;<br>
+              content: ""\020"";<br>
+              display: block;<br>
+              height: 2px;<br>
+              margin: 1rem 0;<br>
+              width: 1em;<br>
+}
+</div>
+<div class="col-lg-4">  
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    image transform
+</div>
+<div class="col-lg-6 column-border">
+  style="transform: scale(0.75); position: relative; right: 28px; top: -65px;"
+</div>
+<div class="col-lg-4">
+  increases part of image not stretch
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    background-img: url()
+</div>
+<div class="col-lg-6 column-border">
+  .travelingloan {
+    background-image: url(http://localhost/insurance/wp-content/uploads/2019/11/happiness-couple-1.jpg);
+    height: 650px;
+    width: 252px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+}
+</div>
+<div class="col-lg-4">
+  increases part of image not stretch
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    paragraph header tag
+</div>
+<div class="col-lg-6 column-border">
+  margin: 0px
+padding:0px
+</div>
+<div class="col-lg-4">
+  
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    animation
+</div>
+<div class="col-lg-6 column-border">
+  style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;"
+</div>
+<div class="col-lg-4">
+  
+</div>
+</div>
+
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    address
+</div>
+<div class="col-lg-6 column-border">
+  <div class=""footer-links"">
+    <h4>Contact Us</h4>
+    <p>
+      A108 Adam Street <br>
+      New York, NY 535022<br>
+      United States <br>
+      <strong>Phone:</strong> +1 5589 55488 55<br>
+      <strong>Email:</strong> info@example.com<br>
+    </p>
+  </div>  
+</div>
+<div class="col-lg-4">  
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    unicode
+</div>
+<div class="col-lg-6 column-border">
+  nav a:hover:after {
+    content: ""↓"";
+}
+nav a:hover:after {
+  content: ""\2193"";
+}
+
+
+</div>
+<div class="col-lg-4">
+
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    html space
+</div>
+<div class="col-lg-6 column-border">
+  &-nbsp 
+</div>
+<div class="col-lg-4">
+
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    html two part
+</div>
+<div class="col-lg-6 column-border">
+  <textarea class="textarea-size" ><div class="container">
+    
+   <div class="row">
+        <div class="col-xs-6 col-sm-6">
+            <div id="text1">
+                <label>Text 1</label>
+            </div>
+            <div id="text2">
+                <label>Text 2</label>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6">
+            <div id="navigation">
+                <label>Navigation</label>
+            </div>
+            
+        </div>
+    </div>
+</div></textarea> 
+</div>
+<div class="col-lg-4">
+
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    edit table content
+</div>
+<div class="col-lg-6 column-border">
+  <textarea class="textarea-size">
+    <tr>
+      <td contenteditable>Eve</td>
+      <td contenteditable>Jackson</td>
+      <td contenteditable>94</td>
+    </tr>
+
+  </textarea>
+</div>
+<div class="col-lg-4">
+
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    image align center
+</div>
+<div class="col-lg-6 column-border">
+  <textarea class="textarea-size">
+    <img src="paris.jpg" alt="Paris" class="center">
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+  </textarea>
+</div>
+<div class="col-lg-4">
+
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    how to arrange five div
+</div>
+<div class="col-lg-6 column-border">
+  <textarea class="textarea-size">
+    .wrap {
+      text-align: center;
+  }
+  .wrap > div {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      background: #1ea0e9;
+      margin: 20px;
+  }
+  <div class="wrap">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+
+  </textarea>
+</div>
+<div class="col-lg-4">
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="container-fluid" style="margin-top:40px; border-top: 1px solid gray">
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px">
+      method
+  </div>
+  <div class="col-lg-6 column-border" style="padding-left: 36px;">
+    Javascript
+</div>
+<div class="col-lg-4" style="padding-left: 36px;">
+  description
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border" style="padding-left: 36px">
+    Change tag using javascript [duplicate]<br>
+    Replace particular html tags using javascript
+</div>
+<div class="col-lg-6 column-border" style="padding-left: 36px;">
+  <textarea class="textarea-size">var s=<div>hello world<br/><li>First LI</li><li>Second LI</li></div></p>"; <br>  
+    s = s.replace(/<li>/g, "#");<br>  
+    s = s.replace(/<\/li>/g,"<br/>"); <br> 
+    alert(s);<br></textarea >
+  
+
+var e = document.getElementsByTagName('span')[0]; <br>
+var d = document.createElement('div'); <br>
+d.innerHTML = e.innerHTML; <br>
+e.parentNode.replaceChild(d, e); <br>
+</div>
+<div class="col-lg-4" style="padding-left: 36px;">
+replace one html with another
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border" style="padding-left: 36px">
+    jquery for beginners
+</div>
+<div class="col-lg-6 column-border" style="padding-left: 36px;">
+  https://www.cs.utexas.edu/~teammco/teaching/fall2013_cs329e/jQuery/jquery_presentation.pdf
+</div>
+<div class="col-lg-4" style="padding-left: 36px;">
+
+</div>
+</div>
+
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border" style="padding-left: 36px">
+    jquery keydown
+</div>
+<div class="col-lg-6 column-border" style="padding-left: 36px;">
+  var keyCode = (event.keyCode ? event.keyCode : event.which);
+</div>
+<div class="col-lg-4" style="padding-left: 36px;">
+
+</div>
+</div>
+
+
+
+</div>
+
+ 
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="testing.js"></script>
+  </body>
+  </html>

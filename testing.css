@@ -1,0 +1,17 @@
+.container-fluid{
+    font-size:14px;
+    color: black;
+    font-weight: bold;    
+}
+.row-border{
+    border-bottom: 1px solid gray;
+    /* display: border-box;     */
+}
+
+.column-border{
+    border-right: 1px solid gray;
+}
+
+.textarea-size{
+    width:100%; height:134px;
+}

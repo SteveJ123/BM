@@ -1,0 +1,36 @@
+Node.js Tutorial for Beginners 1 - Node.js Introduction - https://www.youtube.com/watch?v=8fssCpuqkLo&list=PLS1QulWo1RIb8IwHYfah5pxGU5jgNiEbK&index=11
+Pure CSS Moving Background Image - CSS Animation with keyframes - Repeating Background Animation - https://www.youtube.com/watch?v=e3_qXLoIFds
+Node.js Tutorial for Beginners 1 - Node.js Introduction - https://www.youtube.com/watch?v=8fssCpuqkLo&list=PLS1QulWo1RIb8IwHYfah5pxGU5jgNiEbK&index=11
+
+Nodemon Tutorial for Beginners | Installing Nodemon in NodeJS | Running a simple Program - https://www.youtube.com/watch?v=Ej6V7714ygs
+
+Node.js Tutorial For Beginners | Node JS Crash Course - https://www.youtube.com/watch?v=zQRrXTSkvfw
+
+Learn Node.js - Full Tutorial for Beginners - https://www.youtube.com/watch?v=RLtyhwFtXQA
+
+“npm” is not anacronym (which is why it isn’t capitalized); rather, it is a recursive abbreviation for “npmis not an acronym.”
+Broadly speaking, a package manager’s two primary responsibilities are installing pack-ages and manging dependencies.
+npm is installed when you install Node, so if you followed the steps listed earlier, you’vealready got it. So let’s get to work!
+The primary command you’ll be using with npm (unsurprisingly), is install. For ex-ample, to install Grunt (a popular JavaScript task runner), you would issue the followingcommand (on the console):npm install -g grunt-cliThe -g flag tells npm to install the package globally, meaning it’s available globally onthe system. This distinction will become clearer when we cover the package.json files.For  now,  the  rule  of  thumb  is  that  JavaScript  utilities  (like  Grunt)  will  generally  beinstalled globally, whereas packages that are specific to your web app or project will not.
+localhost, as the name implies, refers to the computer you’re on. Thisis a common alias for the IPv4 loopback address 127.0.0.1, or the IPv6loopback address ::1. You will often see 127.0.0.1 used instead, but Iwill be usinglocalhost in this book. If you’re using a remote computer(using SSH, for example), keep in mind that browsing to localhost willnot connect to that computer.
+Node offers a different paradigm than that of a traditional web server: the app that youwrite  is  the  web  server.  Node  simply  provides  the  framework  for  you  to  build  a  webserver.
+
+Hello WorldI’ve always found it unfortunate that the canonical introductory programming exampleis the uninspired message “Hello World.” However, it seems almost sacrilegious at thispoint to fly in the face of such ponderous tradition, so we’ll start there, and then moveon to something more interesting.In your favorite editor, create a file called helloWorld.js:var http = require('http');http.createServer(function(req,res){res.writeHead(200, { 'Content-Type': 'text/plain' });res.end('Hello world!');}).listen(3000);console.log('Server started on localhost:3000; press Ctrl-C to terminate....');Make  sure  you  are  in  the  same  directory  as  helloWorld.js,  and  type  node  helloWorld.js. Then open up a browser and navigate to http://localhost:3000, and voilà! Yourfirst web server. This particular one doesn’t serve HTML; rather, it just transmits themessage “Hello world!” in plaintext to your browser. If you want, you can experimentwith sending HTML instead: just change text/plain to text/html and change 'Helloworld!' to a string containing valid HTML. I didn’t demonstrate that, because I try toavoid writing HTML inside JavaScript for reasons that will be discussed in more detailin Chapter 7.
+
+npm manages project dependencies—as well as metadata about the project—in a filecalled package.json.   The easiest way to create this file is to run npm init
+
+
+
+app.set('port', 8080) is similar to setting a "variable" named port to 8080, which you can access later on using app.get('port'). Accessing your website from the browser will really not work because you still didn't tell your app to listen and accept connections.
+
+app.listen(8080) on the other hand listens for connections at port 8080. This is the part where you're telling your app to listen and accept connections. Accessing your app from the browser using localhost:8080 will work if you have this in your code.
+
+The two commands can actually be used together:
+
+app.set('port', 8080);
+app.listen(app.get('port'));
+
+https://www.geeksforgeeks.org/routing-in-node-js/
+Get started with Express Handlebars - #1 - https://www.youtube.com/watch?v=erfN7fH7A6s
+https://expressjs.com/en/starter/hello-world.html
+
