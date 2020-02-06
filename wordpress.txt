@@ -157,6 +157,7 @@ DiscordJS Tutorial - Create a Discord Bot from Scratch - https://www.youtube.com
 Discord.JS Bot Development - Introduction - Episode 01 - https://www.youtube.com/watch?v=KZ7c0OXzg6k&list=PLdnyVeMcpY78Hz8fFD1vqhYliBmZKaa7N
 How do I open a PHP file in my browser? - https://www.youtube.com/watch?v=RwQW0Qy85jY&t=298s
 How to run php file - https://www.youtube.com/watch?v=ImZEwrHohRg
+login and logout in php using session and cookies - https://www.youtube.com/watch?v=_uXLcvfDBwk&t=188s
 
 
 
