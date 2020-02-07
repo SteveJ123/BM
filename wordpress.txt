@@ -158,6 +158,7 @@ Discord.JS Bot Development - Introduction - Episode 01 - https://www.youtube.com
 How do I open a PHP file in my browser? - https://www.youtube.com/watch?v=RwQW0Qy85jY&t=298s
 How to run php file - https://www.youtube.com/watch?v=ImZEwrHohRg
 login and logout in php using session and cookies - https://www.youtube.com/watch?v=_uXLcvfDBwk&t=188s
+27: Session and Cookies in PHP | PHP Tutorial | Learn PHP Programming | PHP for Beginners - https://www.youtube.com/watch?v=jort8_4U-88&t=221s
 
 
 
