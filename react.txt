@@ -8,6 +8,9 @@ if you want content use props.children
 when button clicked it produces ()
 
 
+npx create-react-app
+
+
 
 
 https://www.youtube.com/watch?v=Y2hgEGPzTZY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=4
