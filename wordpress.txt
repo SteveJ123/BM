@@ -147,6 +147,7 @@ Login Logout system in php with Session - Hindi Tutorials - https://www.youtube.
 Learn Sass In 20 Minutes | Sass Crash Course - https://www.youtube.com/watch?v=Zz6eOVaaelI&t=2s
 
 Object Oriented Programming 2 - Classes and Objects - https://www.youtube.com/watch?v=POrU7vcKB_k
+Object Oriented JavaScript Tutorial #4 - Classes - https://www.youtube.com/watch?v=Ug4ChzopcE4
 
 
 
