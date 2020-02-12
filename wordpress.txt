@@ -108,30 +108,6 @@ Using files from web applications - https://developer.mozilla.org/en-US/docs/Web
 Using the File API on Upload Forms - JavaScript Tutorial - https://www.youtube.com/watch?v=lbb4FS_mjU0
 HTML iframe Example and Tutorial - https://www.youtube.com/watch?v=t2ByLmLnYJ8
 
-$("#add_product").click(function(e){
-    e.preventDefault();
-    var fdata = new FormData()
-    
-   fdata.append("product_name",$("product_name").val());
-  
-    if($("#file")[0].files.length>0)
-       fdata.append("file",$("#file")[0].files[0])
-    //d = $("#add_new_product").serialize();
-    $.ajax({
-        type: 'POST',
-        url: 'ajax.php',
-        data:fdata,
-        contentType: false,
-        processData: false, 
-        success: function(response)
-        {
-            //
-            alert(response);
-
-        }
-    })
-});
-
 HTML5 Tutorial - Reading Local Files - https://www.youtube.com/watch?v=7aCnXGrNrEY
 JavaScript FileReader - https://www.youtube.com/watch?v=-AR-6X_98rM - mulitple files
                         https://www.youtube.com/watch?v=_wVSxjk-7j4
@@ -170,6 +146,7 @@ Login Logout system in php with Session - Hindi Tutorials - https://www.youtube.
 
 Learn Sass In 20 Minutes | Sass Crash Course - https://www.youtube.com/watch?v=Zz6eOVaaelI&t=2s
 
+Object Oriented Programming 2 - Classes and Objects - https://www.youtube.com/watch?v=POrU7vcKB_k
 
 
 
@@ -177,19 +154,8 @@ Learn Sass In 20 Minutes | Sass Crash Course - https://www.youtube.com/watch?v=Z
 
 
 
-Why Choose Sunita Maternity Hospital For Your ChildBirth
- You get personalized care from a mother, not just a professional.
- Your problems are overcome with genuine advice- value for money.
- Smiling staff members relieve your stress- you'd want more of those.
- Proper investigations are done to suggest you a pregnancy plan.
- Healthy and protein rich diet is recommended- that will make your baby shine like Sun.
- Don't let overweight or existing disease burden your mind- you can still have normal child birth.
- You will be working closely with a veteran of 22 years in Obstetrician-Gynecologist and Infertility field.
- You get lactation experts to help you learn latching techniques before and after your delivery.
- You get arrangements for Yoga sessions to stay fit.
- You get a tailored medication plan that tracks your previous medical history.
- Don't just focus on state of the art infrastructure- machines without human touch are useless.
- Are you worried about the rising cost of delivery in metros? Turn off the chatter, you get the most affordable maternity hospital in Hadapsar, Pune.
+
+
 
 
 
@@ -208,11 +174,6 @@ Google Python Class Day 1 Part 1 - https://www.youtube.com/watch?v=tKTZoB2Vjuk
 
 
 
-https://www.wp101.com/membership/
-https://www.udemy.com/course/complete-wordpress-course-for-beginners/
-https://yoast.com/academy/free-training-wordpress-for-beginners/
-https://www.ostraining.com/wordpress-training/
-https://wearehathway.com/careers/front-end-developer
 
 Hiring for web developer position location Madurai .
 One year experience in WordPress software , Location : Madurai.
