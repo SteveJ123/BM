@@ -107,6 +107,7 @@ Upload Image without using Form Submit in PHP with Ajax - https://www.youtube.co
 Using files from web applications - https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
 Using the File API on Upload Forms - JavaScript Tutorial - https://www.youtube.com/watch?v=lbb4FS_mjU0
 HTML iframe Example and Tutorial - https://www.youtube.com/watch?v=t2ByLmLnYJ8
+WordPress | How To Insert Custom Image Logo On A header.php WPBblog - https://www.youtube.com/watch?v=lmqXHmN2CsE
 
 HTML5 Tutorial - Reading Local Files - https://www.youtube.com/watch?v=7aCnXGrNrEY
 JavaScript FileReader - https://www.youtube.com/watch?v=-AR-6X_98rM - mulitple files
