@@ -150,6 +150,7 @@ Object Oriented JavaScript Tutorial #4 - Classes - https://www.youtube.com/watch
 How To Make A Forum With Wordpress | Free Forum Website - https://www.youtube.com/watch?v=sUjb-QOFk2Q
 How To Add a Video Background with HTML & CSS - https://www.youtube.com/watch?v=05ZHUuQVvJM
 WordPress Tutorial 1: Introduction - https://www.youtube.com/watch?v=ynA8_5jAc1s&list=PLpcSpRrAaOaqMA4RdhSnnNcaqOVpX7qi5&index=5
+Wordpress Theme Development tutorial from scratch (Part 20) front-page.php vs home.php vs index.php - https://www.youtube.com/watch?v=pLo6j127agc
 
 
 android
