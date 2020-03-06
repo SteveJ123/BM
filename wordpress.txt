@@ -152,7 +152,7 @@ How To Add a Video Background with HTML & CSS - https://www.youtube.com/watch?v=
 WordPress Tutorial 1: Introduction - https://www.youtube.com/watch?v=ynA8_5jAc1s&list=PLpcSpRrAaOaqMA4RdhSnnNcaqOVpX7qi5&index=5
 Wordpress Theme Development tutorial from scratch (Part 20) front-page.php vs home.php vs index.php - https://www.youtube.com/watch?v=pLo6j127agc
 Wordpress Theme Development tutorial from scratch (Part 9) Create Post and Display on theme page - https://www.youtube.com/watch?v=Iikw95u98jg
-
+Understanding State in React Native - https://www.youtube.com/watch?v=HatZnLxJB_0
 
 android
 
