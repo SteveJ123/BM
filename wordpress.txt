@@ -211,4 +211,5 @@ https://www.javatpoint.com/react-native-modal - popup
 ReactJS Basics - #6 Passing Data with Props - https://www.youtube.com/watch?v=GIU8ekYndKw
 Set Up Custom React Native (Without Expo) In Windows [Urdu/Hindi] - https://www.youtube.com/watch?v=CpXWG4ePFdM
 Run React Native Project on Android Emulator AVD 2017 - https://www.youtube.com/watch?v=uhuoTcbquic
-Setup development environment for React Native - https://www.youtube.com/watch?v=F7xdbsjFGtU
+Setup development environment for React Native - https://www.youtube.com/watch?v=F7xdbsjFGtUe
+Development: The Venerable console.log | How to Debug React Native Apps - https://www.youtube.com/watch?v=oGEvkonm-Bg
