@@ -213,3 +213,13 @@ Set Up Custom React Native (Without Expo) In Windows [Urdu/Hindi] - https://www.
 Run React Native Project on Android Emulator AVD 2017 - https://www.youtube.com/watch?v=uhuoTcbquic
 Setup development environment for React Native - https://www.youtube.com/watch?v=F7xdbsjFGtUe
 Development: The Venerable console.log | How to Debug React Native Apps - https://www.youtube.com/watch?v=oGEvkonm-Bg
+React Hooks Tutorial - 3 - useState with previous state - https://www.youtube.com/watch?v=d0plTCQgsXs
+
+
+PMD Tool Demonstration - Eclipse Plugin
+help - marketplace - pmd - install
+How to install Lombok in Eclipse Or Any Other IDE - https://www.youtube.com/watch?v=g_yvTqY5UKc
+
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+git setting add key
