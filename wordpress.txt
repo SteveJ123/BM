@@ -224,3 +224,4 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 git setting add key
 JUnit Test Exception Examples - https://www.youtube.com/watch?v=OlSo6QjL9LA
+JUnit - Annotations - https://www.youtube.com/watch?v=Ai9Y84WUqBE
