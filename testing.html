@@ -496,7 +496,11 @@ Added benefits - easy conceptualized model close to real world which means less 
       wp_enqueue_style('fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');<br>
       wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/all.css', array(), '4.0.0', 'all' );<br>
       wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '2.1.1', true );<br>
-	    wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.0.0', 'all' );<br>
+      wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.0.0', 'all' );<br>
+      wp_register_style( 'Font_Awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );<br>
+wp_enqueue_style('Font_Awesome');<br>
+wp_register_script( 'jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', null, null, true );<br>
+wp_enqueue_script('jQuery');<br>
     
     </div>
     <div class="col-lg-4">

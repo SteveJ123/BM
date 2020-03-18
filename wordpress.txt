@@ -154,6 +154,7 @@ Wordpress Theme Development tutorial from scratch (Part 20) front-page.php vs ho
 Wordpress Theme Development tutorial from scratch (Part 9) Create Post and Display on theme page - https://www.youtube.com/watch?v=Iikw95u98jg
 Understanding State in React Native - https://www.youtube.com/watch?v=HatZnLxJB_0
 React hooks? useState vs setState? React JS - https://www.youtube.com/watch?v=dvsBuHKKolM
+How to use external font in HTML - https://www.youtube.com/watch?v=TrMfVcOJZx8
 
 android
 
