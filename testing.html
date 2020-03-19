@@ -911,6 +911,58 @@ replace one html with another
 
  
 
+<div class="container-fluid">
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px;">
+      method
+    </div>
+    <div class="col-lg-6 column-border" style="padding-left: 72px;">
+
+      <p>Java</p>
+    </div>
+    <div class="col-lg-4" style="padding-left:68px; ">
+      Description
+    </div>
+  </div>
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      string to number
+    </div>
+    <div class="col-lg-6 column-border">
+
+      final long firstValue = Long.parseLong(value[0]);
+    </div>
+    <div class="col-lg-4">
+      convert string to number
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      display array values
+    </div>
+    <div class="col-lg-6 column-border">
+      System.out.println("first value " + Arrays.toString(value));
+    </div>
+    <div class="col-lg-4">
+      display array values
+    </div>
+  </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      divisor by zero error
+    </div>
+    <div class="col-lg-6 column-border">
+      ThrowableTester.assertThrows(() -> stringDivisor.call("6 0"))
+      .assertMessageIs("/ by zero");      
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
+  </div>
+
+</div>
 
 
 
