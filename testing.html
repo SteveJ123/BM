@@ -951,7 +951,7 @@ replace one html with another
 
   <div class="row row-border">
     <div class="col-lg-2 column-border">
-      divisor by zero error
+      divisor by zero error assert message
     </div>
     <div class="col-lg-6 column-border">
       ThrowableTester.assertThrows(() -> stringDivisor.call("6 0"))
@@ -961,6 +961,18 @@ replace one html with another
       
     </div>
 
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        divisor by zero error assert exception
+      </div>
+      <div class="col-lg-6 column-border">
+        ThrowableTester.assertThrows(() -> stringDivisor.call("6 0"))
+        .assertException(ArithmeticException.class);      
+      </div>
+      <div class="col-lg-4">
+        
+      </div>
+  
 
     <div class="row row-border">
       <div class="col-lg-2 column-border">
