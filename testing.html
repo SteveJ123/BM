@@ -970,6 +970,20 @@ replace one html with another
         .assertException(ArithmeticException.class);      
       </div>
       <div class="col-lg-4">
+
+        <div class="row row-border">
+          <div class="col-lg-2 column-border">
+            annotation on top of test class
+          </div>
+          <div class="col-lg-6 column-border">
+            import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.jupiter.MockitoSettings;
+            @ExtendWith(MockitoExtension.class)
+@MockitoSettings(strictness = Strictness.LENIENT)
+@RunWith(MockitoJUnitRunner.class)
+          </div>
+          <div class="col-lg-4">
         
       </div>
   
