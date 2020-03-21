@@ -951,6 +951,17 @@ replace one html with another
 
   <div class="row row-border">
     <div class="col-lg-2 column-border">
+      exception message
+    </div>
+    <div class="col-lg-6 column-border">
+      e.getMessage();      
+    </div>
+    <div class="col-lg-4">      
+    </div>
+</div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
       divisor by zero error assert message
     </div>
     <div class="col-lg-6 column-border">
@@ -959,6 +970,7 @@ replace one html with another
     </div>
     <div class="col-lg-4">
       
+    </div>
     </div>
 
     <div class="row row-border">
@@ -970,6 +982,8 @@ replace one html with another
         .assertException(ArithmeticException.class);      
       </div>
       <div class="col-lg-4">
+      </div>
+    </div>
 
         <div class="row row-border">
           <div class="col-lg-2 column-border">
@@ -983,22 +997,47 @@ import org.mockito.junit.jupiter.MockitoSettings;
 @MockitoSettings(strictness = Strictness.LENIENT)
 @RunWith(MockitoJUnitRunner.class)
           </div>
-          <div class="col-lg-4">
-        
+          <div class="col-lg-4">        
       </div>
-  
+    </div>
 
-    <div class="row row-border">
-      <div class="col-lg-2 column-border">
-        exception message
-      </div>
-      <div class="col-lg-6 column-border">
-        e.getMessage();      
-      </div>
-      <div class="col-lg-4">
-        
-      </div>
+      <div class="row row-border">
+        <div class="col-lg-2 column-border">
+          annotation on class
+        </div>
+        <div class="col-lg-6 column-border">
+          <p>import org.springframework.stereotype.Service;
+
+@Service
+public class StringDivisor {</p>
+        </div>
+        <div class="col-lg-4">
+      
+    </div>
   </div>
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      annotation on initialition of another inside other class field
+    </div>
+    <div class="col-lg-6 column-border">
+      <p>import org.springframework.beans.factory.annotation.Autowired;</p>
+      <p>@Service
+        public class StringDivisor {
+        
+          @Autowired
+          DividerService dividerservice;
+        
+          public String call(final String string) {</p>      
+    </div>
+    <div class="col-lg-4">
+      <p>@Autowired is used to initialize filed</p>
+      <p>field should be outside method below class</p>
+</div>
+</div>
+
+
+    
 
 </div>
 
