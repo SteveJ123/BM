@@ -909,7 +909,7 @@ replace one html with another
 </div>
 </div>
 
- 
+<br><br><br><br>
 
 <div class="container-fluid">
   <div class="row row-border">
@@ -936,6 +936,58 @@ replace one html with another
       convert string to number
     </div>
   </div>
+
+  
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        declaring and initalizing array<br>
+        length of array
+      </div>
+      <div class="col-lg-6 column-border">
+  
+        int[] a= new int[2];<br>
+        a[0]=1;<br>
+        a[1]=2;<br><br>
+
+        <textarea class="textarea-size">
+          List<String> s = new ArrayList<String>();
+            s.add("John");
+            s.add("Jame");           
+            String[] arr = s.toArray(new String[s.size()]);
+
+            String[] arr = { "John", "Jame" }; 
+            List<String> s = Arrays.asList(arr);  
+        </textarea>
+        int [] a=  { 3, 34, 7, 9};<br>
+int len = a.length; //len = 4<br>
+        
+      </div>
+    </div>
+      
+      <div class="row row-border">
+        <div class="col-lg-2 column-border">
+          Array of Objects         </div>
+   
+      <div class="col-lg-6 column-border">
+        class Student {<br>
+          int marks;<br>
+       }<br><br>
+       Student[] studentArray = new Student[7];<br>
+       studentArray[0].marks = 100;<br><br>
+  
+        Student[] studentArray = new Student[7];<br>
+    studentArray[0] = new Student();<br>
+    studentArray[0].marks = 99;<br>
+    System.out.println(studentArray[0].marks); // prints 99<br>
+    modify(studentArray[0]);<br>
+    System.out.println(studentArray[0].marks); // prints 100 and not 99<br>
+    // code
+      </div>
+      <div class="col-lg-4">
+        convert string to number
+      </div>
+    </div>
+
 
   <div class="row row-border">
     <div class="col-lg-2 column-border">
@@ -1058,6 +1110,8 @@ public class StringDivisor {</p>
     <p>field should be outside method below class</p>
 </div>
 </div>
+
+
 
 
     
