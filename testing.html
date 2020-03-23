@@ -1056,7 +1056,7 @@ public class ExceptionTest {
 
       <div class="row row-border">
         <div class="col-lg-2 column-border">
-          annotation on class
+          @Service annotation on class
         </div>
         <div class="col-lg-6 column-border">
           <p>import org.springframework.stereotype.Service;
@@ -1108,6 +1108,35 @@ public class StringDivisor {</p>
   <div class="col-lg-4">
     <p>@Autowired is used to initialize filed</p>
     <p>field should be outside method below class</p>
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    @InjectMocks @Mocks
+  </div>
+  <div class="col-lg-6 column-border">
+    @InjectMocks<br>
+ MathApplication mathApplication;<br>
+same as mathApplication = new MathApplication();<br><br>
+ @Mock<br>
+CalculatorService calcService;<br>
+same as calcService = mock(CalculatorService.class);<br>
+mathApplication.setCalculatorService(calcService);<br><br>
+
+same as<br>
+private MathApplication mathApplication;<br>
+private CalculatorService calcService;<br><br>
+
+@Before<br>
+public void setUp(){<br>
+	mathApplication = new MathApplication();<br>
+calcService = mock(CalculatorService.class);<br>
+	mathApplication.setCalculatorService(calcService);<br>
+}<br> 
+  </div>
+  <div class="col-lg-4">
+    
 </div>
 </div>
 
