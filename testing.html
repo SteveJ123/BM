@@ -1140,6 +1140,59 @@ calcService = mock(CalculatorService.class);<br>
 </div>
 </div>
 
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    import
+  </div>
+  <div class="col-lg-6 column-border">
+    package com.tutorialspoint.mock;<br><br> 
+import static org.mockito.Mockito.mock;<br>
+import static org.mockito.Mockito.verify;<br>
+import static org.mockito.Mockito.when;<br><br>
+ 
+import org.junit.Assert;<br>
+import org.junit.Before;<br>
+import org.junit.Test;<br>
+import org.junit.runner.RunWith;<br><br>
+
+import org.mockito.runners.MockitoJUnitRunner;<br><br> 
+ 
+// @RunWith attaches a runner with the test class to initialize the test data<br>
+ @RunWith(MockitoJUnitRunner.class)<br>
+ public class MathApplicationTester {
+  </div>
+  <div class="col-lg-4">
+    
+</div>
+</div>
+
+<div class="row row-border">
+  <div class="col-lg-2 column-border">
+    run test particular class
+  </div>
+  <div class="col-lg-6 column-border">
+    import org.junit.runner.JUnitCore;<br>
+ import org.junit.runner.Result;<br>
+ import org.junit.runner.notification.Failure;<br><br>
+ 
+ 
+public class TestRunner {<br>
+    public static void main(String[] args) {<br>
+       Result result = JUnitCore.runClasses(MathApplicationTester.class);<br>
+              for (Failure failure : result.getFailures()) {<br>
+          System.out.println(failure.toString());<br>
+       }<br>
+              System.out.println(result.wasSuccessful());<br>
+    }<br>
+ }<br>
+
+
+  </div>
+  <div class="col-lg-4">
+    
+</div>
+</div>
+
 
 
 
