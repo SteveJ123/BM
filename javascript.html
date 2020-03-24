@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="testing.css" media="screen" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+  <div class="container-fluid" style="margin-top:40px; border-top: 1px solid gray">
+    <div class="row row-border">
+      <div class="col-lg-2 column-border" style="padding-left: 36px">
+        method
+    </div>
+    <div class="col-lg-6 column-border" style="padding-left: 36px;">
+      Javascript
+  </div>
+  <div class="col-lg-4" style="padding-left: 36px;">
+    description
+  </div>
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px">
+      Change tag using javascript [duplicate]<br>
+      Replace particular html tags using javascript
+  </div>
+  <div class="col-lg-6 column-border" style="padding-left: 36px;">
+    <textarea class="textarea-size">var s=<div>hello world<br/><li>First LI</li><li>Second LI</li></div></p>"; <br>  
+      s = s.replace(/<li>/g, "#");<br>  
+      s = s.replace(/<\/li>/g,"<br/>"); <br> 
+      alert(s);<br></textarea >
+    
+  
+  var e = document.getElementsByTagName('span')[0]; <br>
+  var d = document.createElement('div'); <br>
+  d.innerHTML = e.innerHTML; <br>
+  e.parentNode.replaceChild(d, e); <br>
+  </div>
+  <div class="col-lg-4" style="padding-left: 36px;">
+  replace one html with another
+  </div>
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px">
+      jquery for beginners
+  </div>
+  <div class="col-lg-6 column-border" style="padding-left: 36px;">
+    https://www.cs.utexas.edu/~teammco/teaching/fall2013_cs329e/jQuery/jquery_presentation.pdf
+  </div>
+  <div class="col-lg-4" style="padding-left: 36px;">
+  
+  </div>
+  </div>
+  
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px">
+      jquery keydown
+  </div>
+  <div class="col-lg-6 column-border" style="padding-left: 36px;">
+    var keyCode = (event.keyCode ? event.keyCode : event.which);
+  </div>
+  <div class="col-lg-4" style="padding-left: 36px;">
+  
+  </div>
+  </div>
+  
+  
+  
+  </div>
+
+  <script type="text/javascript" src="testing.js"></script>
+</body>
+</html>

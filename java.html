@@ -1,0 +1,310 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="testing.css" media="screen" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+  <div class="container-fluid" style="margin-top:40px; border-top: 1px solid gray">
+    <div class="row row-border">
+      <div class="col-lg-2 column-border" style="padding-left: 36px;">
+        method
+      </div>
+      <div class="col-lg-6 column-border" style="padding-left: 72px;">
+  
+        <p>Java</p>
+      </div>
+      <div class="col-lg-4" style="padding-left:68px; ">
+        Description
+      </div>
+    </div>
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        string to number
+      </div>
+      <div class="col-lg-6 column-border">
+  
+        final long firstValue = Long.parseLong(value[0]);
+      </div>
+      <div class="col-lg-4">
+        convert string to number
+      </div>
+    </div>
+  
+    
+      <div class="row row-border">
+        <div class="col-lg-2 column-border">
+          declaring and initalizing array<br>
+          length of array
+        </div>
+        <div class="col-lg-6 column-border">
+    
+          int[] a= new int[2];<br>
+          a[0]=1;<br>
+          a[1]=2;<br><br>
+  
+          <textarea class="textarea-size">
+            List<String> s = new ArrayList<String>();
+              s.add("John");
+              s.add("Jame");           
+              String[] arr = s.toArray(new String[s.size()]);
+  
+              String[] arr = { "John", "Jame" }; 
+              List<String> s = Arrays.asList(arr);  
+          </textarea>
+          int [] a=  { 3, 34, 7, 9};<br>
+  int len = a.length; //len = 4<br><br>
+  
+  int[] x = {1, 2, 3, 4, 5, 6};<br>	
+    for(int t : x) {<br>
+      System.out.println("value of x " + t);<br>
+    }        
+        </div>
+      </div>
+        
+        <div class="row row-border">
+          <div class="col-lg-2 column-border">
+            Array of Objects         </div>
+     
+        <div class="col-lg-6 column-border">
+          class Student {<br>
+            int marks;<br>
+         }<br><br>
+         Student[] studentArray = new Student[7];<br>
+         studentArray[0].marks = 100;<br><br>
+    
+          Student[] studentArray = new Student[7];<br>
+      studentArray[0] = new Student();<br>
+      studentArray[0].marks = 99;<br>
+      System.out.println(studentArray[0].marks); // prints 99<br>
+      modify(studentArray[0]);<br>
+      System.out.println(studentArray[0].marks); // prints 100 and not 99<br>
+      // code
+        </div>
+        <div class="col-lg-4">
+          convert string to number
+        </div>
+      </div>
+  
+  
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        display array values
+      </div>
+      <div class="col-lg-6 column-border">
+        System.out.println("first value " + Arrays.toString(value));
+      </div>
+      <div class="col-lg-4">
+        display array values
+      </div>
+    </div>
+  
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        exception message
+      </div>
+      <div class="col-lg-6 column-border">
+        e.getMessage();      
+      </div>
+      <div class="col-lg-4">      
+      </div>
+  </div>
+  
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        divisor by zero error assert message
+      </div>
+      <div class="col-lg-6 column-border">
+        ThrowableTester.assertThrows(() -> stringDivisor.call("6 0"))
+        .assertMessageIs("/ by zero");      
+      </div>
+      <div class="col-lg-4">
+        
+      </div>
+      </div>
+  
+      <div class="row row-border">
+        <div class="col-lg-2 column-border">
+          divisor by zero error assert exception
+        </div>
+        <div class="col-lg-6 column-border">
+          ThrowableTester.assertThrows(() -> stringDivisor.call("6 0"))
+          .assertException(ArithmeticException.class);      
+        </div>
+        <div class="col-lg-4">
+        </div>
+      </div>
+  
+          <div class="row row-border">
+            <div class="col-lg-2 column-border">
+              annotation on top of test class
+            </div>
+            <div class="col-lg-6 column-border">
+              import org.mockito.junit.MockitoJUnitRunner;<br>
+  import org.mockito.junit.jupiter.MockitoExtension;<br>
+  import org.mockito.junit.jupiter.MockitoSettings;<br>
+              @ExtendWith(MockitoExtension.class)<br>
+  @MockitoSettings(strictness = Strictness.LENIENT)<br>
+  @RunWith(MockitoJUnitRunner.class)<br>
+  public class ExceptionTest {
+            </div>
+            <div class="col-lg-4">        
+        </div>
+      </div>
+  
+        <div class="row row-border">
+          <div class="col-lg-2 column-border">
+            @Service annotation on class
+          </div>
+          <div class="col-lg-6 column-border">
+            <p>import org.springframework.stereotype.Service;
+  
+  @Service
+  public class StringDivisor {</p>
+          </div>
+          <div class="col-lg-4">
+        
+      </div>
+    </div>
+  
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        annotation on initialition of another class inside other class field
+      </div>
+      <div class="col-lg-6 column-border">
+        <p>import org.springframework.beans.factory.annotation.Autowired;</p>
+        <p>@Service<br>
+          public class StringDivisor {</p>
+          
+            <p>@Autowired<br>
+            DividerService dividerservice;</p>
+          
+            public String call(final String string) {
+      </div>
+      <div class="col-lg-4">
+        <p>@Autowired is used to initialize filed</p>
+        <p>field should be outside method below class</p>
+  </div>
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      @Autowired annotion should be used @Mock annotation in test
+    </div>
+    <div class="col-lg-6 column-border">
+      @Mock<br>
+      DividerService dividerService<br><br>
+  
+      you need not write<br>
+      dividerService = new DividerService<br><br>
+      
+      use this<br>
+    void setUp(){<br>
+      Mocito.when(dividerService).call()<br>
+    }
+    </div>
+    <div class="col-lg-4">
+      <p>@Autowired is used to initialize filed</p>
+      <p>field should be outside method below class</p>
+  </div>
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      @InjectMocks @Mocks
+    </div>
+    <div class="col-lg-6 column-border">
+      @InjectMocks<br>
+   MathApplication mathApplication;<br>
+  same as mathApplication = new MathApplication();<br><br>
+   @Mock<br>
+  CalculatorService calcService;<br>
+  same as calcService = mock(CalculatorService.class);<br>
+  mathApplication.setCalculatorService(calcService);<br><br>
+  
+  same as<br>
+  private MathApplication mathApplication;<br>
+  private CalculatorService calcService;<br><br>
+  
+  @Before<br>
+  public void setUp(){<br>
+    mathApplication = new MathApplication();<br>
+  calcService = mock(CalculatorService.class);<br>
+    mathApplication.setCalculatorService(calcService);<br>
+  }<br> 
+    </div>
+    <div class="col-lg-4">
+      
+  </div>
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      import
+    </div>
+    <div class="col-lg-6 column-border">
+      package com.tutorialspoint.mock;<br><br> 
+  import static org.mockito.Mockito.mock;<br>
+  import static org.mockito.Mockito.verify;<br>
+  import static org.mockito.Mockito.when;<br><br>
+   
+  import org.junit.Assert;<br>
+  import org.junit.Before;<br>
+  import org.junit.Test;<br>
+  import org.junit.runner.RunWith;<br><br>
+  
+  import org.mockito.runners.MockitoJUnitRunner;<br><br> 
+   
+  // @RunWith attaches a runner with the test class to initialize the test data<br>
+   @RunWith(MockitoJUnitRunner.class)<br>
+   public class MathApplicationTester {
+    </div>
+    <div class="col-lg-4">
+      
+  </div>
+  </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border">
+      run test particular class
+    </div>
+    <div class="col-lg-6 column-border">
+      import org.junit.runner.JUnitCore;<br>
+   import org.junit.runner.Result;<br>
+   import org.junit.runner.notification.Failure;<br><br>
+   
+   
+  public class TestRunner {<br>
+      public static void main(String[] args) {<br>
+         Result result = JUnitCore.runClasses(MathApplicationTester.class);<br>
+                for (Failure failure : result.getFailures()) {<br>
+            System.out.println(failure.toString());<br>
+         }<br>
+                System.out.println(result.wasSuccessful());<br>
+      }<br>
+   }<br>
+  
+  
+    </div>
+    <div class="col-lg-4">
+      
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+      
+  
+  </div>
+
+  <script type="text/javascript" src="testing.js"></script>
+</body>
+</html>
