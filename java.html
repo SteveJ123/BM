@@ -194,7 +194,8 @@
   
   <div class="row row-border">
     <div class="col-lg-2 column-border">
-      @Autowired annotion should be used @Mock annotation in test
+      @Autowired annotion should be used in service<br>
+       @Mock annotation in test
     </div>
     <div class="col-lg-6 column-border">
       @Mock<br>
@@ -236,6 +237,10 @@
     mathApplication = new MathApplication();<br>
   calcService = mock(CalculatorService.class);<br>
     mathApplication.setCalculatorService(calcService);<br>
+    through method<br>
+    or<br>
+    mathApplication = new MathApplication(calcService);<br>
+    through constructor<br>
   }<br> 
     </div>
     <div class="col-lg-4">
