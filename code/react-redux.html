@@ -74,10 +74,7 @@
 
           <div class="row row-border">
             <div class="col-lg-2 column-border">
-              import for component<br>
-              ComponentOne extends Component<br>
-              component contain render method<br>
-              render method return JSX<br> 
+              import for component<br>              
             </div>
             <div class="col-lg-6 column-border">
               import React, { Component} from 'react';<br>
@@ -90,7 +87,36 @@
                       </div>
                   )
               }
-              }<br>         
+              }<br>
+              export default ComponentOne         
+              
+            </div>
+            <div class="col-lg-4">
+              ComponentOne extends Component<br>
+              component contain render method<br>
+              render method return JSX<br>
+              export component using<br>
+              export default ComponentOne 
+            </div>
+          </div>
+
+          <div class="row row-border">
+            <div class="col-lg-2 column-border">
+              props              
+            </div>
+            <div class="col-lg-6 column-border">
+              <textarea class="textarea-size">
+                <ComponentOne name="Rayu" age="20" />
+              </textarea>  <br>
+              render(){<br>
+                <p>---render method in ComponentOne</p>
+                ---console.log(this.props);<br>
+                return(<br>                    
+                <div className="componentone">
+                  <p>Name: {this.props.name}</p>
+                  <p>Age: {this.props.age}</p>
+              </div>
+                )           
               
             </div>
             <div class="col-lg-4">
