@@ -111,12 +111,21 @@
               render(){<br>
                 <p>---render method in ComponentOne</p>
                 ---console.log(this.props);<br>
-                return(<br>                    
+                return(                    
                 <div className="componentone">
-                  <p>Name: {this.props.name}</p>
-                  <p>Age: {this.props.age}</p>
+                  Name: {this.props.name}<br>
+                  Age: {this.props.age}
               </div>
-                )           
+                ) <br><br>
+                
+              ---destructing props
+              const {name, age } = this.props;<br>
+              return(
+            <div className="componentone">
+                Name: {name}<br>
+                Age: {age}
+            </div>
+        )
               
             </div>
             <div class="col-lg-4">
