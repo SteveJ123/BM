@@ -125,8 +125,53 @@
                 Name: {name}<br>
                 Age: {age}
             </div>
-        )
+
+            ---use map method to list itmes<br>
+            state={<br>
+              passProps:[{name:"Rayu", age: 20, position: "designer", id:1},<br>
+              {name:"Rayu1", age: 20, position: "designer1", id:2},<br>
+              {name:"Rayu2", age: 20, position: "designer2", id:3}]<br>
+            }<br>
+
+            ---use map in ComponentOne<br>
+            render(){<br>        
+              const {passProps } = this.props;<br>           
+              const ListJSX = passProps.map(ninja=>{<br>        
+                  return(
+                    <div key={ninja.id}>
+                      {ninja.name}<br>        
+                      {ninja.age}<br>        
+                      {ninja.position}<br>        
+                    </div>
+                  )
+                });<br>          
+                  return(
+                      <div className="componentone">
+                          {ListJSX}
+                      </div>
+                  )
+              }
+          }        
+          
               
+            </div>
+            <div class="col-lg-4">
+              
+            </div>
+          </div>
+
+          <div class="row row-border">
+            <div class="col-lg-2 column-border">
+              alter state <br>
+              need to make copy of state              
+            </div>
+            <div class="col-lg-6 column-border">              
+              let y = [...this.state.data, singledata];<br>
+              or<br>
+              let y = [...this.state.data, ...arrayofdata];<br>
+              this.setState({<br>
+                dataUpdate: y<br>
+              })
             </div>
             <div class="col-lg-4">
               
