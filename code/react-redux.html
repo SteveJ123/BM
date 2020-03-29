@@ -75,12 +75,21 @@
           <div class="row row-border">
             <div class="col-lg-2 column-border">
               import for component<br>
-              ComponentOne extends Component 
+              ComponentOne extends Component<br>
+              component contain render method<br>
+              render method return JSX<br> 
             </div>
             <div class="col-lg-6 column-border">
               import React, { Component} from 'react';<br>
               class ComponentOne extends Component{<br>
-                  
+                render(){<br>
+                  return(<br>
+                      <div class="componentone">
+                          <p>Name: Ryu</p>
+                          <p>Age: 20</p>
+                      </div>
+                  )
+              }
               }<br>         
               
             </div>
