@@ -78,4 +78,5 @@ Create Your First GitHub Pages Website - https://www.youtube.com/watch?v=BA_c3bG
 
 How to Add Files to a GitHub Repo You Don’t Own https://ardalis.com/how-to-add-files-to-a-github-repo-you-dont-own
 Learn Git from Scratch - Fetch and Pull from Origin - https://www.youtube.com/watch?v=q6rYglziOjM
-Creating a Simple Github Pull Request - https://www.youtube.com/watch?v=rgbCcBNZcdQ
+Creating a Simple Github Pull Request - https://www.youtube.com/watch?v=rgbCcBNZcdQ
+Git and GitHub Tutorials #5 - Understanding GitHub Issues - https://www.youtube.com/watch?v=TKJ4RdhyB5Y
