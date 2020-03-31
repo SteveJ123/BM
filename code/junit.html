@@ -43,9 +43,30 @@
 
           <div class="d-flex ">
             <div>
-              Repository
+               DTO data transfer object which received from outside - we do not send entity to outside world<br>
+
+               entity - data we put to database and we get from database<br>
+               
+               DTO - factory  - you have to create DTO - test dictates that you need not create DTO - you need to use JSON data structure - you should not directly instantiate<br>
+               - we have factory to create the object DTO - we can mock factory like we mock in test - you need not have repository<br>
+               
+               Entity - repository - data which is stored in database - data from disk and file always need not be sql<br>
+               
+               legacy object - something which is third party which not developed us<br>
+               
+               utility class - you cannot put directly into services or controllers it is too data - when you have big data or big code we need to put some part of code to utility class.<br>
+               
+               constants -  we should not have constants in services controllers and utility classes<br>
+               
+               assertTrue assertEqual<br>
+               
+               verify<br>
+               
+               asserThrow<br>    
             </div>
-            <div class="ml-4">
+            <div class="ml-4">           
+
+
               A repository is managing the persistence of entities.<br><br>
               Repository naming ---WorkItemRepository<br>
               ancillary unit<br>
