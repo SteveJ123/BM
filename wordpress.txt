@@ -155,7 +155,7 @@ Wordpress Theme Development tutorial from scratch (Part 9) Create Post and Displ
 Understanding State in React Native - https://www.youtube.com/watch?v=HatZnLxJB_0
 React hooks? useState vs setState? React JS - https://www.youtube.com/watch?v=dvsBuHKKolM
 How to use external font in HTML - https://www.youtube.com/watch?v=TrMfVcOJZx8
-
+Developing a WordPress Theme with Bootstrap from Scratch Part 1 - https://www.youtube.com/watch?v=OF_62MbJ8VA
 android
 
 Log.d("TAG", String.valueOf(variable_name));
