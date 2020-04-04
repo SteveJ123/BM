@@ -85,7 +85,8 @@
             }<br>
             var add = require('');<br>
             add();<br><br>
-            module.exports={
+            --------------------<br>
+            module.exports={<br>
               add = function(){<br>
 
               }<br>
@@ -96,9 +97,26 @@
             var add = require('')<br>
             add.add();<br>
             add.sub()<br>
-            
-            
+          </div>
+          <div class="col-lg-4">
+      
+          </div>
+        </div>
 
+        <div class="row row-border">
+          <div class="col-lg-2 column-border">
+            file system fs
+          </div>
+          <div class="col-lg-6 column-border">
+            var fs = require('fs');
+            fs.readFile(path[, options], callback)<br>
+            var dataFile = fs.readFile('./test1.txt', 'UTF8', (err, data) => {<br>
+              if (err) throw err;<br>
+              console.log(data);<br>
+              fs.writeFile('./test2.txt', data, (err)=>{<br>
+              console.log('The file has been saved');<br>
+              })<br>
+            });
           </div>
           <div class="col-lg-4">
       

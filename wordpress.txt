@@ -156,6 +156,8 @@ Understanding State in React Native - https://www.youtube.com/watch?v=HatZnLxJB_
 React hooks? useState vs setState? React JS - https://www.youtube.com/watch?v=dvsBuHKKolM
 How to use external font in HTML - https://www.youtube.com/watch?v=TrMfVcOJZx8
 Developing a WordPress Theme with Bootstrap from Scratch Part 1 - https://www.youtube.com/watch?v=OF_62MbJ8VA
+Wordpress An installation already exists error - https://www.youtube.com/watch?v=QysRpISycsc
+How to do Domain Renewal for Single and Bulk Domains | ResellerClub - https://www.youtube.com/watch?v=fon1W17ymHU
 android
 
 Log.d("TAG", String.valueOf(variable_name));
