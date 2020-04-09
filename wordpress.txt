@@ -158,6 +158,7 @@ How to use external font in HTML - https://www.youtube.com/watch?v=TrMfVcOJZx8
 Developing a WordPress Theme with Bootstrap from Scratch Part 1 - https://www.youtube.com/watch?v=OF_62MbJ8VA
 Wordpress An installation already exists error - https://www.youtube.com/watch?v=QysRpISycsc
 How to do Domain Renewal for Single and Bulk Domains | ResellerClub - https://www.youtube.com/watch?v=fon1W17ymHU
+Wordpress tutorials in Hindi Ep#17 | How to make a child theme in wordpress - https://www.youtube.com/watch?v=BM8ZrmfwwxY
 android
 
 Log.d("TAG", String.valueOf(variable_name));
