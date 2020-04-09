@@ -240,3 +240,20 @@ Junit - Testing with Mock Objects using Mockito Framework - https://www.youtube.
 How to Set Java Path and Classpath in Windows 10 (Hindi) - https://www.youtube.com/watch?v=KdhRlR71t6E
 Download and Install Junit on Java and Eclipse | Step by Step | Project based - https://www.youtube.com/watch?v=WHPPQGOyy_Y
 Mockito JUnit Example - https://www.youtube.com/watch?v=HsQ9OwKA79s
+
+
+"row creator": {
+			"prefix": "rc",
+			"body": [
+				"<div class=\"row row-border\">",
+				"<div class=\"col-lg-2 column-border\">",
+					"$1",
+				"</div>",
+				"<div class=\"col-lg-6 column-border\">",
+				"$2",
+				"</div>",
+				"<div class=\"col-lg-4\"></div>",
+				"</div>"
+			],
+			"description": "Log output to console"
+		}
