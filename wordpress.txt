@@ -256,4 +256,19 @@ Mockito JUnit Example - https://www.youtube.com/watch?v=HsQ9OwKA79s
 				"</div>"
 			],
 			"description": "Log output to console"
+		},
+		"break": {
+			"prefix": "br",
+			"body": [
+				"<br>"
+			],
+			"description": "Log output to console"
+		},
+		"textarea": {
+			"prefix": "ta",
+			"body": [
+				"<textarea class=\"textarea-size\">",							
+			  "</textarea>"
+			],
+			"description": "Log output to console"
 		}
