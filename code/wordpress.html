@@ -112,18 +112,53 @@
        page.php
        </div>
        <div class="col-lg-6 column-border">
-         <a href="https://www.youtube.com/watch?v=fZ8ZVf4xW5U" >Wordpress Theme Development tutorial from scratch (Part 19) page.php, page-{page-id}.php, templates</a>
-         
-         magento
-         xampp php version  7.1.30 -  https://www.filehorse.com/download-xampp/41039/download/
-         <a href="https://www.youtube.com/watch?v=Vh070XW8z9Q" target="_blank">How to Upgrade or Downgrade PHP Version in XAMPP | 2018</a>
-        <a href="https://www.youtube.com/watch?v=MAtJHM-qfoU">Fix - 2 missing PHP extensions check error in Magento 2 installation</a>
-        Your Store Address <br>
-          http://localhost/shopping/Magento Admin Address <br>
-          http://localhost/shopping/admin_5num82 <br>
-
-        
+         <a href="https://www.youtube.com/watch?v=fZ8ZVf4xW5U" >Wordpress Theme Development tutorial from scratch (Part 19) page.php, page-{page-id}.php, templates</a>       
+                
        </div>
+       <div class="col-lg-4">
+       
+       </div>
+       </div>
+
+       <div class="row row-border">
+       <div class="col-lg-2 column-border">
+        magento <br>
+        Login <br>
+        jjanardhan@gmail.com <br>
+        testing123* <br>
+       </div>
+       <div class="col-lg-6 column-border">
+        
+        xampp php version  7.1.30 -  https://www.filehorse.com/download-xampp/41039/download/ <br>
+        <a href="https://www.youtube.com/watch?v=Vh070XW8z9Q" target="_blank">How to Upgrade or Downgrade PHP Version in XAMPP | 2018</a>
+       <a href="https://www.youtube.com/watch?v=MAtJHM-qfoU">Fix - 2 missing PHP extensions check error in Magento 2 installation</a> <br>
+       Your Store Address <br>
+       http://127.0.0.1/shopping/<br>
+       Magento Admin Addres  http://127.0.0.1/shopping/admin<br>
+       admin
+       admin123 <br>
+       installation 0% <br>
+       xdebug.max_nesting_level = 200; <br>
+       Magento 2.3 Admin Login not Working https://www.youtube.com/watch?v=v8XUN1jDIDU <br>
+       php bin/magento setup:install <br>
+
+       you must go to following folder <br>
+       /vendor/magento/framework/View/Element/Template/File/Validator.php and find field: <br>
+       $realPath = $this->fileDriver->getRealPath($path); // approx 114 line then replace with : <br>
+       $realPath = str_replace('\\', '/', $this->fileDriver->getRealPath($path)); <br>
+that should be work <br>
+
+Go to the following link open the admin login page of Magento. <br>
+http://localhost/Magento/admin <br>
+***Note: If you face any dashboard access error then do the following tasks. <br>
+A. Go to the following location <br>
+>cd c:\xampp\php <br>
+B. Run the following command clear the cache. <br>
+>php C:\xampp\htdocs\Magento\bin\magento setup:static-content:deploy -f <br>
+>php C:\xampp\htdocs\Magento\bin\magento cache:clean <br>
+>php C:\xampp\htdocs\Magento\bin\magento cache:flush <br>
+
+</div>
        <div class="col-lg-4">
        
        </div>
