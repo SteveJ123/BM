@@ -144,16 +144,17 @@
        
        installation 0% <br>
        php.ini add <br>
-       xdebug.max_nesting_level = 200; <br>
+       xdebug.max_nesting_level = 200; or php bin/magento setup:install - both <br>
        <a href="https://www.youtube.com/watch?v=v8XUN1jDIDU" >Magento 2.3 Admin Login not Working</a> <br> <br>
        control panel click on shell button and type when installing is 0%<br>
        php bin/magento setup:install <br> <br>
 
        you must go to following folder <br>
-       /vendor/magento/framework/View/Element/Template/File/Validator.php and find field: <br>
-       $realPath = $this->fileDriver->getRealPath($path); // approx 114 line then replace with : <br>
-       $realPath = str_replace('\\', '/', $this->fileDriver->getRealPath($path)); <br>
-that should be work <br> <br>
+                
+      /vendor/magento/framework/View/Element/Template/File/Validator.php and find field: <br>
+      $realPath = $this->fileDriver->getRealPath($path); // approx 114 line then replace with : <br>
+      $realPath = str_replace('\\', '/', $this->fileDriver->getRealPath($path)); <br>
+      that should be work<br> <br>
 
 admin panel image not loading <br>
 go to app/etc/di.xml <br>
