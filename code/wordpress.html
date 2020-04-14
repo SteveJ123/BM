@@ -132,21 +132,34 @@
         xampp php version  7.1.30 -  https://www.filehorse.com/download-xampp/41039/download/ <br>
         <a href="https://www.youtube.com/watch?v=Vh070XW8z9Q" target="_blank">How to Upgrade or Downgrade PHP Version in XAMPP | 2018</a>
        <a href="https://www.youtube.com/watch?v=MAtJHM-qfoU">Fix - 2 missing PHP extensions check error in Magento 2 installation</a> <br>
+       <a href="https://www.youtube.com/watch?v=tUGIhJOhTNE" >how to install magento 2.3.3 on xampp server</a> <br>
+       <a href="https://fahmidasclassroom.com/how-to-install-magento-2-3-3-in-xampp-server/">How to install Magento 2.3.3 in XAMPP Server - document</a> <br>
+       <a href="https://www.youtube.com/watch?v=LoOGoCcDC84" >admin panel icon not display magento || admin panel icon and menu not working magento 2.X</a>  <br> <br>
+       
        Your Store Address <br>
        http://127.0.0.1/shopping/<br>
        Magento Admin Addres  http://127.0.0.1/shopping/admin<br>
        admin
-       admin123 <br>
+       admin123 <br> <br>
+       
        installation 0% <br>
+       php.ini add <br>
        xdebug.max_nesting_level = 200; <br>
-       Magento 2.3 Admin Login not Working https://www.youtube.com/watch?v=v8XUN1jDIDU <br>
-       php bin/magento setup:install <br>
+       <a href="https://www.youtube.com/watch?v=v8XUN1jDIDU" >Magento 2.3 Admin Login not Working</a> <br> <br>
+       control panel click on shell button and type when installing is 0%<br>
+       php bin/magento setup:install <br> <br>
 
        you must go to following folder <br>
        /vendor/magento/framework/View/Element/Template/File/Validator.php and find field: <br>
        $realPath = $this->fileDriver->getRealPath($path); // approx 114 line then replace with : <br>
        $realPath = str_replace('\\', '/', $this->fileDriver->getRealPath($path)); <br>
-that should be work <br>
+that should be work <br> <br>
+
+admin panel image not loading <br>
+go to app/etc/di.xml <br>
+
+replace <item name="view_preprocessed" xsi:type="object">Magento\Framework\App\View\Asset\MaterializationStrategy\Symlink</item> with <br>
+<item name="view_preprocessed" xsi:type="object">Magento\Framework\App\View\Asset\MaterializationStrategy\Copy</item> <br> <br>
 
 Go to the following link open the admin login page of Magento. <br>
 http://localhost/Magento/admin <br>
