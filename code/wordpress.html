@@ -171,6 +171,14 @@ B. Run the following command clear the cache. <br>
 >php C:\xampp\htdocs\Magento\bin\magento setup:static-content:deploy -f <br>
 >php C:\xampp\htdocs\Magento\bin\magento cache:clean <br>
 >php C:\xampp\htdocs\Magento\bin\magento cache:flush <br> <br>
+
+<a href="https://meetanshi.com/blog/solution-your-session-has-expired-on-clicking-add-to-cart-in-magento-2-3-localhost/" >Solved – “Your session has expired” On Clicking Add To Cart In Magento 2.3 Localhost</a> <br>
+UPDATE core_config_data SET value = 'http://127.0.0.1/mag233sample/' WHERE core_config_data.path = 'web/unsecure/base_url'; <br>
+UPDATE core_config_data SET value = 'http://127.0.0.1/mag233sample/' WHERE core_config_data.path = 'web/secure/base_url'; <br>
+Run the command: <br>
+php bin/magento cache:flush <br> <br>
+<a href="https://magenticians.com/magento-2-paypal-payment-gateway-integration/" >PayPal Payment Gateway Integration in Magento 2</a>
+
 </div>
        <div class="col-lg-4">
        
