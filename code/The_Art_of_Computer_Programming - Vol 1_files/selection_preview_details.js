@@ -1,0 +1,2 @@
+define(["require","exports","tslib","react"],(function(e,t,r,i){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),i=r.__importDefault(i),t.SelectionPreviewDetails=function(e){var t=e.header,r=e.subheader;return i.default.createElement("div",{className:"selection-preview-details"},t,r)}}));
+//# sourceMappingURL=selection_preview_details.min.js-vflZR7fV1.map

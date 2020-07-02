@@ -167,6 +167,8 @@ for example if int x=10; then
 
 Log.d("value of x is ", String.valueOf(x));
 
+How To Make Login & Registration Form In PHP And MySql, Create SignIn & SignUp Page - https://www.youtube.com/watch?v=NXAHkqiIepc
+
 
 
 
@@ -273,3 +275,14 @@ Mockito JUnit Example - https://www.youtube.com/watch?v=HsQ9OwKA79s
 			],
 			"description": "Log output to console"
 		}
+
+
+
+
+
+make sure to add these plugins in all static wp sites from now onwards
+1. WP Super Cache
+2. Short pixel image optimizer
+3. Lazy Loading
+4. Yoast SEO
+5. WordFence- for security and firewall
