@@ -167,6 +167,8 @@ for example if int x=10; then
 
 Log.d("value of x is ", String.valueOf(x));
 
+
+
 How To Make Login & Registration Form In PHP And MySql, Create SignIn & SignUp Page - https://www.youtube.com/watch?v=NXAHkqiIepc
 
 
