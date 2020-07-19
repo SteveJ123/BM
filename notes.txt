@@ -1,1 +1,2 @@
 Feature-rich Data Table with Bootstrap - https://www.youtube.com/watch?v=uhdxAlzbiks
+Data Table with Bootstrap 4 (Full Featured) - https://www.youtube.com/watch?v=yGBk9Nalyq8
