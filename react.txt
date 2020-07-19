@@ -17,3 +17,6 @@ https://www.youtube.com/watch?v=Y2hgEGPzTZY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rx
 React JS State and Props | setState with Virtual DOM | React.JS tutorial Series Part 4 - https://www.youtube.com/watch?v=DJtI3Pogd88
 React Basics - Props, State and Stateful vs Stateless Components - Episode #4 - https://www.youtube.com/watch?v=wdXEtKtHFdw
 destructing props - https://scrimba.com/p/pgGEGtW/cKp4eRfq
+
+Ubuntu: npm update check failed (3 Solutions!!) - https://www.youtube.com/watch?v=NYZ3LrI24HI
+Start with Basic React - FreeCodeCamp - Random Quote Machine 01 - React - https://www.youtube.com/watch?v=XnoTmO06OYo

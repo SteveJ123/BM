@@ -1,0 +1,16 @@
+body{
+
+    margin:0px;
+}
+
+.container.icon{
+    margin-left: 0px;
+}
+
+.taskheading{
+    background-color:#00a1ff;
+}
+
+.taskcontainer{
+    background-color: blue;
+}

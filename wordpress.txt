@@ -32,6 +32,7 @@ Learn to upload files in godaddy cPanel manually 2019 - https://www.youtube.com/
 Become a WordPress Developer: Unlocking Power with Code  - https://www.youtube.com/watch?v=FVqzKAUsM68
 Contact Form 7 auto added p tags - empty p tag - https://stackoverflow.com/questions/32539905/contact-form-7-auto-added-p-tags
 How to Install Let's Encrypt Free SSL Certificate 2017 - https://www.youtube.com/watch?v=KmrWypEY6LE
+SSLForFree is now ZeroSSL, Follow This Process To Renew SSL certificates in 2020 - Cpanel Godaddy - https://www.youtube.com/watch?v=ZBp9BD2uafw
 Godaddy: How To Find .htaccess File (Easiest Way) - https://www.youtube.com/watch?v=z_gCLJ63c9Q
 https://mdbootstrap.com/docs/jquery/javascript/accordion/
 How to Edit & Customize Any WordPress Theme with CSS, HTML & PHP - https://www.youtube.com/watch?v=oZnzc0c8VB0
