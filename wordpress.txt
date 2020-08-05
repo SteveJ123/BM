@@ -289,3 +289,5 @@ make sure to add these plugins in all static wp sites from now onwards
 3. Lazy Loading
 4. Yoast SEO
 5. WordFence- for security and firewall
+
+Both are technically a function. But when you create a function in a class, it’s called a method.
