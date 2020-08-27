@@ -228,6 +228,30 @@ php bin/magento cache:flush <br> <br>
           upload_max_filesize = 1500M <br>
         </div>
         </div>
+
+        <div class="row row-border">
+          <div class="col-lg-2 column-border">
+          
+          </div>
+          <div class="col-lg-6 column-border">
+           child theme <br>
+           add js file to child theme
+          </div>
+          <div class="col-lg-4">            
+            <textarea style="width:100%; height: 80px">             
+          <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/filename.js"  type="text/javascript"></script>
+             </textarea>
+             function my_scripts_method() { <br>
+              wp_enqueue_script( <br>
+                  'custom-script', <br>
+                  get_stylesheet_directory_uri() . '/js/custom_script.js', <br>
+                  array( 'jquery' ) <br>
+               ); <br>
+              } <br>
+              
+              add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+          </div>
+          </div>
   
 
       <script type="text/javascript" src="testing.js"></script>
