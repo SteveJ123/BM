@@ -162,6 +162,8 @@ How to do Domain Renewal for Single and Bulk Domains | ResellerClub - https://ww
 Wordpress tutorials in Hindi Ep#17 | How to make a child theme in wordpress - https://www.youtube.com/watch?v=BM8ZrmfwwxY
 android
 
+
+access javascript data in php - https://www.youtube.com/watch?v=q-li1Zdnwuo
 Log.d("TAG", String.valueOf(variable_name));
 
 for example if int x=10; then
