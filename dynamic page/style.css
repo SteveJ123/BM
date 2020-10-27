@@ -11,7 +11,7 @@
   color: white;
 }
 
-.why_car_switch, .switcher{
+.why_car_switch, .switcher, .private-buyer{
   margin-top:80px;
 }
 
@@ -193,4 +193,8 @@ hr{
 .carousel-indicators li.active {	
 	background: #555;		
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.private-buyer{
+  background-color: #ffa834;
 }
