@@ -3,33 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./fontawesome-free-5.15.1-web/css/all.css">
   <link rel="stylesheet" href="style.css">
   <title>Task</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ml-4">
     <a href="/" class="logo-holder">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10535.35 1284.91" height="25px">
-      <g data-name="Layer 1">
-      <path fill="currentColor" d="M2475.32,1030.37c18.29,0,32,6.09,45.72,18.29q18.3,18.28,18.3,45.72c0,18.29-6.1,32-18.3,44.21q-178.32,141.75-402.39,141.75-265.22,0-452.69-187.48T1478.48,640.17q0-265.21,187.48-452.69T2118.65,0q228.63,0,407,146.32,18.28,18.3,18.29,45.73c0,18.29-6.1,32-18.29,45.73q-18.3,18.28-45.73,18.29c-18.29,0-32-6.1-45.73-19.82C2344.24,163.09,2239.07,128,2118.65,128c-141.75,0-262.16,50.3-361.23,149.38C1656.82,378,1608,498.42,1608,638.64c0,141.76,50.3,262.17,149.38,361.24,100.59,100.6,221,149.38,361.23,149.38,121.94,0,228.63-36.59,320.09-111.27A92,92,0,0,1,2475.32,1030.37Z"></path>
-      <path fill="currentColor" d="M2944.78,833.74l-158.52,408.49c-3.05,7.62-7.62,13.72-13.72,21.34q-18.28,18.29-45.73,18.29c-18.29,0-32-6.1-45.72-18.29q-18.3-18.28-18.29-45.73c0-10.66,1.52-19.81,6.09-27.43L3114,47.25c3.05-9.14,9.15-18.29,16.77-25.91a61.06,61.06,0,0,1,44.2-18.29q25.16,0,45.73,18.29c7.62,7.62,12.19,16.77,15.24,25.91L3681,1190.41c3.05,7.62,6.1,16.77,6.1,27.43,0,18.3-6.1,32-18.29,45.73q-18.3,18.29-45.73,18.29c-18.29,0-32-6.1-44.2-18.29a64,64,0,0,1-13.72-21.34L3406.61,833.74Zm410-128L3174.93,242.35,2995.07,705.71Z"></path>
-      <path fill="currentColor" d="M3877.59,3.05h320.09c106.69,0,196.62,38.1,271.31,112.79s112.79,164.61,112.79,271.31-36.58,196.62-111.27,271.31c-35.06,35.06-71.64,61-112.79,79.26l277.41,446.59c7.62,10.67,10.66,21.34,10.66,35.06,0,18.29-6.09,32-18.29,45.73q-18.28,18.29-45.72,18.29c-22.87,0-41.16-10.67-56.4-32L4225.11,771.25c-9.14,0-18.29,1.52-27.43,1.52H3941.61v448.12c0,18.29-6.1,32-18.29,45.73q-18.29,18.29-45.73,18.29c-18.29,0-32-6.1-45.72-18.29q-18.3-18.28-18.29-45.73V67.07c0-18.3,6.09-32,18.29-45.73C3845.58,9.15,3859.3,3.05,3877.59,3.05Zm64,128V643.22h256.07c70.11,0,131.08-24.39,181.38-74.69s74.68-109.74,74.68-181.38c0-70.11-24.38-131.08-74.68-181.38s-109.75-74.69-181.38-74.69Z"></path>
-      <path class="carswitchlogo-2" d="M4911,530.43c-56.4-67.07-82.31-144.8-74.69-233.21s44.2-160,111.27-218C5007,27.44,5077.15,1.52,5154.88,1.52q139.47,0,242.35,114.32c12.19,13.72,21.34,29,30.48,42.68,6.1,10.67,9.15,21.34,9.15,35,0,18.3-6.1,32-18.29,45.73q-18.28,18.29-45.73,18.29c-19.81,0-35.05-6.1-44.2-19.81-9.14-12.2-19.81-25.91-29-39.63-35.06-41.16-77.73-62.5-129.56-67.07-53.34-4.57-99.07,10.67-140.22,45.73s-62.5,77.73-67.07,129.56c-4.57,53.34,10.67,99.07,45.73,140.22,29,27.44,74.68,48.78,137.18,65.54,111.26,24.39,196.62,70.12,254.54,135.66,59.44,71.64,89.93,152.42,89.93,242.35,0,12.19,0,24.39-1.53,36.58-9.14,105.17-53.34,192-134.13,260.64-71.64,61-153.94,91.45-245.4,91.45-114.31,0-213.38-45.72-295.69-135.65a391.37,391.37,0,0,1-30.49-39.63c-9.14-10.67-12.19-24.39-12.19-38.11,0-18.29,6.1-32,18.29-45.72q18.29-18.3,45.73-18.29c22.86,0,41.15,9.14,54.87,29,6.1,10.67,13.72,19.81,22.86,29,45.73,54.87,103.65,83.83,173.76,89.93,70.12,4.57,132.61-15.25,186-61s83.83-103.65,89.92-173.76-13.71-132.61-59.44-187.48c-39.63-44.2-100.6-77.74-184.43-99.07C5039,617.31,4968.93,583.77,4911,530.43Z"></path>
-      <path class="carswitchlogo-2" d="M6278.22,21.34a61.08,61.08,0,0,1,44.21-18.29q25.14,0,45.72,18.29a59.56,59.56,0,0,1,15.24,24.39l259.12,932.81L6901.63,45.73c3.05-9.15,9.14-16.77,15.24-24.39a61,61,0,0,1,44.2-18.29c18.29,0,32,6.1,45.73,18.29q18.28,18.29,18.29,45.73a86.51,86.51,0,0,1-4.57,27.43l-312.47,1134a99.68,99.68,0,0,1-19.81,35.06c-12.2,12.19-27.44,19.82-45.73,19.82s-32-6.1-44.2-19.82c-9.15-9.14-16.77-21.34-19.82-33.53L6322.43,307.89l-254.55,920.62a99.68,99.68,0,0,1-19.81,35.06c-12.19,12.19-27.44,19.82-45.73,19.82s-32-6.1-44.2-19.82c-9.14-9.14-16.77-21.34-19.81-33.53L5624.34,94.5a86.23,86.23,0,0,1-4.57-27.43c0-18.3,6.09-32,18.29-45.73q18.28-18.28,45.72-18.29c18.29,0,32,6.1,45.73,18.29a59.66,59.66,0,0,1,15.24,24.39l259.12,932.81L6263,45.73C6264.51,36.58,6269.08,29,6278.22,21.34Z"></path>
-      <path class="carswitchlogo-2" d="M7218.66,67.07c0-18.3,6.1-32,18.29-45.73q18.3-18.28,45.73-18.29c18.29,0,32,6.1,45.73,18.29q18.29,18.29,18.29,45.73V1217.84c0,18.29-6.1,32-18.29,45.73q-18.3,18.29-45.73,18.29c-18.29,0-32-6.1-45.73-18.29q-18.28-18.28-18.29-45.73Z"></path>
-      <path class="carswitchlogo-2" d="M7601.24,131.08c-18.29,0-32-6.09-45.73-18.29q-18.29-18.29-18.29-45.72c0-18.3,6.1-32,18.29-45.73q18.3-18.28,45.73-18.29h830.69c18.29,0,32,6.1,45.73,18.29q18.28,18.29,18.29,45.73c0,18.29-6.1,32-18.29,45.72q-18.28,18.3-45.73,18.29H8079.84V1217.84c0,18.3-6.1,32-18.29,45.73q-18.29,18.29-45.73,18.29c-18.29,0-32-6.1-45.72-18.29q-18.3-18.28-18.29-45.73V131.08Z"></path>
-      <path class="carswitchlogo-2" d="M9453.16,1030.37c18.29,0,32,6.09,45.72,18.29q18.3,18.28,18.29,45.72c0,18.29-6.09,32-18.29,44.21q-178.33,141.75-402.39,141.75-265.21,0-452.69-187.48T8456.32,640.17q0-265.21,187.48-452.69T9096.49,0q228.63,0,407,146.32,18.3,18.3,18.29,45.73c0,18.29-6.09,32-18.29,45.73q-18.28,18.28-45.72,18.29c-18.29,0-33.53-6.1-45.73-19.82C9322.07,163.09,9216.9,128,9096.49,128c-141.75,0-262.16,50.3-361.24,149.38s-149.37,221-149.37,361.23c0,141.76,50.3,262.17,149.37,361.24s221,149.38,361.24,149.38c121.94,0,228.63-36.59,320.08-111.27A92,92,0,0,1,9453.16,1030.37Z"></path>
-      <path class="carswitchlogo-2" d="M9640.63,67.07c0-18.3,6.1-32,18.29-45.73q18.3-18.28,45.73-18.29c18.29,0,32,6.1,45.73,18.29q18.29,18.29,18.29,45.73V579.2h638.64V67.07c0-18.3,6.1-32,18.29-45.73q18.3-18.28,45.73-18.29c18.29,0,32,6.1,45.73,18.29q18.29,18.29,18.29,45.73V1217.84c0,18.29-6.1,32-18.29,45.73q-18.3,18.29-45.73,18.29c-18.29,0-32-6.1-45.73-18.29q-18.29-18.28-18.29-45.73V705.71H9768.67v512.13c0,18.29-6.1,32-18.29,45.73q-18.3,18.29-45.73,18.29c-18.29,0-32-6.1-45.73-18.29q-18.29-18.28-18.29-45.73Z"></path>
-      <path class="switch-1" fill="currentColor" d="M1013.6,0H300.27C135.65,0,0,132.61,0,292.65,0,454.21,134.13,585.3,300.27,585.3h714.85c164.62,0,300.27-132.61,300.27-292.65C1313.87,132.61,1178.21,0,1013.6,0Z"></path>
-      <path fill="white" d="M786.49,294.17C786.49,167.66,890.14,64,1016.65,64S1246.8,167.66,1246.8,294.17s-103.64,230.16-230.15,230.16S786.49,420.68,786.49,294.17Z"></path>
-      <path class="switch-2" fill="currentColor" d="M1013.6,695H300.27C135.65,695,0,827.65,0,987.69c0,161.57,134.13,292.65,300.27,292.65h714.85c164.62,0,300.27-132.61,300.27-292.65C1313.87,827.65,1178.21,695,1013.6,695Z"></path>
-      <path fill="white" d="M70.11,989.21c0-126.51,103.65-230.15,230.16-230.15S530.43,862.7,530.43,989.21s-103.65,230.16-230.16,230.16S70.11,1115.72,70.11,989.21Z"></path>
-      </g>
-      </svg>
+      Logo
       </a>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0 ml-4">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
@@ -37,8 +21,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent ml-4">
+      <ul class="navbar-nav ml-4">
         <li class="nav-item active">
           <a class="nav-link" href="#">Financing <span class="sr-only">(current)</span></a>
         </li>
@@ -53,11 +37,9 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            
-            <span class="navbar-toggler-icon"></span>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
           </a>
-          
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
@@ -70,39 +52,39 @@
       </ul>
       
     </div>
-  </nav> 
+  </nav>  
+
+  
 
   <div class="info">
-    <div class="container text-center">
-    <h1>Dubai’s #1 rated service to <br> sell or buy your next car</h1>
-    <div class="container text-center">
+    <div class="container ml-4">
+    <h1 class="text-center ml-4"> Best rated service to sell or buy your next car</h1>
+    <div class="container text-center ml-4">
     <button class="btn btn-primary d-flex flex-row ">
-      <a href="/uae/used-cars/search" class="text-color">Buy Used Car</a>
+      <a href="" class="text-color">Buy Used Car</a>
       
       <div class="used_car_onclick">
-      <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M22.5 5C23.2956 5 24.0587 5.31607 24.6213 5.87868C25.1839 6.44129 25.5 7.20435 25.5 8C25.5 8.79565 25.1839 9.55871 24.6213 10.1213C24.0587 10.6839 23.2956 11 22.5 11C21.7044 11 20.9413 10.6839 20.3787 10.1213C19.8161 9.55871 19.5 8.79565 19.5 8C19.5 7.20435 19.8161 6.44129 20.3787 5.87868C20.9413 5.31607 21.7044 5 22.5 5ZM22.5 0.5C26.64 0.5 30 3.86 30 8C30 12.14 26.64 15.5 22.5 15.5H7.5C3.36 15.5 0 12.14 0 8C0 3.86 3.36 0.5 7.5 0.5H22.5ZM7.5 3.5C6.30653 3.5 5.16193 3.97411 4.31802 4.81802C3.47411 5.66193 3 6.80653 3 8C3 9.19347 3.47411 10.3381 4.31802 11.182C5.16193 12.0259 6.30653 12.5 7.5 12.5H22.5C23.6935 12.5 24.8381 12.0259 25.682 11.182C26.5259 10.3381 27 9.19347 27 8C27 6.80653 26.5259 5.66193 25.682 4.81802C24.8381 3.97411 23.6935 3.5 22.5 3.5H7.5Z" fill="white"></path>
-      </svg>
+      
       </div>
     </button>
-    <a href="/uae/used-car/sell" class="btn btn-secondary sell-button-in-view">Sell Car</a>
+    <a href="" class="btn btn-secondary sell-button-in-view">Sell Car</a>
     </div>
     </div>
     </div>
 
-    <div class="container text-center why_car_switch">
-      <h3 class="section-title mb-2">Why CarSwitch</h3> 
+    <div class="container text-center why_car_search">
+      <h3 class="section-title why-buy mb-2">Why Buy</h3> 
       <div class="row">
-        <div class="col car_switch">
+        <div class="col car_search">
           <div class="icon-holder" id="img-one">
-            <i class="fas fa-award  fa-3x""></i>
+            <i class="fas fa-award  fa-3x"></i>
             </div>
             <div class="contents">
               <h4 id="b-p">Best prices</h4>
               <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
               </div>
         </div>
-        <div class="col car_switch">
+        <div class="col car_search">
           <div class="icon-holder fa-3x" id="img-one">
             <i class="fas fa-search"></i>
             </div>
@@ -111,7 +93,7 @@
               <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
               </div>
         </div>
-        <div class="col car_switch">
+        <div class="col car_search">
           <div class="icon-holder" id="img-one">
             <i class="fas fa-comment-dollar fa-3x""></i>
             </div>
@@ -129,133 +111,194 @@
       <div class="item"><input onclick="switchType('buyer')" type="radio" checked="" name="seller-type" data-type="buyers"><span>Buyers</span></div>
       </div>
 
-      <div class="container text-center why_car_switch">
-        <h3 class="section-title mt-4">In the news</h3>
-        <hr class="mb-4"> 
-        <div class="row">
-          <div class="col">
-            
-              <div class="contents">
-                <img class="quote-icon lozad"  alt="" src="./image/quote.png" data-loaded="true">
-                <img class="lozad img" data-src="" alt="" src="./image/forbesmiddleeast.jpg" data-loaded="true">
-                <h4 id="b-p">Best prices</h4>
-                <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
-                </div>
-          </div>
-          <div class="col">
-            
-              <div class="contents">
-                <img class="quote-icon lozad"  alt="" src="./image/quote.png" data-loaded="true">
-                <img class="lozad img" data-src="" alt="" src="./image/entrepreneur.jpg" data-loaded="true">
-                <h4 id="b-p">Best prices</h4>
-                <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
-                </div>
-          </div>
-          <div class="col">
-            
-              <div class="contents">
-                <img class="quote-icon lozad"  alt="" src="./image/quote.png" data-loaded="true">
-                <img class="lozad img" data-src="" alt="" src="./image/khaleej.png" data-loaded="true">
-                <h4 id="b-p">Best prices</h4>
-                <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
-                </div>
-          </div>
-        </div>
-        
-      </div>
+     
 
-      <div class="container text-center why_car_switch">
-        <div class="row">
-          <div class="col">
-            
-              <div class="contents">
-                <img class="quote-icon lozad"  alt="" src="./image/quote.png" data-loaded="true">
-                <img class="lozad img" data-src="" alt="" src="./image/gb.png" data-loaded="true">
-                <h4 id="b-p">Best prices</h4>
-                <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
-                </div>
-          </div>
-          <div class="col">
-            
-              <div class="contents">
-                <img class="quote-icon lozad"  alt="" src="./image/quote.png" data-loaded="true">
-                <img class="lozad img" data-src="" alt="" src="./image/menabytes.png" data-loaded="true">
-                <h4 id="b-p">Best prices</h4>
-                <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
-                </div>
-          </div>
-          <div class="col">
-            
-              <div class="contents">
-                <img class="quote-icon lozad"  alt="" src="./image/quote.png" data-loaded="true">
-                <img class="lozad img" data-src="" alt="" src="./image/national_logo_big.png" data-loaded="true">
-                <h4 id="b-p">Best prices</h4>
-                <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
-                </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <div class="container-xl">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Testimonials</h2>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Carousel indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>   
-              <!-- Wrapper for carousel items -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="img-box"><img src="./image/1.jpg" alt=""></div>
-                  <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                  <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
-                </div>
-                <div class="carousel-item">
-                  <div class="img-box"><img src="./image/2.jpg" alt=""></div>
-                  <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                  <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
-                </div>
-                <div class="carousel-item">
-                  <div class="img-box"><img src="./image/3.jpg" alt=""></div>
-                  <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                  <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
-                </div>
-              </div>
-              <!-- Carousel controls -->
-              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <i class="fa fa-angle-left"></i>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                <i class="fa fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
       <section class="private-buyer">
         <div class="grid-holder container text-center mt-4" data-item-gap="25">
         <div class="grid-holder inner" data-item-gap="20">
         <img class="lozad mx-auto image" data-src="" alt="Image" src="./image/private-buyer.svg" data-loaded="true">
         <div class="last-margin-0 contents">
-        <p><strong>Set your own price</strong>, and CarSwitch will sell your car for you. Let the <strong>#1 rated selling service</strong> in the UAE do the job for you!</p>
+        <p><strong>Set your own price</strong>, and we will sell your car for you. Let the <strong>#1 rated selling service</strong> in the do the job for you!</p>
         </div>
         </div>
         <div><a href="/dubai/used-car/sell" class="btn btn-secondary">Sell my car to private buyer</a></div>
         </div>
         </section>
-      
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
+               
+          <section class="">
+            <div class="container text-center why_car_search">
+              <h2 class="section-title mt-2">Other Services</h2> 
+              <div class="row">
+                <div class="col car_search d-flex flex-column">
+                  <div class="icon-holder" id="img-one">
+                    <i class="fas fa-car fa-3x"></i>
+                    </div>
+                    <div class="contents">
+                      <h4 id="b-p">Best prices</h4>
+                      <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
+                      </div>
+                </div>
+                <div class="col car_search d-flex flex-column">
+                  <div class="icon-holder" id="img-one">
+                    <i class="fas fa-car fa-3x"></i>
+                    </div>
+                    <div class="contents">
+                      <h4 id="b-p">Best prices</h4>
+                      <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
+                      </div>
+                </div>
+                <div class="col car_search d-flex flex-column">
+                  <div class="icon-holder" id="img-one">
+                    <i class="fas fa-car fa-3x"></i>
+                    </div>
+                    <div class="contents">
+                      <h4 id="b-p">Best prices</h4>
+                      <p id="b-p-t">Buy directly from private sellers, skip dealer margins!</p>
+                      </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+
+<section class="container faq mb-4">
+
+  <h2 class="text-center">FAQ</h2>
+
+<button class="accordion">Question 1 - click here to see answer</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Question 2 - click here to see answer</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Question 3 - click here to see answer</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+</section>
+
+<section class="footer mt-2">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col">
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+
+      </div>
+      <div class="col">
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        
+      </div>
+      <div class="col">
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+      </div>
+    </div>
+
+    <hr>
+    <!-- more links -->
+    <div class="container mt-4">
+    <div class="row">
+      <div class="col">
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+
+      </div>
+      <div class="col">
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        
+      </div>
+      <div class="col">
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+        <div class="item v-list"><a href="">Value your Car</a></div>
+        <div class="item v-list"><a href="">Newsroom</a></div>
+      </div>
+    </div>
+     
+
+    <div class="container text-center mt-4">
+      <div class="item v-list">
+        <p class="mb-3">Address: Head Office</a></p>
+        <div class="justify-content-center mb-3" data-item-gap="10">
+          <img class="mr-2" data-src="/assets/images/visa-card.png" width="50" src="/assets/images/visa-card.png" data-loaded="true">
+          <img class="" data-src="/assets/images/master-card.png" width="50" src="/assets/images/master-card.png" data-loaded="true">
+          </div>
+          <div class="v-list" data-item-gap="5">
+            <div><a href="/termsandconditions">Terms &amp; Conditions · </a><a href="/privacypolicy">Privacy Policy</a></div>
+            <div class="item v-list">© All rights reserved.</div>
+            </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+  
+
 </body>
 </html>
 

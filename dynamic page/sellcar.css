@@ -1,0 +1,185 @@
+/* navbar */
+.navbar{
+  margin-left: 0px !important;
+}
+
+.navbar, .dropdown, .dropdown-menu{
+  background: maroon !important;
+  
+}
+
+.nav-link, .dropdown-item{
+  color: white !important;
+}
+
+.nav-link, .dropdown-item:hover {
+  background: maroon !important;
+  color: white !important;
+}
+
+.fas, .fab, .far{
+  color: maroon;
+}
+
+
+/* sell car */
+
+
+.sell-any-car{
+  margin-top: 120px;
+}
+.sell-brand{
+    width:120px;
+    margin-left:4px;
+    margin-bottom:4px;
+    padding: 10px ;
+    border: solid 2px gray;
+    text-align: center;
+    cursor: pointer;
+    height: 80px;
+    font-weight: 700;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+}
+
+.sell-my-car{
+  width: 378px;
+    height: 58px;
+    border-radius: 15px;
+    background: maroon;
+    color: white;
+}
+
+/* why our brand */
+
+.why-our-brand{
+  margin-top: 80px;
+}
+
+.why-our-brand h3{
+  background: maroon;
+  color: white;
+
+}
+
+.why-our-brand .info{
+  background: maroon;
+  color: white;
+  border-radius: 1px solid maroon;
+  padding-left:10px;
+}
+
+.header-color{
+  background-color: maroon;
+  color: white;
+}
+
+/* in news */
+.why_car_switch, .switcher, .private-buyer{
+  margin-top:80px;
+}
+
+.quote-icon {
+  position: absolute;
+  left: 8px;
+  top: -24px;
+  pointer-events: none;
+  z-index: 0;
+  width: 78px;
+  padding: 20px;
+  opacity: 0.5;
+}
+
+.lozad.img {
+  max-width: 130px;
+  max-height: 35px;
+}
+
+/* testimonial */
+.col-3.float-left{
+  border:0.5px solid gray;
+  padding:40px;  
+}
+
+
+/* read our seller guide */
+.read-our-seller-guide{
+  border:1px solid gray;
+  border-radius: 15px;
+}
+
+
+
+/* interested specific make */
+.car-buy-sell{
+  /* border-top:1px solid gray; */
+  padding-left:80px;
+  padding-top:20px;
+  border-right:1px solid #EEE;
+  border-bottom:1px solid #EEE;
+  padding-bottom:20px;
+}
+
+.car-buy-sell-l{
+/* border-top:1px solid gray; */
+padding-left:80px;
+padding-top:20px;
+border-bottom:1px solid #EEE;
+padding-bottom:20px;
+}
+
+.specific-make{
+  margin-top:80px;
+}
+
+.accordion {
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+
+/* footer */
+.footer{
+    background-color: maroon;
+  }
+  
+  .item.v-list{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    line-height: 17px;
+    --item-gap: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #B7B7B7;
+  }
+  
+  .item.v-list a{
+    box-sizing: border-box;
+    color: #B7B7B7;
+    text-decoration: none;
+    line-height: inherit;
+    /* margin-bottom: 10px; */
+    list-style-type: none;
+    display: block;
+  }

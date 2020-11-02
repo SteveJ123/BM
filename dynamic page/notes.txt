@@ -1,0 +1,5 @@
+navba sticky maroon   - done
+footer in buycar html -- done
+add maroon color to slider in buycar page -- done
+
+Why Our brand maroon box and text white  -- done

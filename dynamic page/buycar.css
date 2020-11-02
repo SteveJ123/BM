@@ -1,0 +1,172 @@
+/* navbar */
+.navbar{
+    margin-left: 0px !important;
+  }
+
+.navbar, .dropdown, .dropdown-menu{
+    background: maroon !important;
+    
+}
+
+.nav-link, .dropdown-item{
+    color: white !important;
+}
+
+.nav-link, .dropdown-item:hover {
+    background: maroon !important;
+    color: white !important;
+}
+
+.filter-container{
+    margin-top: 80px;
+}
+
+  input[type="range"]{
+      -webkit-appearance: none;
+      background-color: maroon;
+      color: white;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -0px;
+}
+
+.fas{
+    color: maroon;
+}
+.filter{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.filter-bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#filter-count{
+    color: blue;
+}
+
+.btn-round-sm{
+    border-radius: 15px;
+}
+
+
+
+.item{
+    width:70px;
+    /* height:20px; */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.bodytype{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.features{
+    width:180px;
+}
+
+.city .btn, .features .btn, .transmission .btn, .seller-type .btn{
+    overflow: hidden;    
+    border: 1px solid #E5E5E5;
+    background: white;
+    border-radius: 15px;
+    font-size: 13px;    
+    
+}
+
+/* price guidance */
+.price-guidance .round, .badges .round{
+    margin-left: 4px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border: 1px solid gray;
+}
+
+.price-guidance .button{
+    width:65px;
+    height:20px;
+    border-radius:20%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    font-size: 13px;
+}
+
+.badges .button{
+    width:80px;
+    height:20px;
+    border-radius:20%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    font-size: 12px;
+}
+
+.colours .round1, .colours .round2, .colours .round3, .colours .round4, .colours .round5, .colours .round6{
+    margin-left: 4px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border: 1px solid gray;
+}
+
+.round1{
+    background-color: white;
+}
+
+.round2{
+    background-color: black;
+}
+
+.round3{
+    background-color: gray;
+}
+
+.round4{
+    background-color: silver;
+}
+.round5{
+    background-color: red;
+}
+.round6{
+    background-color: blue;
+}
+
+
+/* footer */
+.footer{
+    background-color: maroon;
+  }
+  
+  .items.v-list{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    line-height: 17px;
+    --item-gap: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #B7B7B7;
+  }
+  
+  .items.v-list a{
+    box-sizing: border-box;
+    color: #B7B7B7;
+    text-decoration: none;
+    line-height: inherit;
+    /* margin-bottom: 10px; */
+    list-style-type: none;
+    display: block;
+  }
