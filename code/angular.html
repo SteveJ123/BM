@@ -48,6 +48,7 @@
     in component.ts <br>
     add <br>
     "add <" "base href="/">" <br>
+    
     <a href="https://www.youtube.com/watch?v=psElhjrYmco&t=986s" target="_blank">Router Link in Angular 8 | Angular 8 Tutorial in Hindi</a> <br>
     <a href="https://www.smashingmagazine.com/2018/11/a-complete-guide-to-routing-in-angular/" target="_blank">angular router</a> <br>
     <a href="https://www.youtube.com/watch?v=VRf21fum3nk" target="_blank">Angular 9 Tutorial For Beginners #39 - Route Guards</a> <br>
@@ -65,7 +66,23 @@
     
   </div>
   </div>
+  
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px">
+      href, src url link
+    </div>
+  <div class="col-lg-6 column-border" style="padding-left: 36px;">
+    import {DomSanitizer, SafeUrl} from '@angular/platform-browser'; <br>
+    constructor(private sanitizer: DomSanitizer ) { } <br>
+    ngOnInit(): void {
+       this.youtubeLink = this.sanitizer.bypassSecurityTrustResourceUrl(this.courseDetail[0].video);
+     
+    } <br>
+  </div>
+  <div class="col-lg-4" style="padding-left: 36px;">
     
+  </div>
+  </div>
   
   </div>
 
