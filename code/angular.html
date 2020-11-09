@@ -94,6 +94,46 @@
     
   </div>
   </div>
+
+
+  <div class="row row-border">
+    <div class="col-lg-2 column-border" style="padding-left: 36px">
+      unordered list *ngFor - flex
+    </div>
+  <div class="col-lg-6 column-border" style="padding-left: 36px;">
+    
+    <textarea name="" id="" cols="30" rows="10">
+      <ul>
+        <li *ngFor="let postData of posts">
+          <post [title]="postData.title"
+                [postTest]="postData.postText"></post>
+        </li>
+      </ul>    
+    </textarea>
+
+    <textarea name="" id="" cols="30" rows="10">
+      <ul>
+        <li *ngFor="let postData of posts">
+          {{postData}}
+        </li>
+      </ul>    
+    </textarea>
+
+    <textarea name="" id="" cols="30" rows="10">
+      <div class="container m-0 d-flex flex-row">
+        <div class="coursevideo-flex" *ngFor="let element of testArray" >
+          <app-coursevideo ></app-coursevideo>    
+          <!-- test -->
+        </div>
+      
+      </div>
+    </textarea>
+    
+  </div>
+  <div class="col-lg-4" style="padding-left: 36px;">
+    
+  </div>
+  </div>
   
   </div>
 
