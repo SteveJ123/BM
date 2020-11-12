@@ -47,7 +47,16 @@
     import { RouterModule } from '@angular/router'; <br>
     in component.ts <br>
     add <br>
-    "add <" "base href="/">" <br>
+    "add <" "base href="/">" <br><br><br>
+    creating component in particular folder<br>
+    Quick, Simple and Error free method<br>
+    i.e. You want to create a component in a app/component folder, then follow these steps<br>
+    Right click on the folder to which you want to create component<br>
+    Select Open in Command Prompt option<br>
+    In new terminal (you'll see your selected path), then type ng g c my-new-component<br>
+    Also you can check this process through this image<br>
+    when you use [src]="variable" <br>
+    when you use value use src="../location" <br>
     
     <a href="https://www.youtube.com/watch?v=psElhjrYmco&t=986s" target="_blank">Router Link in Angular 8 | Angular 8 Tutorial in Hindi</a> <br>
     <a href="https://www.smashingmagazine.com/2018/11/a-complete-guide-to-routing-in-angular/" target="_blank">angular router</a> <br>
@@ -87,6 +96,14 @@
       -<li *ngFor="let element of courseCharacteristic">{{element}}-</li>
       
   -</ul>
+
+  <textarea name="" id="" cols="30" rows="10">
+    <ul>
+      <li *ngFor="let element of array; let i = index">
+        {{i}}. {{element.name}}, {{element.age}}
+      </li>
+    </ul>
+  </textarea>
   <a href="https://malcoded.com/posts/angular-ngfor/" target="_blank">Angular NgFor: Everything you need to know</a> <br>
   <a href="https://ultimatecourses.com/blog/angular-ngfor-index" target="_blank">Accessing the index inside NgFor</a>
   <a href="https://www.youtube.com/watch?v=qj_AZ_FkPtQ" target="_blank">angular youtube player</a>
