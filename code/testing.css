@@ -1,8 +1,8 @@
 .container-fluid{
     font-size:14px;
-    color: black;
-    font-weight: bold;    
-}
+    /* color: black; */
+    /* font-weight: bold;     */
+ }
 .row-border{
     border-bottom: 1px solid gray;
     /* display: border-box;     */
