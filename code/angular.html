@@ -98,14 +98,19 @@
     <b>test module imports</b>  <br>
     add component to test routing module <br>    
     
-
-    <h4>canactiviate route guard auth guard</h4>
-    <a href="https://www.youtube.com/watch?v=GHKNVczkoLI&feature=youtu.be&ab_channel=SahosoftSolutions">CanActivate Route Guards in Angular 8 | Angular 8 Tutorial in Hindi</a>
-
-    <textarea name="" id="" cols="80" rows="10">
-      ng g g activate - update app.module.ts in provider section activeGuard also update service in provider section 
-ng g s
+    <h4>router link</h4>
+    <textarea name="" id="" cols="80" rows="2">
+      <a [routerLink]="['/test']" >Home</a>
+    <a [routerLink]="['/test/picture']" routerLinkActivate="activate">Picture</a>
     </textarea>
+
+
+    <h4>canactivate route guard auth guard</h4>
+    <a href="https://www.youtube.com/watch?v=GHKNVczkoLI&feature=youtu.be&ab_channel=SahosoftSolutions">CanActivate Route Guards in Angular 8 | Angular 8 Tutorial in Hindi</a> <br>
+
+    <b>ng g g activate</b> - update <b>active guard</b> in app.module.ts in <b>provider section</b> activeGuard also update <b>service</b> in provider section <br>
+    <b>ng g s service</b> 
+   
 
   </div>
   <div class="col-lg-4" style="padding-left: 36px;">
