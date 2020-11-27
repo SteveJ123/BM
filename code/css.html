@@ -1,165 +1,167 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="testing.css" media="screen" >
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="testing.css" media="screen">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Document</title>
+  <title>Document</title>
 </head>
+
 <body>
-    
+
   <div class="container-fluid" style="margin-top:40px; border-top: 1px solid gray">
     <div class="row row-border">
       <div class="col-lg-2 column-border" style="padding-left: 36px">
         method
-    </div>
-    <div class="col-lg-6 column-border" style="padding-left: 36px;">
-      CSS
-  </div>
-  <div class="col-lg-4" style="padding-left: 36px;">
-    description
-  </div>
-  
+      </div>
+      <div class="col-lg-6 column-border" style="padding-left: 36px;">
+        CSS
+      </div>
+      <div class="col-lg-4" style="padding-left: 36px;">
+        description
+      </div>
+
     </div>
     <div class="row row-border">
       <div class="col-lg-2 column-border">
         horizontal line appearing above h tag
+      </div>
+      <div class="col-lg-6 column-border">
+        "/* header creating line above h tag */<br>
+        h1:before, h2:before {<br>
+        opacity: 0;<br>
+        }<br>
+        h1:not(.site-title):before,<br>
+        h2:before {<br>
+        background: none;<br>
+        content: ""\020"";<br>
+        display: block;<br>
+        height: 2px;<br>
+        margin: 1rem 0;<br>
+        width: 1em;<br>
+        }
+      </div>
+      <div class="col-lg-4">
+      </div>
     </div>
-    <div class="col-lg-6 column-border">
-              "/* header creating line above h tag */<br>
-              h1:before, h2:before {<br>
-                  opacity: 0;<br>
-              }<br>
-              h1:not(.site-title):before,<br>
-              h2:before {<br>
-                background: none;<br>
-                content: ""\020"";<br>
-                display: block;<br>
-                height: 2px;<br>
-                margin: 1rem 0;<br>
-                width: 1em;<br>
-  }
-  </div>
-  <div class="col-lg-4">  
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      image transform
-  </div>
-  <div class="col-lg-6 column-border">
-    style="transform: scale(0.75); position: relative; right: 28px; top: -65px;"
-  </div>
-  <div class="col-lg-4">
-    increases part of image not stretch
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      background-img: url()
-  </div>
-  <div class="col-lg-6 column-border">
-    .travelingloan {
-      background-image: url(http://localhost/insurance/wp-content/uploads/2019/11/happiness-couple-1.jpg);
-      height: 650px;
-      width: 252px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 60% 50%;
-  }
-  </div>
-  <div class="col-lg-4">
-    increases part of image not stretch
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      paragraph header tag
-  </div>
-  <div class="col-lg-6 column-border">
-    margin: 0px
-  padding:0px
-  </div>
-  <div class="col-lg-4">
-    
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      animation
-  </div>
-  <div class="col-lg-6 column-border">
-    style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;"
-  </div>
-  <div class="col-lg-4">
-    
-  </div>
-  </div>
-  
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      address
-  </div>
-  <div class="col-lg-6 column-border">
-    <div class=""footer-links"">
-      <h4>Contact Us</h4>
-      <p>
-        A108 Adam Street <br>
-        New York, NY 535022<br>
-        United States <br>
-        <strong>Phone:</strong> +1 5589 55488 55<br>
-        <strong>Email:</strong> info@example.com<br>
-      </p>
-    </div>  
-  </div>
-  <div class="col-lg-4">  
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      unicode
-  </div>
-  <div class="col-lg-6 column-border">
-    nav a:hover:after {
-      content: ""↓"";
-  }
-  nav a:hover:after {
-    content: ""\2193"";
-  }
-  
-  
-  </div>
-  <div class="col-lg-4">
-  
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      html space
-  </div>
-  <div class="col-lg-6 column-border">
-    &-nbsp 
-  </div>
-  <div class="col-lg-4">
-  
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      html two part
-  </div>
-  <div class="col-lg-6 column-border">
-    <textarea class="textarea-size" ><div class="container">
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        image transform
+      </div>
+      <div class="col-lg-6 column-border">
+        style="transform: scale(0.75); position: relative; right: 28px; top: -65px;"
+      </div>
+      <div class="col-lg-4">
+        increases part of image not stretch
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        background-img: url()
+      </div>
+      <div class="col-lg-6 column-border">
+        .travelingloan {
+        background-image: url(http://localhost/insurance/wp-content/uploads/2019/11/happiness-couple-1.jpg);
+        height: 650px;
+        width: 252px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60% 50%;
+        }
+      </div>
+      <div class="col-lg-4">
+        increases part of image not stretch
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        paragraph header tag
+      </div>
+      <div class="col-lg-6 column-border">
+        margin: 0px
+        padding:0px
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        animation
+      </div>
+      <div class="col-lg-6 column-border">
+        style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;"
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        address
+      </div>
+      <div class="col-lg-6 column-border">
+        <div class="" footer-links"">
+          <h4>Contact Us</h4>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        unicode
+      </div>
+      <div class="col-lg-6 column-border">
+        nav a:hover:after {
+        content: ""↓"";
+        }
+        nav a:hover:after {
+        content: ""\2193"";
+        }
+
+
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        html space
+      </div>
+      <div class="col-lg-6 column-border">
+        &-nbsp
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        html two part
+      </div>
+      <div class="col-lg-6 column-border">
+        <textarea class="textarea-size"><div class="container">
       
      <div class="row">
           <div class="col-xs-6 col-sm-6">
@@ -177,19 +179,19 @@
               
           </div>
       </div>
-  </div></textarea> 
-  </div>
-  <div class="col-lg-4">
-  
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      edit table content
-  </div>
-  <div class="col-lg-6 column-border">
-    <textarea class="textarea-size">
+  </div></textarea>
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        edit table content
+      </div>
+      <div class="col-lg-6 column-border">
+        <textarea class="textarea-size">
       <tr>
         <td contenteditable>Eve</td>
         <td contenteditable>Jackson</td>
@@ -197,21 +199,21 @@
       </tr>
   
     </textarea>
-  </div>
-  <div class="col-lg-4">
-    Feature-rich Data Table with Bootstrap - https://www.youtube.com/watch?v=uhdxAlzbiks
-    Data Table with Bootstrap 4 (Full Featured) - https://www.youtube.com/watch?v=yGBk9Nalyq8
-    Bootstrap 4 Table Classes Explained! - https://www.youtube.com/watch?v=FaNk_GO7uLs
-    Responsive table using Bootstrap 4 - https://www.youtube.com/watch?v=6gKKDF-fB-A
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      image align center
-  </div>
-  <div class="col-lg-6 column-border">
-    <textarea class="textarea-size">
+      </div>
+      <div class="col-lg-4">
+        Feature-rich Data Table with Bootstrap - https://www.youtube.com/watch?v=uhdxAlzbiks
+        Data Table with Bootstrap 4 (Full Featured) - https://www.youtube.com/watch?v=yGBk9Nalyq8
+        Bootstrap 4 Table Classes Explained! - https://www.youtube.com/watch?v=FaNk_GO7uLs
+        Responsive table using Bootstrap 4 - https://www.youtube.com/watch?v=6gKKDF-fB-A
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        image align center
+      </div>
+      <div class="col-lg-6 column-border">
+        <textarea class="textarea-size">
       <img src="paris.jpg" alt="Paris" class="center">
   
       .center {
@@ -222,18 +224,18 @@
       }
   
     </textarea>
-  </div>
-  <div class="col-lg-4">
-  
-  </div>
-  </div>
-  
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      how to arrange five div
-  </div>
-  <div class="col-lg-6 column-border">
-    <textarea class="textarea-size">
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        how to arrange five div
+      </div>
+      <div class="col-lg-6 column-border">
+        <textarea class="textarea-size">
       .wrap {
         text-align: center;
     }
@@ -253,19 +255,19 @@
     </div>
   
     </textarea>
-  </div>
-  <div class="col-lg-4">
-  
-  </div>
-  </div>
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
 
 
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      read more read less
-  </div>
-  <div class="col-lg-6 column-border">
-    <textarea class="textarea-size">
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        read more read less
+      </div>
+      <div class="col-lg-6 column-border">
+        <textarea class="textarea-size">
       <h2>Read More Read Less Button</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
@@ -280,252 +282,290 @@
 <script>
   function myFunction(x) {
     var t = x;
-    var dotsNumber = "dots"+x;
-    var moreNumber = "more"+x;
-    var myBtnNumber = "myBtn"+x;
+    var dotsNumber = "dots" + x;
+    var moreNumber = "more" + x;
+    var myBtnNumber = "myBtn" + x;
     var dots = document.getElementById(dotsNumber);
     var moreText = document.getElementById(moreNumber);
     var btnText = document.getElementById(myBtnNumber);
-  
+
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Read more>>>"; 
+      btnText.innerHTML = "Read more>>>";
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read less<<<"; 
+      btnText.innerHTML = "Read less<<<";
       moreText.style.display = "inline";
     }
   }
-  </script>
+</script>
   
     </textarea>
-  </div>
-  <div class="col-lg-4">
-  
-  </div>
-  </div>
+      </div>
+      <div class="col-lg-4">
 
-  <div class="row row-border d-flex flex-column">
-    <div class="col-lg-2 column-border">
-      bootstrap flex
-  </div>
-  <div class="col-lg-12 column-border d-flex">
-    <div>
-    .d-flex<br>
-.d-inline-flex<br>
-.d-sm-flex<br>
-.d-sm-inline-flex<br><br>
-</div>
-<div>
-.justify-content-start<br>
-.justify-content-end<br>
-.justify-content-center<br>
-.justify-content-between<br>
-.justify-content-around<br>
-.justify-content-sm-start<br>
-.justify-content-sm-end<br>
-.justify-content-sm-center<br>
-.justify-content-sm-between<br>
-.justify-content-sm-around<br><br>
-</div>
-<div>
-  .flex-row<br>
-.flex-row-reverse<br>
-.flex-column<br>
-.flex-column-reverse<br>
-.flex-sm-row<br>
-.flex-sm-row-reverse<br>
-.flex-sm-column<br>
-.flex-sm-column-reverse<br>
-</div>
+      </div>
+    </div>
 
-<div>
-  .align-items-start<br>
-.align-items-end<br>
-.align-items-center<br>
-.align-items-baseline<br>
-.align-items-stretch<br>
-.align-items-sm-start<br>
-.align-items-sm-end<br>
-.align-items-sm-center<br>
-.align-items-sm-baseline<br>
-.align-items-sm-stretch<br>
-</div>
-<div>
-  .align-self-start<br>
-.align-self-end<br>
-.align-self-center<br>
-.align-self-baseline<br>
-.align-self-stretch<br>
-.align-self-sm-start<br>
-.align-self-sm-end<br>
-.align-self-sm-center<br>
-.align-self-sm-baseline<br>
-.align-self-sm-stretch<br>
-</div>
-<div>
-  .flex-fill<br>
-.flex-sm-fill<br>
-</div>
-<div>
-  .flex-{grow|shrink}-0<br>
-.flex-{grow|shrink}-1<br>
-.flex-sm-{grow|shrink}-0<br>
-.flex-sm-{grow|shrink}-1<br>
-</div>
-<div>
-  .flex-nowrap<br>
-.flex-wrap<br>
-.flex-wrap-reverse<br>
-.flex-sm-nowrap<br>
-.flex-sm-wrap<br>
-</div>
-<div>
-  .order-0<br>
-  .order-1<br>
-.order-2<br>
-.order-3<br>
-.order-4<br>
-.order-5<br>
-.order-6<br>
-.order-7<br>
-.order-8<br>
-.order-9<br>
-.order-10<br>
-.order-11<br>
-.order-12<br>
-.order-sm-0<br>
-</div>
-<div>
-  .align-content-start<br>
-.align-content-end<br>
-.align-content-center<br>
-.align-content-around<br>
-.align-content-stretch<br>
-.align-content-sm-start<br>
-.align-content-sm-end<br>
-.align-content-sm-center<br>
-.align-content-sm-around<br>
-.align-content-sm-stretch<br>
-</div>
-  </div>
-  <div class="pl-2">
-    bootstrap image <br>
-    .img-fluid. max-width: 100%; and height: auto; are applied to the image so that it scales with the parent element <br>
-    .img-thumbnail to give an image a rounded 1px border appearance. <br>
-    rounded float-left <br>
-    rounded float-right <br>
-    rounded mx-auto d-block to center <br>
-  </div>
-  <div class="col-lg">
-  
-  </div>
-  </div>
+    <div class="row row-border d-flex flex-column">
+      <div class="col-lg-2 column-border">
+        bootstrap flex
+      </div>
+      <div class="col-lg-12 column-border d-flex">
+        <div>
+          .d-flex<br>
+          .d-inline-flex<br>
+          .d-sm-flex<br>
+          .d-sm-inline-flex<br><br>
+        </div>
+        <div>
+          .justify-content-start<br>
+          .justify-content-end<br>
+          .justify-content-center<br>
+          .justify-content-between<br>
+          .justify-content-around<br>
+          .justify-content-sm-start<br>
+          .justify-content-sm-end<br>
+          .justify-content-sm-center<br>
+          .justify-content-sm-between<br>
+          .justify-content-sm-around<br><br>
+        </div>
+        <div>
+          .flex-row<br>
+          .flex-row-reverse<br>
+          .flex-column<br>
+          .flex-column-reverse<br>
+          .flex-sm-row<br>
+          .flex-sm-row-reverse<br>
+          .flex-sm-column<br>
+          .flex-sm-column-reverse<br>
+        </div>
 
-  <div class="row row-border">
-    <div class="col-lg-2 column-border">
-      placeholder color changed
-  </div>
-  <div class="col-lg-6 column-border">
-    input::-webkit-input-placeholder {<br>
-      color: red !important;<br>
-      }<br>
-       
-      input:-moz-placeholder { /* Firefox 18- */<br>
-      color: red !important;<br>  
-      }<br>
-       
-      input::-moz-placeholder {  /* Firefox 19+ */<br>
-      color: red !important;<br>  
-      }<br>
-       
-      input:-ms-input-placeholder {<br>  
-      color: red !important;<br>  
-      }<br><br>
+        <div>
+          .align-items-start<br>
+          .align-items-end<br>
+          .align-items-center<br>
+          .align-items-baseline<br>
+          .align-items-stretch<br>
+          .align-items-sm-start<br>
+          .align-items-sm-end<br>
+          .align-items-sm-center<br>
+          .align-items-sm-baseline<br>
+          .align-items-sm-stretch<br>
+        </div>
+        <div>
+          .align-self-start<br>
+          .align-self-end<br>
+          .align-self-center<br>
+          .align-self-baseline<br>
+          .align-self-stretch<br>
+          .align-self-sm-start<br>
+          .align-self-sm-end<br>
+          .align-self-sm-center<br>
+          .align-self-sm-baseline<br>
+          .align-self-sm-stretch<br>
+        </div>
+        <div>
+          .flex-fill<br>
+          .flex-sm-fill<br>
+        </div>
+        <div>
+          .flex-{grow|shrink}-0<br>
+          .flex-{grow|shrink}-1<br>
+          .flex-sm-{grow|shrink}-0<br>
+          .flex-sm-{grow|shrink}-1<br>
+        </div>
+        <div>
+          .flex-nowrap<br>
+          .flex-wrap<br>
+          .flex-wrap-reverse<br>
+          .flex-sm-nowrap<br>
+          .flex-sm-wrap<br>
+        </div>
+        <div>
+          .order-0<br>
+          .order-1<br>
+          .order-2<br>
+          .order-3<br>
+          .order-4<br>
+          .order-5<br>
+          .order-6<br>
+          .order-7<br>
+          .order-8<br>
+          .order-9<br>
+          .order-10<br>
+          .order-11<br>
+          .order-12<br>
+          .order-sm-0<br>
+        </div>
+        <div>
+          .align-content-start<br>
+          .align-content-end<br>
+          .align-content-center<br>
+          .align-content-around<br>
+          .align-content-stretch<br>
+          .align-content-sm-start<br>
+          .align-content-sm-end<br>
+          .align-content-sm-center<br>
+          .align-content-sm-around<br>
+          .align-content-sm-stretch<br>
+        </div>
+      </div>
+      <div class="pl-2">
+        bootstrap image <br>
+        .img-fluid. max-width: 100%; and height: auto; are applied to the image so that it scales with the parent
+        element <br>
+        .img-thumbnail to give an image a rounded 1px border appearance. <br>
+        rounded float-left <br>
+        rounded float-right <br>
+        rounded mx-auto d-block to center <br>
+      </div>
+      <div class="col-lg">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        placeholder color changed
+      </div>
+      <div class="col-lg-6 column-border">
+        input::-webkit-input-placeholder {<br>
+        color: red !important;<br>
+        }<br>
+
+        input:-moz-placeholder { /* Firefox 18- */<br>
+        color: red !important;<br>
+        }<br>
+
+        input::-moz-placeholder { /* Firefox 19+ */<br>
+        color: red !important;<br>
+        }<br>
+
+        input:-ms-input-placeholder {<br>
+        color: red !important;<br>
+        }<br><br>
 
 
-      textarea::-webkit-input-placeholder {<br>
+        textarea::-webkit-input-placeholder {<br>
         color: green !important;<br>
         }<br>
-         
+
         textarea:-moz-placeholder { /* Firefox 18- */<br>
-        color: green !important; <br> 
+        color: green !important; <br>
         }<br>
-         
-        textarea::-moz-placeholder {  /* Firefox 19+ */<br>
-        color: green !important;<br>  
+
+        textarea::-moz-placeholder { /* Firefox 19+ */<br>
+        color: green !important;<br>
         }<br>
-         
-        textarea:-ms-input-placeholder {<br>  
-        color: green !important;<br>  
+
+        textarea:-ms-input-placeholder {<br>
+        color: green !important;<br>
         }<br><br>
 
 
         input[type="email"]::-webkit-input-placeholder {<br>
-          color: blue !important;<br>
-          }<br>
-           
-          input[type="email"]:-moz-placeholder { /* Firefox 18- */<br>
-          color: blue !important;<br>  
-          }<br>
-           
-          input[type="email"]::-moz-placeholder {  /* Firefox 19+ */<br>
-          color: blue !important;<br>  
-          }<br>
-           
-          input[type="email"]:-ms-input-placeholder {<br>  
-          color: blue !important;<br>  
-          }<br>
-  </div>
-  <div class="col-lg-4">
-    https://www.templatemonster.com/help/how-to-change-the-placeholder-text-color-of-an-input.html
-  </div>
-  </div>
+        color: blue !important;<br>
+        }<br>
 
-  
-  <div class="row row-border">
-  <div class="col-lg-2 column-border">
-    change background color of success message wordpress
-  </div>
-  <div class="col-lg-6 column-border">
-    div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {<br>
-      color: white;<br>
-  }<br><br>
-  
-  div.wpcf7-mail-sent-ok {<br>
-      color: #398f14<br>
-  }<br>
-  }
-  </div>
-  <div class="col-lg-4"></div>
-  </div>
+        input[type="email"]:-moz-placeholder { /* Firefox 18- */<br>
+        color: blue !important;<br>
+        }<br>
 
-  <div class="row row-border">
-  <div class="col-lg-2 column-border">
-    wordpress message after submit contact form
-  </div>
-  <div class="col-lg-6 column-border">
-    [response] <br>
+        input[type="email"]::-moz-placeholder { /* Firefox 19+ */<br>
+        color: blue !important;<br>
+        }<br>
 
-    Your Name (required)<br>
-    [text* your-name] <br>
-    
-    Subject <br>
-    [text your-subject] <br>
-    
-    Your Message <br>
-    [textarea your-message] <br>
-    
-    [response]<br>
-    
-    [submit "Send"] <br>
-  </div>
-  <div class="col-lg-4"></div>
-  </div>
-  
+        input[type="email"]:-ms-input-placeholder {<br>
+        color: blue !important;<br>
+        }<br>
+      </div>
+      <div class="col-lg-4">
+        https://www.templatemonster.com/help/how-to-change-the-placeholder-text-color-of-an-input.html
+      </div>
+    </div>
+
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        change background color of success message wordpress
+      </div>
+      <div class="col-lg-6 column-border">
+        div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {<br>
+        color: white;<br>
+        }<br><br>
+
+        div.wpcf7-mail-sent-ok {<br>
+        color: #398f14<br>
+        }<br>
+        }
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        wordpress message after submit contact form
+      </div>
+      <div class="col-lg-6 column-border">
+        [response] <br>
+
+        Your Name (required)<br>
+        [text* your-name] <br>
+
+        Subject <br>
+        [text your-subject] <br>
+
+        Your Message <br>
+        [textarea your-message] <br>
+
+        [response]<br>
+
+        [submit "Send"] <br>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+
+      </div>
+      <div class="col-lg-6 column-border">
+        <p>Here we are placing margins of <strong>10 pixels on the top and bottom</strong> of a div</p>
+        <p>margins of <strong>20 pixels on the left and right</strong> </p>
+
+
+        <textarea name="" id="" cols="80" rows="10">
+        div {
+          margin: 10px 20px;
+          }
+
+        div { //10px top 20px right 0px bottom 15px left
+           margin: 10px 20px 0 15px;
+        }
+      </textarea>
+
+        <h4>Margin & Padding Colors</h4>
+
+        <p>The margin and padding properties are completely transparent and <strong>do not accept any
+          color</strong> values. Being transparent, though, they show the background colors of relative elements.
+          For margins, we see the background color of the parent element, and for padding,
+          we see the background color of the element the padding is applied to.</p>
+
+          <h4>Borders</h4>
+          
+<p>Borders fall between the padding and margin, providing an outline around an element.
+  The border property requires three values: <strong>width, style, and color</strong></p> 
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+
+
   </div>
   <a href="https://www.youtube.com/watch?v=WlGQdgy-M6w">box-sizing: border-box explained</a>
   <script type="text/javascript" src="testing.js"></script>
 </body>
+
 </html>
