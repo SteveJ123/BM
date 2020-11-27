@@ -550,14 +550,66 @@
         <h4>Margin & Padding Colors</h4>
 
         <p>The margin and padding properties are completely transparent and <strong>do not accept any
-          color</strong> values. Being transparent, though, they show the background colors of relative elements.
+            color</strong> values. Being transparent, though, they show the background colors of relative elements.
           For margins, we see the background color of the parent element, and for padding,
           we see the background color of the element the padding is applied to.</p>
 
-          <h4>Borders</h4>
-          
-<p>Borders fall between the padding and margin, providing an outline around an element.
-  The border property requires three values: <strong>width, style, and color</strong></p> 
+        <h4>Borders</h4>
+
+        <p>Borders fall between the padding and margin, providing an outline around an element.
+          The border property requires three values: <strong>width, style, and color</strong></p>
+        <p>The most common style values are <strong>solid, double, dashed, dotted, and none</strong> but there are
+          several others to choose from.</p>
+        <p>Additionally, styles for individual border sides may be controlled at an even finer level.
+          For example, if we wish to <strong>change only the width of the bottom border</strong> we can use the
+          following code:</p>
+        <textarea name="" id="" cols="80" rows="10">
+          div {
+            border-bottom-width: 12px;
+            }
+        </textarea>
+
+        <h4>Border Radius</h4>
+
+        <strong>enables us to round the corners of an element</strong>
+        <p>The border-radius property accepts length units, including <strong>percentages and pixels</strong>
+          that identify the radius by which the corners of an element are to be rounded. A single value
+          will round all four corners of an element equally; two values will round the top-left/
+          bottom-right and top-right/bottom-left corners in that order; four values will round
+          the top-left, top-right, bottom-right, and bottom-left corners in that order </p>
+
+        <textarea name="" id="" cols="80" rows="10">
+              div {
+                 border-top-right—radius: 5px;
+                 }
+        </textarea>
+
+        <h4>Box sizing</h4>
+
+        <textarea name="" id="" cols="80" rows="15">
+          div {
+             -webkit-box-sizing: content-box;
+             -moz-box-sizing: content-box;
+             -moz-box-sizing: content-box;
+             }
+
+          div {
+             box-sizing: padding-box;
+             }
+
+             //css
+             *, *:before, *:after {
+               -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                box-sizing: border-box;
+               }
+
+            div {
+               box-sizing: border-box;
+               }
+        </textarea>
+
       </div>
       <div class="col-lg-4"></div>
     </div>
