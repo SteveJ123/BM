@@ -213,6 +213,20 @@ password:['', Validators.required]
         {{i}}. {{element.name}}, {{element.age}}
       </li>
     </ul>
+
+    @Component({
+      selector: 'angular-app',
+      template: `
+      <div *ngIf="a == 6 || b == 9"> if string *ngIf="a == 'string'"
+        Angular 8 Or || Operator Demo
+      </div>
+      `,
+    })
+    
+    export class AppComponent {
+      a = 6; if string a = 'string';
+      b = 9;
+    }
   </textarea>
   <a href="https://malcoded.com/posts/angular-ngfor/" target="_blank">Angular NgFor: Everything you need to know</a> <br>
   <a href="https://ultimatecourses.com/blog/angular-ngfor-index" target="_blank">Accessing the index inside NgFor</a>
