@@ -79,7 +79,17 @@ Making a Pull Request - https://www.atlassian.com/git/tutorials/making-a-pull-re
 
 Create Your First GitHub Pages Website - https://www.youtube.com/watch?v=BA_c3bGQXlQ
 
-How to Add Files to a GitHub Repo You Don’t Own https://ardalis.com/how-to-add-files-to-a-github-repo-you-dont-own
+How to Add Files to a GitHub Repo You Donï¿½t Own https://ardalis.com/how-to-add-files-to-a-github-repo-you-dont-own
 Learn Git from Scratch - Fetch and Pull from Origin - https://www.youtube.com/watch?v=q6rYglziOjM
 Creating a Simple Github Pull Request - https://www.youtube.com/watch?v=rgbCcBNZcdQ
-Git and GitHub Tutorials #5 - Understanding GitHub Issues - https://www.youtube.com/watch?v=TKJ4RdhyB5Y
+Git and GitHub Tutorials #5 - Understanding GitHub Issues - https://www.youtube.com/watch?v=TKJ4RdhyB5Y
+
+
+git merge conflict
+
+Git Merge Conflict Tutorial | Resolving Merge Conflicts In Git | DevOps Training | Edureka - https://www.youtube.com/watch?v=1MVQYSlgXrI&ab_channel=DavidMahlerDavidMahler
+
+git pull --rebase origin branch
+git merge mergetool
+git rebase --continue
+git push origin branch
