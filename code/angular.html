@@ -342,6 +342,17 @@ password:['', Validators.required]
   
   </div>
 
+
+  <h1>Interpolation in strings made using backtick operator</h1>
+  <textarea name="" id="" cols="30" rows="10">
+    let user='user';
+let msg=`Welcome ${user}! 
+I can write multi-line string.
+
+This is awesome!
+`;
+console.log(msg);
+  </textarea>
   <script type="text/javascript" src="testing.js"></script>
 </body>
 </html>
