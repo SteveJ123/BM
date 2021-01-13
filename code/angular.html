@@ -231,8 +231,27 @@ cameraStream(chosenCamera: string) {
     
 
     <h4>Angular 8 Pipes | All Type of Pipes with Examples</h4>
-    <a href="https://www.freakyjolly.com/angular-8-pipes-all-type-of-pipes-with-examples/#.X_8oaznivIU">Angular 8 Pipes | All Type of Pipes with Examples</a>
+    <a href="https://www.freakyjolly.com/angular-8-pipes-all-type-of-pipes-with-examples/#.X_8oaznivIU">Angular 8 Pipes | All Type of Pipes with Examples</a> <br>
+    <textarea name="" id="" cols="80" rows="20">
+      ng generate pipe pipes/MyCustomPipe
+      // or simply      
+      ng g pipe pipes/MyCustomPipe
+      
+      import { Pipe, PipeTransform } from ‘@angular/core’;
+        @Pipe({
+        name: ‘myPipe’
+              })
+      export class MyPipe implements PipeTransform {
+          transform(value: any, args?: any): any {
+          return null;
+    }
+    }
 
+    <div> {{ myData | myPipe }} </div>
+
+    <div> {{ myData | myPipe:firstArg:secondArg }} </div>
+
+    </textarea>
     <h4>observable behavior subject</h4>
     <a href="https://www.youtube.com/watch?v=UpY_REnVEH0&ab_channel=Academind">Observable and Behavior Subject in Angular 8</a>
 
