@@ -28,7 +28,7 @@ How to upload local wordpress website to 000webhost (or any virtual servers) - h
 How to Add a Click to Call Button in WordPress - https://www.youtube.com/watch?time_continue=235&v=_9rHADrirpM&feature=emb_logo
 How to add a Whatsapp button in Wordpress with the Buttonizer plugin - https://www.youtube.com/watch?v=-2c2PaThkcA
 FIXED 500 Internal Server Error on WordPress - https://www.youtube.com/watch?v=OhWUvQU2diU
-Learn to upload files in godaddy cPanel manually 2019 - https://www.youtube.com/watch?v=EfRsb-Vu8wc
+Learn to upload files in godaddy cPanel manually 2019 ----- host ---- - https://www.youtube.com/watch?v=EfRsb-Vu8wc
 Become a WordPress Developer: Unlocking Power with Code  - https://www.youtube.com/watch?v=FVqzKAUsM68
 Contact Form 7 auto added p tags - empty p tag - https://stackoverflow.com/questions/32539905/contact-form-7-auto-added-p-tags
 How to Install Let's Encrypt Free SSL Certificate 2017 - https://www.youtube.com/watch?v=KmrWypEY6LE
