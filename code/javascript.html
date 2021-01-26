@@ -69,6 +69,144 @@
   
   </div>
   </div>
+
+  <div class="container">
+    <h1>Javascript Info</h1>
+
+    <h4> use strict</h4>
+    <h4>Nullish coalescing operator</h4>
+    '??' - a ?? b  expands to  a !== null && a !== undefined ? a : b <br>
+Transpilers - A transpiler is a special piece of software that can parse (“read and understand”) modern code,
+and rewrite it using older syntax constructs, so that the result would be the same. <br>
+
+E.g. JavaScript before year 2020 didn’t have the “nullish coalescing operator” ??. So, if a visitor uses an outdated browser, it may fail to understand the code like height = height ?? 100. <br>
+
+<h4>transpiler</h4>
+A transpiler would analyze our code and rewrite height ?? 100 into (height !== undefined && height !== null) ? height : 100. <br>
+
+Babel is one of the most prominent transpilers <br>
+
+Modern project build systems, such as webpack, provide means to run transpiler automatically on every code change, so it’s very easy to integrate into development process. <br>
+
+<h4>Polyfills</h4>
+Polyfills - In some (very outdated) JavaScript engines, there’s no Math.trunc, so such code will fail. <br>
+A script that updates/adds new functions is called “polyfill”. It “fills in” the gap and adds missing implementations. <br>
+
+Two interesting libraries of polyfills are: <br>
+
+core js that supports a lot, allows to include only needed features. <br>
+polyfill.io service that provides a script with polyfills, depending on the features and user’s browser. <br>
+
+<h4>Objects</h4>
+Usually, the figure brackets {...} are used. That declaration is called an <b>object literal</b>. <br>
+
+<b>multiword property names</b> <br>
+let user = {<br>
+  name: "John",<br>
+  age: 30,<br>
+  <b>"likes birds"</b>: true  <b>// multiword property name must be quoted</b> <br>
+}; <br>
+
+<b>“trailing” or “hanging” comma</b> <br>
+
+let user = { <br>
+  name: "John", <br>
+  age: 30,<br>
+}<br>
+
+<b>Square brackets</b> <br>
+let user = {}; <br>
+// set <br>
+user["likes birds"] = true; <br>
+
+Square brackets also provide a way to obtain the property name as the result of any expression – as opposed to a literal string – like from a variable as follows: <br>
+let key = "likes birds"; <br>
+
+// same as user["likes birds"] = true; <br>
+user[key] = true; <br>
+
+the variable <b>key</b> may be calculated at run-time or depend on the user input <br>
+let key = prompt("What do you want to know about the user?", "name"); <br>
+
+// access by variable <br>
+alert( user[key] ); // John (if enter "name") <br>
+<b>Computed properties</b> <br>
+let fruit = prompt("Which fruit to buy?", "apple");<br>
+
+let bag = {<br>
+  [fruit]: 5, // the name of the property is taken from the variable fruit<br>
+};<br>
+
+alert( bag.apple ); // 5 if fruit="apple"<br>
+<b>Property value shorthand</b> <br>
+function makeUser(name, age) { <br>
+  return { <br>
+    name: name,<br>
+    age: age,<br>
+    // ...other properties<br>
+  };<br>
+}
+
+let user = makeUser("John", 30);<br>
+alert(user.name); // John<br>
+<b>Instead of name:name we can just write name, like this:</b> <br>
+function makeUser(name, age) { <br>
+  return {<br>
+    name, // same as name: name<br>
+    age,  // same as age: age<br>
+    // ...<br>
+  };<br>
+  <b>Property existence test, “in” operator</b> <br>
+  <b>"key" in object</b> <br>
+  let user = { name: "John", age: 30 }; <br>
+
+alert( "age" in user ); // true, user.age exists<br>
+alert( "blabla" in user ); // false, user.blabla doesn't exist<br>
+
+<b>Why does the in operator exist? Isn’t it enough to compare against undefined?</b>  <br> 
+
+Well, most of the time the comparison with undefined works fine. But there’s a special case when it fails, but "in" works correctly.<br>
+
+It’s when an object property exists, but stores undefined:<br>
+
+let obj = {<br>
+  test: undefined<br>
+};<br>
+
+alert( obj.test ); // it's undefined, so - no such property?<br>
+
+alert( "test" in obj ); // true, the property does exist!<br>
+
+}<br>
+
+<b>The “for…in” loop</b> <br>
+let user = { <br>
+  name: "John",<br>
+  age: 30,<br>
+  isAdmin: true<br>
+};<br>
+
+for (let key in user) {<br>
+  // keys<br>
+  alert( key );  // name, age, isAdmin<br>
+  // values for the keys<br>
+  alert( user[key] ); // John, 30, true<br>
+}<br>
+
+<b>Ordered like an object</b> <br>
+let codes = { <br>
+  "49": "Germany",<br>
+  "41": "Switzerland",<br>
+  "44": "Great Britain",<br>
+  // ..,<br>
+  "1": "USA"<br>
+};<br>
+
+for (let code in codes) {<br>
+  alert(code); // 1, 41, 44, 49<br>
+}<br>
+
+  </div>
   
   
   
