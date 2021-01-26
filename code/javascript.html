@@ -206,6 +206,81 @@ for (let code in codes) {<br>
   alert(code); // 1, 41, 44, 49<br>
 }<br>
 
+
+<h4>Object references and copying</h4>
+<b>A variable assigned to an object stores not the object itself, but its “address in memory” – in other words “a reference” to it.</b> <br>
+let user = { name: "John" }; <br>
+
+let admin = user; // copy the reference <br>
+let user = { name: 'John' }; <br>
+
+let admin = user;<br>
+
+admin.name = 'Pete'; // changed by the "admin" reference<br>
+
+alert(user.name); // 'Pete', changes are seen from the "user" reference<br>
+<b>Comparison by reference</b> <br>
+let a = {}; <br>
+let b = a; // copy the reference<br>
+
+alert( a == b ); // true, both variables reference the same object<br>
+alert( a === b ); // true <br>
+<b>two independent objects </b> <br>
+let a = {}; <br>
+let b = {}; // two independent objects<br>
+
+alert( a == b ); // false<br>
+
+<b>Cloning and merging, Object.assign</b> <br>
+let user = { <br>
+  name: "John", <br>
+  age: 30<br>
+};<br>
+
+let clone = {}; // the new empty object<br>
+
+// let's copy all user properties into it<br>
+for (let key in user) {<br>
+  clone[key] = user[key];<br>
+}<br>
+
+// now clone is a fully independent object with the same content<br>
+clone.name = "Pete"; // changed the data in it<br>
+
+alert( user.name ); // still John in the original object<br>
+<b>Object.assign(dest, [src1, src2, src3...]) - copy paste content</b> <br>
+<p><i>Objects are assigned and copied by reference. In other words, a variable stores not the “object value”, but a “reference” (address in memory) for the value. So copying such a variable or passing it as a function argument copies that reference, not the object itself. <br>
+
+  All operations via copied references (like adding/removing properties) are performed on the same single object.<br>
+  
+  To make a “real copy” (a clone) we can use Object.assign for the so-called “shallow copy” (nested objects are copied by reference) or a “deep cloning” function, such as _.cloneDeep(obj).<br></i></p> 
+let user = { name: "John" }; <br>
+
+let permissions1 = { canView: true };<br>
+let permissions2 = { canEdit: true };<br>
+
+// copies all properties from permissions1 and permissions2 into user<br>
+Object.assign(user, permissions1, permissions2);<br>
+
+// now user = { name: "John", canView: true, canEdit: true }<br>
+<b>If the copied property name already exists, it gets overwritten:</b> <br>
+<b>Nested cloning</b> <br>
+Until now we assumed that all properties of user are primitive. But properties can be references to other objects. What to do with them? <br>
+let user = { <br>
+  name: "John",<br>
+  sizes: {<br>
+    height: 182,<br>
+    width: 50<br>
+  }<br>
+};<br>
+
+let clone = Object.assign({}, user);<br>
+
+alert( user.sizes === clone.sizes ); // true, same object <b>sizes object is not copied.  It is nested object</b> <br>
+
+// user and clone share sizes<br>
+user.sizes.width++;       // change a property from one place<br>
+alert(clone.sizes.width); // 51, see the result from the other one<br>
   </div>
   
   
