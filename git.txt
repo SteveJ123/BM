@@ -29,6 +29,18 @@ git push origin master
 
 git pull origin master
 
+to move from current branch to new branch
+git checkout -b filesupdated    //it will create new branch
+
+type
+git push  //you need message
+fatal: The current branch filesupdated has no upstream branch.        
+To push the current branch and set the remote as upstream, use        
+
+    git push --set-upstream origin filesupdated
+
+git push --set-upstream origin branchname
+
 
 
 
