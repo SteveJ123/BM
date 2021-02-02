@@ -73,6 +73,9 @@
   <div class="container">
     <h1>Javascript Info</h1>
 
+    <h4>symbol</h4>
+    <a href="https://www.youtube.com/watch?v=DHrYasp1OTw&ab_channel=ColtSteele">FINALLY - ES6 Symbols are Explained!</a>
+
     <h4> use strict</h4>
     <h4>Nullish coalescing operator</h4>
     '??' - a ?? b  expands to  a !== null && a !== undefined ? a : b <br>
@@ -289,6 +292,16 @@ alert( user.sizes === clone.sizes ); // true, same object <b>sizes object is not
 // user and clone share sizes<br>
 user.sizes.width++;       // change a property from one place<br>
 alert(clone.sizes.width); // 51, see the result from the other one<br>
+
+<h4>Object to primitive conversion</h4>
+<a href="https://www.youtube.com/watch?v=kNYH9oU9dDw&ab_channel=9StarStudio">Modern Javascript Objects 5 Object to primitive conversion</a>
+What happens when objects are added obj1 + obj2, subtracted obj1 - obj2 or printed using alert(obj)? <br>
+<b>when addition and substraction is used on objects it is converted to number</b> <br>
+<b>In that case, objects are auto-converted to primitives, and then the operation is carried out.</b> <br>
+In the chapter Type Conversions we’ve seen the rules for numeric, string and boolean conversions of primitives. But we left a gap for objects. Now, as we know about methods and symbols it becomes possible to fill it. <br>
+ <b>All objects are true in a boolean context.</b> There are only numeric and string conversions. <br>
+<b>The numeric conversion happens when we subtract objects or apply mathematical functions. For instance, Date objects (to be covered in the chapter Date and time) can be subtracted, and the result of date1 - date2 is the time difference between two dates.</b> <br>
+As for the string conversion – it usually happens when we output an object like alert(obj) and in similar contexts. <b>obj will be converted to string as alert takes string</b> <br>
   </div>
   
   
