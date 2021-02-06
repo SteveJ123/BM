@@ -41,7 +41,10 @@ To push the current branch and set the remote as upstream, use
 
 git push --set-upstream origin branchname
 
-
+git clone branch
+git clone -b <branch> <remote_repo>
+git clone -b my-branch git@github.com:user/myproject.git
+https://stackoverflow.com/questions/1911109/how-do-i-clone-a-specific-git-branch
 
 
 
