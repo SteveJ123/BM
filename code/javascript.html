@@ -101,7 +101,13 @@ core js that supports a lot, allows to include only needed features. <br>
 polyfill.io service that provides a script with polyfills, depending on the features and user’s browser. <br>
 
 <h4>Objects</h4>
-<a href="https://mathiasbynens.be/notes/shapes-ics">JavaScript’s object model</a>
+<a href="https://mathiasbynens.be/notes/shapes-ics">JavaScript’s object model</a> <br>
+<b>property attribute</b> 
+Other than the <b>[[Value]]</b>  itself, the spec defines these properties: <br>
+<b>[[Writable]]</b>  which determines whether the property can be reassigned to, <br>
+<b>[[Enumerable]]</b>  which determines whether the property shows up in for-in loops, <br>
+and <b>[[Configurable]]</b>  which determines whether the property can be deleted. <br>
+<a href="https://www.youtube.com/watch?v=HZjvoftRvGE">Iterable vs Enumerable in JavaScript</a>
 <a href="https://medium.com/better-programming/different-ways-to-duplicate-objects-in-javascript-c199be34ecb7">Different Ways to Duplicate Objects in JavaScript</a> <br>
 <h4>primitive data</h4>
 <img src="images/primitive.png" width="400" height="400"><br>
@@ -303,6 +309,8 @@ In the chapter Type Conversions we’ve seen the rules for numeric, string and b
 <b>The numeric conversion happens when we subtract objects or apply mathematical functions. For instance, Date objects (to be covered in the chapter Date and time) can be subtracted, and the result of date1 - date2 is the time difference between two dates.</b> <br>
 As for the string conversion – it usually happens when we output an object like alert(obj) and in similar contexts. <b>obj will be converted to string as alert takes string</b> <br>
   </div>
+
+<a href="https://stackoverflow.com/questions/4750225/what-does-object-object-mean">object to primitive conversion</a>
 
 <h4>Module</h4>
 <a href="https://www.youtube.com/watch?v=cRHQNNcYf6s&ab_channel=WebDevSimplified">JavaScript ES6 Modules</a>
