@@ -8,6 +8,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
+<style>
+  p{
+    font-size: 18px;
+  }
+</style>
 <body>
     
   <div class="container-fluid" style="margin-top:40px; border-top: 1px solid gray">
@@ -343,6 +348,22 @@ As for the string conversion – it usually happens when we output an object lik
 <a href="https://www.youtube.com/watch?v=HDCi0royjkM">Call Stack & Execution Context Explained With Live Example | Advanced JavaScript</a> <br>
 <a href="https://www.youtube.com/watch?v=9DDS5aXx9y8">Hoisting in JavaScript in Hindi | Function Hoisting in JavaScript</a><br>
 <a href="http://dannyzhang.run/2017/04/03/How-JavaScript-works-Behind-the-Scenes/">How JavaScript Works Behind the Scenes</a>
+
+<h4>Javascript Memory model</h4>
+<a href="https://medium.com/@ethannam/javascripts-memory-model-7c972cd2c239">JavaScript’s Memory Model</a>
+<h2>let myNumber = 23</h2> 
+<img src="images/variable_assignment.jpeg" width="500" height="200">
+<h2>let newVar = myNumber</h2> 
+<img src="images/variable_assigned_to_variable.jpeg" width="500" height="200">
+<h2>myNumber = myNumber + 1</h2>
+<p><b>primitive data</b> types in JS are <b>immutable</b> , when “myNumber + 1” resolves to “24”, JS will allocate a new address in memory, store 24 as its value, and “myNumber” will point to the new address.</p>
+<img src="images/variable_memory_allocation.jpeg" width="500" height="200">
+  <h2>call stack and the heap</h2>
+  <p>The <b>call stack</b> is where <b>primitives are stored</b>  (in addition to function calls). A rough representation of the call stack after declaring the variables in the previous section is below.</p>
+  <p>The <b>heap</b> is where <b>non-primitives are stored</b>. The key difference is that the heap can store unordered data that can grow dynamically—perfect for arrays and objects.</p>
+<h2>let myArray = []</h2>
+<img src="images/callstack_heap.jpeg" width="500" height="200">
+
 
 <h4>Lexical scope - closure</h4>
 <!-- <img src="images/Closure.png" width="600" height="200"> <br> -->
