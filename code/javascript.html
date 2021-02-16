@@ -471,7 +471,16 @@ Consider the following code:  <br>
 
  <p>‘this’ is actually a binding that is made when a function is invoked, not when it is declared. What ‘this’ references is determined entirely by the call-site where the function is called.</p>
  <h2>method inside object</h2>
- <b>(Lingo explainer for JavaScript n00bs:  “method” is the name for a function contained within an object. “Callbacks” are anonymous functions passed as an argument into another function. Both are still ultimately just functions, though).</b> 
+ <b>(Lingo explainer for JavaScript n00bs:  “method” is the name for a function contained within an object. “Callbacks” are anonymous functions passed as an argument into another function. Both are still ultimately just functions, though).</b> <br> <br>
+
+ <h2>The language has 4 function invocation types:</h2> 
+ <a href="https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/">Gentle Explanation of "this" in JavaScript</a>
+ In JavaScript the situation is different: this is the context of a function invocation (a.k.a. exection). <br> 
+<b>function invocation:</b>  alert('Hello World!') <br>
+<b>method invocation:</b>  console.log('Hello World!') <br>
+<b>constructor invocation:</b>  new RegExp('\\d') <br>
+<b>indirect invocation:</b>  alert.call(undefined, 'Hello World!') <br>
+Each invocation type defines the context in its way, so this behaves differently than the developer expects. <br>
 
 
 
