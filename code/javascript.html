@@ -381,6 +381,87 @@ As for the string conversion – it usually happens when we output an object lik
 <p>JavaScript uses arrays to represent indexed arrays and objects to represent associative
   arrays. If you want a hash in JavaScript, you use an object.</p> 
 
+  <h2>Accessing an object's properties</h2> 
+<p>There are two ways to access the property of an object:</p>
+<p>Using the square bracket notation, for example, <b>hero['occupation']</b> </p>
+<p>Using the dot notation, for example, <b>hero.occupation</b> </p> 
+ 
+<h2>Calling an object's methods</h2>  
+<p> hero.say('a', 'b', 'c');</p>
+<p>hero['say']();</p>
+
+<h2>Deleting a property:</h2> 
+ <p>delete hero.name;</p> 
+
+ <h4>Constructor functions</h4>
+ function Hero() { <br>
+  this.occupation = 'Ninja'; <br>
+  } <br> <br>
+
+  function Hero(name) { <br>
+    this.name = name; <br>
+    this.occupation = 'Ninja'; <br>
+    this.whoAreYou = function () { <br>
+    return "I'm " + <br>
+    this.name + <br>
+    " and I'm a " + <br>
+    this.occupation; <br>
+    };<br>
+    } <br> <br>
+
+    <p> <b>If you call a function that is designed to be a constructor but you omit the new operator, it is
+      not an error. However, it doesn't give you the expected result:</b> </p> 
+ > var h = Hero('Leonardo'); <br>
+ > typeof h; <br>
+ "undefined" <br>
+What happened here? There is no new operator, so a new object was not created. The <br>
+function was called like any other function, so the variable h contains the value that the <br>
+function returns. The function does not return anything (there's no return function), so it <br>
+actually returns undefined, which gets assigned to the variable h. <br>
+In this case, what does this refer to? It refers to the global object. <br>
+  
+<h4>The constructor property</h4> 
+When an object is created, a special property is assigned to it behind the scenes–the <br>
+constructor property. It contains a reference to the constructor function used to create <br>
+this object. <br>
+Objects <br>
+Continuing from the previous example: <br>
+ > <b> h2.constructor; <br>
+  function Hero(name) { <br>
+  this.name = name; <br>
+  }</b> <br>
+As the constructor property contains a reference to a function, you might as well call this <br>
+function to produce a new object. The following code is like saying, “I don't care how object <br>
+h2 was created, but I want another one just like it”: <br>
+ > var h3 = new h2.constructor('Rafaello'); <br>
+ > h3.name; <br> 
+ "Rafaello" <br>
+If an object was created using the object literal notation, its constructor is the built-in <br>
+Object() constructor function (there is more about this later in this chapter): <br>
+ > var o = {}; <br>
+ ><b>o.constructor; <br>
+  function Object() { [native code] } <br>
+  > typeof o.constructor; <br>
+  "function"</b>  <br> <br>
+
+  <h4>The instanceof operator</h4> 
+With the instanceof operator, you can test whether an object was created with a specific <br>
+constructor function: <br>
+ > <b> function Hero() {} <br>
+  > var h = new Hero(); <br>
+  > var o = {};</b> <br>
+ > <b>h instanceof Hero;</b>  <br>
+ true <br>
+ > <b>h instanceof Object;</b>  <br>
+ true <br>
+ > o instanceof Object; <br>
+ true <br>
+<b> Note that you don't put parentheses after the function name (you don't use h instanceof <br>
+  Hero()).</b> This is because you're not invoking this function, but just referring to it by name, <br>
+as with any other variable. <br> <br>
+
+
+
   </div>
 
   <script type="text/javascript" src="testing.js"></script>
