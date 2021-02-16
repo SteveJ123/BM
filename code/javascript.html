@@ -460,6 +460,19 @@ constructor function: <br>
   Hero()).</b> This is because you're not invoking this function, but just referring to it by name, <br>
 as with any other variable. <br> <br>
 
+If you think about how objects are created inside constructor functions, you can imagine <br>
+that a <b>variable called this is defined at the top of the function</b>  and then returned at the end. <br>
+Consider the following code:  <br>
+ function C() { <br>
+ // <b>var this = {}; </b> // pseudo code, you can't do this <br>
+ this.a = 1; <br>
+ // <b>return this;</b>  <br>
+ } <br> <br>
+
+ <p>‘this’ is actually a binding that is made when a function is invoked, not when it is declared. What ‘this’ references is determined entirely by the call-site where the function is called.</p>
+ <h2>method inside object</h2>
+ <b>(Lingo explainer for JavaScript n00bs:  “method” is the name for a function contained within an object. “Callbacks” are anonymous functions passed as an argument into another function. Both are still ultimately just functions, though).</b> 
+
 
 
   </div>
