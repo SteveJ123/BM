@@ -480,7 +480,29 @@ Consider the following code:  <br>
 <b>method invocation:</b>  console.log('Hello World!') <br>
 <b>constructor invocation:</b>  new RegExp('\\d') <br>
 <b>indirect invocation:</b>  alert.call(undefined, 'Hello World!') <br>
-Each invocation type defines the context in its way, so this behaves differently than the developer expects. <br>
+Each invocation type defines the context in its way, so this behaves differently than the developer expects. <br> <br>
+
+const numbers = { <br>
+  numberA: 5,<br>
+  numberB: 10,<br>
+
+  sum: function() {<br>
+    console.log(this === numbers); // => true <br>
+
+    function calculate() { <br>
+      // this is window or undefined in strict mode <br>
+      console.log(this === numbers); // => false  <br>
+      return this.numberA + this.numberB; <br>
+    } <br>
+
+    return calculate(); <br>
+  } <br>
+}; <br>
+
+numbers.sum(); // => NaN or throws TypeError in strict mode <br>
+<b>numbers.sum() is a method invocation on an object</b>  (see 3.) thus this equals number. <br>
+<b>calculate() function is defined inside sum()</b> , so you might expect to have this as numbers object in when invoking calculate() too. <br>
+<b>calculate() is a function invocation</b>  (but not method invocation), <b>thus here this is the global object window</b>  (case 2.1.) or undefined in strict mode (case 2.2.). Even if the outer function numbers.sum() has the context as numbers object, it doesn’t have influence here. <br>
 
 
 
