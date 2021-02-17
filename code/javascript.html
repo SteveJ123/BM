@@ -513,8 +513,9 @@ const calculate = () => { <br>
 
 return calculate(); <br>
  <b>The arrow function resolves this lexically, or, in other words, uses this value of numbers.sum() method.</b>
- <b>Arrow functions are always anonymous.</b>
- <h2>Arrow function</h2>
+  <h2>Arrow function</h2>
+  <b>Arrow functions are always anonymous.</b>
+<b>Arrow functions do not have their own value of this. The value of this in an arrow function is inherited from the enclosing (lexical) scope.</b> 
  <b>No parameters: () => {...}</b>  <br>
  <b>One parameter: a => {...}</b>  <br>
  <b>More than one parameters: (a,b) => {...}</b>  <br>
