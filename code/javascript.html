@@ -473,6 +473,12 @@ Consider the following code:  <br>
  <h2>method inside object</h2>
  <b>(Lingo explainer for JavaScript n00bs:  “method” is the name for a function contained within an object. “Callbacks” are anonymous functions passed as an argument into another function. Both are still ultimately just functions, though).</b> <br> <br>
 
+ <h2>Inferring object types</h2>
+ <b>typeof returns an object when used with arrays.</b> 
+ > <b>Object.prototype.toString.call({});</b> 
+ "[object Object]"
+ > <b>Object.prototype.toString.call([]);</b> 
+ "[object Array]"
  <h2>The language has 4 function invocation types:</h2> 
  <a href="https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/">Gentle Explanation of "this" in JavaScript</a> <br> <br>
  In JavaScript the situation is different: this is the context of a function invocation (a.k.a. exection). <br> 
@@ -514,8 +520,9 @@ const calculate = () => { <br>
 return calculate(); <br>
  <b>The arrow function resolves this lexically, or, in other words, uses this value of numbers.sum() method.</b>
   <h2>Arrow function</h2>
-  <b>Arrow functions are always anonymous.</b>
-<b>Arrow functions do not have their own value of this. The value of this in an arrow function is inherited from the enclosing (lexical) scope.</b> 
+  <b>Arrow functions are always anonymous.</b> <br>
+<b>Arrow functions do not have their own value of this. The value of this in an arrow function is inherited from the enclosing (lexical) scope.</b> <br>
+<b>A lexical scope is a scope that surrounds the function scope, and the dynamic scope is the scope that called the function (usually an object)</b> <br>
  <b>No parameters: () => {...}</b>  <br>
  <b>One parameter: a => {...}</b>  <br>
  <b>More than one parameters: (a,b) => {...}</b>  <br>
