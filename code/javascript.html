@@ -474,7 +474,7 @@ Consider the following code:  <br>
  <b>(Lingo explainer for JavaScript n00bs:  “method” is the name for a function contained within an object. “Callbacks” are anonymous functions passed as an argument into another function. Both are still ultimately just functions, though).</b> <br> <br>
 
  <h2>The language has 4 function invocation types:</h2> 
- <a href="https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/">Gentle Explanation of "this" in JavaScript</a>
+ <a href="https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/">Gentle Explanation of "this" in JavaScript</a> <br> <br>
  In JavaScript the situation is different: this is the context of a function invocation (a.k.a. exection). <br> 
 <b>function invocation:</b>  alert('Hello World!') <br>
 <b>method invocation:</b>  console.log('Hello World!') <br>
@@ -504,6 +504,15 @@ numbers.sum(); // => NaN or throws TypeError in strict mode <br>
 <b>calculate() function is defined inside sum()</b> , so you might expect to have this as numbers object in when invoking calculate() too. <br>
 <b>calculate() is a function invocation</b>  (but not method invocation), <b>thus here this is the global object window</b>  (case 2.1.) or undefined in strict mode (case 2.2.). Even if the outer function numbers.sum() has the context as numbers object, it doesn’t have influence here. <br>
 
+<b>return calculate.call(this);</b> can be used. <br> <br>
+<b>another solution is arrow function</b>  <br>
+const calculate = () => { <br>
+  console.log(this === numbers); // => true <br>
+  return this.numberA + this.numberB; <br>
+} <br>
+
+return calculate(); <br>
+ <b>The arrow function resolves this lexically, or, in other words, uses this value of numbers.sum() method.</b>
 
 
   </div>
