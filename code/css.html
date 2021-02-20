@@ -613,13 +613,41 @@
                }
         </textarea>
 
-        <h4>center div</h4>
+        <h4>center div horizontally vertially align content inside div vertically horizontally</h4>
 
         <textarea name="" id="" cols="80" rows="10">
           .container {
             margin: 0 auto; //top and bottom margins to 0, and our left and right margins to auto
           }
         </textarea>
+
+        <textarea name="" id="" cols="80" rows="20">
+          .container{
+            /* to position div horizontally center margin: 0 auto */
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            text-align: center;    
+            
+            /* to position div vertically center - margin: auto  not margin: 0 auto */
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            border: solid black;
+        
+            /* to align content inside div */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+        }
+        </textarea>
+
+        <h2>classList add remove toggle</h2>
+        <b>document.getElementById("myDIV").classList.add("mystyle");</b> <br>
+        <b>document.getElementById("myDIV").classList.add("mystyle", "anotherClass", "thirdClass");</b> <br>
+        <b>document.getElementById("myDIV").classList.remove("mystyle");</b> <br>
+        <b>document.getElementById("myDIV").classList.remove("mystyle", "anotherClass", "thirdClass");</b> <br>
+        <b>document.getElementById("myDIV").classList.toggle("newClassName");</b>
 
 
       </div>
