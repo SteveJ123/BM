@@ -552,7 +552,11 @@ Both are equivalent but the second variation is concise and preferred. <br>
   <b>let promise = new Promise(function(resolve, reject) {    <br>
     // Make an asynchronous call and either resolve or reject <br>
 });</b> <br>
-<a href="https://www.freecodecamp.org/news/javascript-promise-tutorial-how-to-resolve-or-reject-promises-in-js/">JavaScript Promise Tutorial – How to Resolve or Reject Promises in JS</a>
+<a href="https://www.freecodecamp.org/news/javascript-promise-tutorial-how-to-resolve-or-reject-promises-in-js/">JavaScript Promise Tutorial – How to Resolve or Reject Promises in JS</a> <br>
+
+<b>A Promise executor should call only one resolve or one reject. Once <br>
+  one state is changed (pending => fulfilled or pending => rejected), <br>
+  that's all. Any further calls to resolve or reject will be ignored.</b> <br>
 
 
   <h4>functional programming</h4>
