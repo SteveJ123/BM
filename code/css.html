@@ -114,7 +114,11 @@
       </div>
 
       <div>
-        <img src="./images/css_rules.png" alt="">
+        <img src="./images/css_rules.png" alt=""> <br>
+        <b>css specificity</b> <br>
+        <img src="./images/css_specificity.png" alt=""> <br>
+        <b>css specificity rules</b> <br>
+        <img src="./images/css_specificity_rule.png" alt=""> <br>
       </div>
     </div>
 
@@ -640,7 +644,10 @@
              }
 
              //css
-             *, *:before, *:after {
+             *,
+             *::before,  //before pseudo element also get box-szing
+             *::after   //after pseduo element also get box-sizing
+             {
                -webkit-box-sizing: border-box;
                -moz-box-sizing: border-box;
                -moz-box-sizing: border-box;
