@@ -80,9 +80,41 @@
         <img src="./images/transform_transition.png" alt="" width="400"> <br>
         <b>after transform: translate(-50%, -50%);</b> <br>
         <img src="./images/after_transform_transition.png" alt="" width="400"> <br>
+        <div>
+          @keyframes moveInLeft{ <br>
+            0%{<br>
+                opacity:0;<br>
+                transform: translateX(-100px);<br>
+            }<br>
+            80%{<br>
+                transform: translateX(10px);<br>
+            }<br>
+            100%{<br>
+                opacity: 1;<br>
+                transform: translate(0);<br>
+            }<br>
+        }<br>
+
+        animation-name: moveInLeft; <br>
+    animation-duration: 2s;<br>
+    animation-timing-function: ease-in;<br>
+    <b>can also be written as</b>
+    animation:  moveInLeft 2s ease-in <br>
+        </div>
+
+        <div>
+          <b>box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;</b> <br>
+            h-offset -  x <br>
+            v-offset - y <br>
+        </div>
+
       </div>
       <div class="col-lg-4">
         increases part of image not stretch
+      </div>
+
+      <div>
+        <img src="./images/css_rules.png" alt="">
       </div>
     </div>
 
