@@ -122,7 +122,26 @@
       
           </div>
         </div>
-             
+
+        <a href="https://www.youtube.com/watch?v=RLtyhwFtXQA&ab_channel=freeCodeCamp.org">Learn Node.js - Full Tutorial for Beginners</a>
+       
+        <h1>node filename.js</h1> 
+        <h2>module</h2>
+        <div>
+          const sum = (num1, num2) => num1 + num2; <br>
+          <b>module.exports = sum</b> <br>
+          <b>const tutorial = require('./filename')</b> <br>
+
+          <h1>multiple exports</h1>
+          <b>module.exports.sum = sum</b> <br>
+          <b>module.exports.multiply = multiply</b> <br>
+          <b>it can also be written as</b> <br>
+          <b>module.exports = {
+              sum: sum,
+              multiply: multiply  
+          }</b> <br>
+        </div>
+
         
         
         app.set('port', 8080) is similar to setting a "variable" named port to 8080, which you can access later on using app.get('port'). Accessing your website from the browser will really not work because you still didn't tell your app to listen and accept connections.<br>
