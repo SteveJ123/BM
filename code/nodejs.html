@@ -197,7 +197,39 @@
 
     </div>
 
+    <div>
+      <h1>readline</h1>
+      <b>const readline = require("readline");</b> <br>
+    <b>const r1 = readline.createInterface({input: process.stdin, output:process.stdout});</b> <br> <br>  
 
+
+     <b>const num1 = Math.floor((Math.random() * 10) + 1);</b>  <br>
+      <b>const num2 = Math.floor((Math.random() * 10) + 1);</b>  <br>      
+      <b>const answer = num1 + num2;</b> <br>             
+
+      <b>r1.question(`what is ${num1} + ${num2}  `, (userInput)=>{</b> <br>       
+         <b>if(userInput.trim() == answer){</b> <br>        
+        <b>
+          r1.close();<br>
+                  } else{<br>
+                      r1.setPrompt("your answer is incorrect try again \n");<br>
+                      r1.prompt();<br>
+                      r1.on("line", (userInput)=>{<br>
+                          if(userInput.trim() == answer){<br>
+                              r1.close();<br>
+                          }else{<br>
+                              r1.setPrompt("your answer is incorrect try again \n");<br>
+                              r1.prompt();<br>
+                          }<br>
+                      })<br>
+                  }<br>
+              });<br> <br>
+
+              r1.on("close", ()=>{<br>
+                  console.log("correct");<br>
+              })<br>
+        </b> <br>
+    </div>
 
     <br>
     <br>
