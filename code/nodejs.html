@@ -1,162 +1,227 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="testing.css" media="screen" >
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="testing.css" media="screen">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Document</title>
+  <title>Document</title>
 </head>
+
+<style>
+  a {
+    font-size: 28px;
+  }
+
+  .highlight-text{
+    font-weight: bold;
+  }
+</style>
+
 <body>
+
+  <div class="container-fluid" style="margin-top:40px; border-top: 1px solid gray">
+    <div class="row row-border">
+      <div class="col-lg-2 column-border" style="padding-left: 36px;">
+        method
+      </div>
+      <div class="col-lg-6 column-border" style="padding-left: 72px;">
+
+        <p>NODEJS</p>
+      </div>
+      <div class="col-lg-4" style="padding-left:68px; ">
+        Description
+      </div>
+    </div>
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+
+      </div>
+      <div class="col-lg-6 column-border">
+
+        <img src="./nodejs/introduction-to-nodejs-3-728.jpg" class="img-responsive" />
+        <img src="./nodejs/introduction-to-nodejs-5-728.jpg" class="img-responsive" />
+        <img src="./nodejs/introduction-to-nodejs-8-728.jpg" class="img-responsive" />
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+
+      </div>
+      <div class="col-lg-6 column-border">
+        nodejs use to create<br>
+        HTTP server<br>
+        TCP server<br>
+        DNS server<br>
+        static file server<br>
+        web application chat<br>
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+
+      </div>
+      <div class="col-lg-6 column-border">
+        <p><a title="Node.js Tutorial for Beginners 1 - Node.js Introduction"
+            href="https://www.youtube.com/watch?v=8fssCpuqkLo&amp;list=PLS1QulWo1RIb8IwHYfah5pxGU5jgNiEbK&amp;index=11"
+            target="_blank" rel="noopener">Node.js Tutorial for Beginners 1 - Node.js Introduction</a></p>
+        <p><a title="Pure CSS Moving Background Image - CSS Animation with keyframes - Repeating Background Animation"
+            href="https://www.youtube.com/watch?v=e3_qXLoIFds" target="_blank" rel="noopener">Pure CSS Moving Background
+            Image - CSS Animation with keyframes - Repeating Background Animation</a></p>
+        <p><a title="Nodemon Tutorial for Beginners | Installing Nodemon in NodeJS | Running a simple Program"
+            href="https://www.youtube.com/watch?v=Ej6V7714ygs" target="_blank" rel="noopener">Nodemon Tutorial for
+            Beginners | Installing Nodemon in NodeJS | Running a simple Program</a></p>
+        <p><a href="https://www.youtube.com/watch?v=zQRrXTSkvfw" target="_blank" rel="noopener">Node.js Tutorial For
+            Beginners | Node JS Crash Course</a></p>
+        <p><a href="https://www.youtube.com/watch?v=RLtyhwFtXQA" target="_blank" rel="noopener">Learn Node.js - Full
+            Tutorial for Beginners</a></p>
+        <p><a href="https://www.geeksforgeeks.org/routing-in-node-js" target="_blank" rel="noopener">routing in node
+            js</a></p>
+        <p><a href="https://www.youtube.com/watch?v=erfN7fH7A6s" target="_blank" rel="noopener">Get started with Express
+            Handlebars - #1</a></p>
+        <p><a href="https://expressjs.com/en/starter/hello-world.html" target="_blank" rel="noopener">express
+            starter</a></p>
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        exports
+      </div>
+      <div class="col-lg-6 column-border">
+        exports is object empty<br>
+        exports.add = function(){<br>
+
+        }<br>
+        var add = require('');<br>
+        add();<br><br>
+        --------------------<br>
+        module.exports={<br>
+        add = function(){<br>
+
+        }<br>
+        sub = function(){<br>
+
+        }<br>
+        }<br>
+        var add = require('')<br>
+        add.add();<br>
+        add.sub()<br>
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <div class="row row-border">
+      <div class="col-lg-2 column-border">
+        file system fs
+      </div>
+      <div class="col-lg-6 column-border">
+        var fs = require('fs');
+        fs.readFile(path[, options], callback)<br>
+        var dataFile = fs.readFile('./test1.txt', 'UTF8', (err, data) => {<br>
+        if (err) throw err;<br>
+        console.log(data);<br>
+        fs.writeFile('./test2.txt', data, (err)=>{<br>
+        console.log('The file has been saved');<br>
+        })<br>
+        });
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=RLtyhwFtXQA&ab_channel=freeCodeCamp.org">Learn Node.js - Full Tutorial for
+      Beginners</a> <br> <br>
+
+      execute filename in node  <b>node filename.js</b>  
+    <h2>module</h2>
+    <div>
+      const sum = (num1, num2) => num1 + num2; <br>
+      <b>module.exports = sum</b> <br>
+      <b>import into your file</b> <br>
+      <b>const tutorial = require('./filename')</b> <br>
+
+      <h1>multiple exports</h1>
+      <b>module.exports.sum = sum</b> <br>
+      <b>module.exports.multiply = multiply</b> <br>
+      <b>it can also be written as</b> <br>
+      <b>module.exports = { <br>
+        sum: sum, <br>
+        multiply: multiply <br>
+        }</b> <br>
+
+      <b>import event emitter</b> <br>
+      <b>const EventEmitter = require('events')</b> <br>
+      <b>const eventEmitter = new EventEmitter()</b> <br>
+      const eventEmitter = new EventEmitter(); <br>
+      eventEmitter.on("tutorial", ()=>{ <br>
+      console.log("tutorial event occured"); <br>
+      }) <br> 
+
+      eventEmitter.emit("tutorial");<br> <br>
+
+      <p class="highlight-text">class Person extends EventEmitter{ <br>
+        constructor(name){ <br>
+            super();<br>
+            this._name = name;<br>
+        }<br>
     
-    <div class="container-fluid" style="margin-top:40px; border-top: 1px solid gray">
-        <div class="row row-border">
-          <div class="col-lg-2 column-border" style="padding-left: 36px;">
-            method
-          </div>
-          <div class="col-lg-6 column-border" style="padding-left: 72px;">
-      
-            <p>NODEJS</p>
-          </div>
-          <div class="col-lg-4" style="padding-left:68px; ">
-            Description
-          </div>
-        </div>
-        <div class="row row-border">
-          <div class="col-lg-2 column-border">
-            
-          </div>
-          <div class="col-lg-6 column-border">
-      
-            <img src="./nodejs/introduction-to-nodejs-3-728.jpg" class="img-responsive" />
-            <img src="./nodejs/introduction-to-nodejs-5-728.jpg" class="img-responsive"  />
-            <img src="./nodejs/introduction-to-nodejs-8-728.jpg" class="img-responsive" />
-          </div>
-          <div class="col-lg-4">
-      
-          </div>
-        </div>
+        get name(){<br>
+            return this._name;<br>
+        }<br>
+    }<br>
+    
+    let pedro = new Person("pedro");<br>
+    
+    pedro.on("name", ()=>{<br>
+        console.log("my name is ", pedro.name );<br>
+    })<br>
+    
+    pedro.emit("name");</p> 
 
-        <div class="row row-border">
-          <div class="col-lg-2 column-border">
-            
-          </div>
-          <div class="col-lg-6 column-border">
-            nodejs use to create<br>
-            HTTP server<br>
-            TCP server<br>
-            DNS server<br>
-            static file server<br>
-            web application chat<br>            
-          </div>
-          <div class="col-lg-4">
-      
-          </div>
-        </div>
+    </div>
 
-        <div class="row row-border">
-          <div class="col-lg-2 column-border">
-            
-          </div>
-          <div class="col-lg-6 column-border">
-            <p><a title="Node.js Tutorial for Beginners 1 - Node.js Introduction" href="https://www.youtube.com/watch?v=8fssCpuqkLo&amp;list=PLS1QulWo1RIb8IwHYfah5pxGU5jgNiEbK&amp;index=11" target="_blank" rel="noopener">Node.js Tutorial for Beginners 1 - Node.js Introduction</a></p>
-<p><a title="Pure CSS Moving Background Image - CSS Animation with keyframes - Repeating Background Animation" href="https://www.youtube.com/watch?v=e3_qXLoIFds" target="_blank" rel="noopener">Pure CSS Moving Background Image - CSS Animation with keyframes - Repeating Background Animation</a></p>
-<p><a title="Nodemon Tutorial for Beginners | Installing Nodemon in NodeJS | Running a simple Program" href="https://www.youtube.com/watch?v=Ej6V7714ygs" target="_blank" rel="noopener">Nodemon Tutorial for Beginners | Installing Nodemon in NodeJS | Running a simple Program</a></p>
-<p><a href="https://www.youtube.com/watch?v=zQRrXTSkvfw" target="_blank" rel="noopener">Node.js Tutorial For Beginners | Node JS Crash Course</a></p>
-<p><a href="https://www.youtube.com/watch?v=RLtyhwFtXQA" target="_blank" rel="noopener">Learn Node.js - Full Tutorial for Beginners</a></p>
-<p><a href="https://www.geeksforgeeks.org/routing-in-node-js" target="_blank" rel="noopener">routing in node js</a></p>
-<p><a href="https://www.youtube.com/watch?v=erfN7fH7A6s" target="_blank" rel="noopener">Get started with Express Handlebars - #1</a></p>
-<p><a href="https://expressjs.com/en/starter/hello-world.html" target="_blank" rel="noopener">express starter</a></p>            
-          </div>
-          <div class="col-lg-4">
-      
-          </div>
-        </div>
-        
-        <div class="row row-border">
-          <div class="col-lg-2 column-border">
-            exports
-          </div>
-          <div class="col-lg-6 column-border">
-            exports is object empty<br>
-            exports.add = function(){<br>
 
-            }<br>
-            var add = require('');<br>
-            add();<br><br>
-            --------------------<br>
-            module.exports={<br>
-              add = function(){<br>
 
-              }<br>
-              sub = function(){<br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-              }<br>
-            }<br>
-            var add = require('')<br>
-            add.add();<br>
-            add.sub()<br>
-          </div>
-          <div class="col-lg-4">
-      
-          </div>
-        </div>
+    app.set('port', 8080) is similar to setting a "variable" named port to 8080, which you can access later on using
+    app.get('port'). Accessing your website from the browser will really not work because you still didn't tell your app
+    to listen and accept connections.<br>
 
-        <div class="row row-border">
-          <div class="col-lg-2 column-border">
-            file system fs
-          </div>
-          <div class="col-lg-6 column-border">
-            var fs = require('fs');
-            fs.readFile(path[, options], callback)<br>
-            var dataFile = fs.readFile('./test1.txt', 'UTF8', (err, data) => {<br>
-              if (err) throw err;<br>
-              console.log(data);<br>
-              fs.writeFile('./test2.txt', data, (err)=>{<br>
-              console.log('The file has been saved');<br>
-              })<br>
-            });
-          </div>
-          <div class="col-lg-4">
-      
-          </div>
-        </div>
+    app.listen(8080) on the other hand listens for connections at port 8080. This is the part where you're telling your
+    app to listen and accept connections. Accessing your app from the browser using localhost:8080 will work if you have
+    this in your code.<br>
 
-        <a href="https://www.youtube.com/watch?v=RLtyhwFtXQA&ab_channel=freeCodeCamp.org">Learn Node.js - Full Tutorial for Beginners</a>
-       
-        <h1>node filename.js</h1> 
-        <h2>module</h2>
-        <div>
-          const sum = (num1, num2) => num1 + num2; <br>
-          <b>module.exports = sum</b> <br>
-          <b>const tutorial = require('./filename')</b> <br>
+    The two commands can actually be used together:<br>
 
-          <h1>multiple exports</h1>
-          <b>module.exports.sum = sum</b> <br>
-          <b>module.exports.multiply = multiply</b> <br>
-          <b>it can also be written as</b> <br>
-          <b>module.exports = {
-              sum: sum,
-              multiply: multiply  
-          }</b> <br>
-        </div>
+    app.set('port', 8080);<br>
+    app.listen(app.get('port'));<br>
 
-        
-        
-        app.set('port', 8080) is similar to setting a "variable" named port to 8080, which you can access later on using app.get('port'). Accessing your website from the browser will really not work because you still didn't tell your app to listen and accept connections.<br>
-        
-        app.listen(8080) on the other hand listens for connections at port 8080. This is the part where you're telling your app to listen and accept connections. Accessing your app from the browser using localhost:8080 will work if you have this in your code.<br>
-        
-        The two commands can actually be used together:<br>
-        
-        app.set('port', 8080);<br>
-        app.listen(app.get('port'));<br>     
-       
-        
-        
-        
 
-      <script type="text/javascript" src="testing.js"></script>
+
+
+
+    <script type="text/javascript" src="testing.js"></script>
 </body>
+
 </html>
