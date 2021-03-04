@@ -231,6 +231,62 @@
         </b> <br>
     </div>
 
+    <div>
+      <h1>file system</h1>
+      <b>const fs = require("fs");</b> <br>
+
+      <b>write file</b> <br> <br>
+      <b>fs.writeFile("example.txt", "This is example data", (err)=>{ <br>
+        if(err){<br>
+            console.log(err);<br>
+        }else{<br>
+            console.log("successfully data file created");<br>
+        }<br>
+    })</b> <br><br>
+
+    <b>read file</b> <br> <br>
+
+    <b>fs.readFile("example.txt", "utf8", (err, file)=>{ <br>
+      if(err){<br>
+          console.log(err);<br>
+      }else{<br>
+          console.log(file);<br>
+      }<br>
+  })</b> <br> <br>
+
+  <b>append file</b> <br> <br>
+  <b>fs.appendFile("example.txt", "data is appended", (err)=>{ <br>
+    if(err){<br>
+        console.log(err);<br>
+    }else{<br>
+        console.log("successfully appended");<br>
+    }<br>
+})<br></b> <br> <br>
+
+
+<b>rename file</b> <br> <br>
+
+<b>fs.rename("example.txt", "example2.txt", (err)=>{ <br>
+  if(err){<br>
+      console.log(err);<br>
+  }else{<br>
+      console.log("successfuly rename file");<br>
+  }<br>
+})</b> <br> <br>
+
+<b>remove file</b> <br> <br>
+
+<b>fs.unlink("example2.txt", (err)=>{ <br>
+  if(err){<br>
+      console.log(err);<br>
+  }else{<br>
+      console.log("successfully file removed");<br>
+  }<br>
+})</b> <br> <br>
+
+
+    </div>
+
     <br>
     <br>
     <br>
