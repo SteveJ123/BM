@@ -233,56 +233,124 @@
 
     <div>
       <h1>file system</h1>
-      <b>const fs = require("fs");</b> <br>
 
-      <b>write file</b> <br> <br>
-      <b>fs.writeFile("example.txt", "This is example data", (err)=>{ <br>
+      <div style="display: flex">
+        <div >
+          <b>const fs = require("fs");</b> <br>
+  
+        <b>write file</b> <br> <br>
+        <b>fs.writeFile("example.txt", "This is example data", (err)=>{ <br>
+          if(err){<br>
+              console.log(err);<br>
+          }else{<br>
+              console.log("successfully data file created");<br>
+          }<br>
+      })</b> <br><br>
+  
+      <b>read file</b> <br> <br>
+  
+      <b>fs.readFile("example.txt", "utf8", (err, file)=>{ <br>
         if(err){<br>
             console.log(err);<br>
         }else{<br>
-            console.log("successfully data file created");<br>
+            console.log(file);<br>
         }<br>
-    })</b> <br><br>
-
-    <b>read file</b> <br> <br>
-
-    <b>fs.readFile("example.txt", "utf8", (err, file)=>{ <br>
+    })</b> <br> <br>
+  
+    <b>append file</b> <br> <br>
+    <b>fs.appendFile("example.txt", "data is appended", (err)=>{ <br>
       if(err){<br>
           console.log(err);<br>
       }else{<br>
-          console.log(file);<br>
+          console.log("successfully appended");<br>
       }<br>
-  })</b> <br> <br>
-
-  <b>append file</b> <br> <br>
-  <b>fs.appendFile("example.txt", "data is appended", (err)=>{ <br>
+  })<br></b> <br> <br>
+  
+  
+  <b>rename file</b> <br> <br>
+  
+  <b>fs.rename("example.txt", "example2.txt", (err)=>{ <br>
     if(err){<br>
         console.log(err);<br>
     }else{<br>
-        console.log("successfully appended");<br>
+        console.log("successfuly rename file");<br>
     }<br>
-})<br></b> <br> <br>
+  })</b> <br> <br>
+  
+  <b>remove file</b> <br> <br>
+  
+  <b>fs.unlink("example2.txt", (err)=>{ <br>
+    if(err){<br>
+        console.log(err);<br>
+    }else{<br>
+        console.log("successfully file removed");<br>
+    }<br>
+  })</b> <br> <br>
+        </div>
+  
+        <div >
+          <b>fs.mkdir("tutorial", (err)=>{ <br>
+            if(err){<br>
+                console.log(err);<br>
+            }else{<br>
+                console.log("folder successfully created");<br>
+                fs.writeFile("./tutorial/example.txt", "example written", (err)=>{ <br>
+                  if(err){<br>
+                      console.log(err);<br>
+                  }else{<br>
+                      console.log("file successfully written");<br>
+                  }<br>
+              })<br>
+            }<br>
+        })<br><br>
 
+        fs.rmdir("tutorial", (err)=>{ <br>
+          if(err){<br>
+              console.log(err);<br>
+          }else{<br>
+              console.log("folder was successfully removed");<br>
+          }<br>
+      })<br> <br>
 
-<b>rename file</b> <br> <br>
+      <h4>when you try to remove folder containing file it  gives error</h4>  <br> <br>
+      
+      fs.unlink("./tutorial/example.txt", (err)=>{ <br>
+        if(err){<br>
+            console.log(err);<br>
+        }else{<br>
+            console.log("file successfully removed");<br>
+        }<br>
+    })<br><br>
+    <br>
+    fs.rmdir("tutorial", (err)=>{
+        if(err){<br>
+            console.log(err);<br>
+        }else{<br>
+            console.log("folder was successfully removed");<br>
+        }<br>
+    })<br><br>
 
-<b>fs.rename("example.txt", "example2.txt", (err)=>{ <br>
-  if(err){<br>
-      console.log(err);<br>
-  }else{<br>
-      console.log("successfuly rename file");<br>
-  }<br>
-})</b> <br> <br>
+    <h4>remove multiple files in folder</h4> <br> <br>
+    fs.readdir("example", (err, files)=>{ <br>
+      if(err){<br>
+          console.log(err);<br>
+      }else{<br>
+          for(let file of files){<br>
+              fs.unlink("./example/" + file, (err)=>{<br>
+                  if(err){<br>
+                      console.log(err);<br>
+                  }else{<br>
+                      console.log("successully files removed");<br>
+                  }<br>
+              })<br>
+          }<br>
+      }<br>
+  })<br> <br>
+      </b>
+        </div>    
+      </div>
 
-<b>remove file</b> <br> <br>
-
-<b>fs.unlink("example2.txt", (err)=>{ <br>
-  if(err){<br>
-      console.log(err);<br>
-  }else{<br>
-      console.log("successfully file removed");<br>
-  }<br>
-})</b> <br> <br>
+      
 
 
     </div>
