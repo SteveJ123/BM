@@ -1,0 +1,2 @@
+operating system
+Introduction to Operating System | Bootstrap program | Boot loader | kernel | OS at deeper level - https://www.youtube.com/watch?v=2s7zPeU-oMY&ab_channel=Dr.SatyanarayanaNimmala

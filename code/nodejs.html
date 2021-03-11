@@ -352,6 +352,40 @@
 
       <div>
         <h4>creating Http Server using Http Module</h4>
+        <div>
+          <b>
+            const server = http.createServer((req, res)=>{ <br>
+              if(req.url === '/'){<br>
+                  res.write("Hello world from nodejs"); <br>   
+              res.end(); <br>
+              }else{ <br>
+                  res.write("request from another domain"); <br>
+                  res.end(); <br>
+              }<br>
+              
+          })<br>
+          </b>
+        </div>
+        <div>
+          <b>
+            const server = http.createServer((req, res)=>{ <br>
+              if(req.url === '/'){ <br>
+                  res.write("Hello world from nodejs"); <br>
+                  res.end(); <br>
+              }else if(req.url === '/test'){ <br>
+                  const readStream = fs.createReadStream('./index.html'); <br>
+                  res.writeHead(200, {'Content-type': 'text/html'}); <br> <br>
+                   ./filejson.json <br>
+                  'Content-type': 'application/json'<br> <br>
+
+                  ./image.jpg <br>
+                  'Content-type': 'image/jpg' <br> <br>
+
+                  readStream.pipe(res); <br>
+              } <br>
+          }) <br>
+          </b>
+        </div>
       </div>
 
 
