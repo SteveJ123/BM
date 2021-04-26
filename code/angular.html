@@ -274,6 +274,74 @@ password:['', Validators.required]
    }
 
     </textarea>    
+
+    <textarea name="" id="" cols="30" rows="10">
+
+      public addEmployeeForm: FormGroup;
+private formBuilder: FormBuilder
+
+this.addEmployeeForm = this.formBuilder.group({
+			
+		});
+
+submit method
+let formData = new FormData();
+
+let obj = {
+			// profilePicture: this.addEmployeeForm.value.profilePicture, ---
+			firstname: this.addEmployeeForm.value.FirstName,
+			lastname: this.addEmployeeForm.value.LastName,
+			email: this.addEmployeeForm.value.Email,
+			password: this.addEmployeeForm.value.Password,
+			confirmpassword: this.addEmployeeForm.value.ConfirmPassword,
+			joindate: DateJoin,
+			dob: DOB,
+			phone: this.addEmployeeForm.value.PhoneNumber,
+			address: this.addEmployeeForm.value.Address,
+			city: this.addEmployeeForm.value.City,
+			state: this.addEmployeeForm.value.State,
+			pincode: this.addEmployeeForm.value.Pincode,
+			gender: this.addEmployeeForm.value.Gender,
+			position: this.addEmployeeForm.value.Position,
+			employmentType: this.addEmployeeForm.value.EmploymentType,
+			companyName: this.addEmployeeForm.value.CompanyName,
+			reportTo: this.addEmployeeForm.value.ReportTo,
+			standardWorkingHours: this.addEmployeeForm.value.StandardWorkingHours,
+			shiftStartingTime: this.addEmployeeForm.value.ShiftStartingTime,
+			shiftEndingTime: this.addEmployeeForm.value.ShiftEndingTime,
+			admin: this.addEmployeeForm.value.Admin,
+			hr: this.addEmployeeForm.value.Hr,
+			seo: this.addEmployeeForm.value.Seo,
+			employee: "yes",
+		};
+		
+
+formData.append('Emp_first_name', obj.firstname)
+		formData.append('Emp_last_name', obj.lastname)
+		formData.append('phone_no', obj.phone)
+		formData.append('Email', obj.email)
+		formData.append('address', obj.address)
+		formData.append('city', obj.city)
+		formData.append('state', obj.state)
+		formData.append('pincode', obj.pincode)
+		formData.append('gender', obj.gender)
+		formData.append('date_of_birth', obj.dob)
+		formData.append('join_date', obj.joindate)
+		formData.append('position', obj.position)
+		formData.append('report_to', obj.reportTo)
+		formData.append('employment_type', obj.employmentType)
+		formData.append('comp_name', obj.companyName)
+
+		if (this.profilePicture) {
+			console.log("picture name", this.profilePicture);
+			console.log("path", "http://161.35.229.33:8002/media/accounts/profile_photos/" + obj.email + "/" + this.profilePicture.name);
+
+			formData.append('photo', this.profilePicture);
+
+			console.log("photo type", typeof this.profilePicture.name);
+
+		}
+    </textarea>
     
 
     <a href="https://www.youtube.com/watch?v=Ux9zUbQ9fTg&ab_channel=TECHWITHAli">how to save image with angular</a> <br>
