@@ -252,7 +252,7 @@ Reactive Form with Validation in Angular 8<br>
         <p class="text-center"><a href="#">Create an Account</a></p>
     </div>
     </textarea>
-
+    <h4>form data add data</h4>
     <textarea name="" id="" cols="80" rows="30">
       import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'; 
 
@@ -341,6 +341,26 @@ formData.append('Emp_first_name', obj.firstname)
 			console.log("photo type", typeof this.profilePicture.name);
 
 		}
+    </textarea>
+
+    <h4>edit modal getting id of employ</h4>
+    <textarea name="" id="" cols="30" rows="10">
+      edit(value) {
+        this.editId = value;
+        console.log("edit id", this.editId);
+        const index = this.allPolicies.findIndex((item) => {
+          return item.id === value;
+        });
+        let toSetValues = this.allPolicies[index];
+        console.log("set values", toSetValues);
+        this.editPolicies.setValue({
+          editPolicyName: toSetValues.name,
+          editDepartment: toSetValues.applicable_for,
+          // editDescription: toSetValues.description,
+        });
+        this.editpolicyname = toSetValues.policy.split("/")[3];  //get file name
+        // console.log("set edit policy", this.setEditPolicy);
+      }
     </textarea>
     
 
