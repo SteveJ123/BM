@@ -228,7 +228,7 @@ Reactive Form with Validation in Angular 8<br>
     <a href="https://www.pluralsight.com/guides/building-custom-validators-in-angular">Building Custom Validators in Angular</a> <br>
     <a href="https://dritalconnect.com/it/tips-and-tricks/Web%252525252525252525252525252520Development/angular-8-reactive-form-with-validation-x1nhei">Angular 8 Registration Form with validation using Reactive Form</a> <br>    
     <a href="https://www.youtube.com/watch?v=JEGz8hOeGBY&ab_channel=TechieOcean">ANGULAR 10 :TYPES OF FORMS</a>
-    <a href="https://www.youtube.com/watch?v=nofXAkAz05Q&ab_channel=TechieOcean">ANGULAR 10 REACTIVE FORM : USING FORMGROUP AND FORM CONTROL</a>
+    <a href="https://www.youtube.com/watch?v=nofXAkAz05Q&ab_channel=TechieOcean">ANGULAR 10 REACTIVE FORM : USING FORMGROUP AND FORM CONTROL</a> <br>
 
     <textarea name="" id="" cols="80" rows="30">
       <div class="login-form">
@@ -275,7 +275,7 @@ password:['', Validators.required]
 
     </textarea>    
 
-    <textarea name="" id="" cols="30" rows="10">
+    <textarea name="" id="" cols="80" rows="100">
 
       public addEmployeeForm: FormGroup;
 private formBuilder: FormBuilder
@@ -580,7 +580,25 @@ console.log(msg);
 
   <a href="https://www.youtube.com/watch?v=v0IgI8vYD_o&ab_channel=EasyTutorials">How To Make A Website Using HTML CSS Bootstrap | Complete Website Design Tutorial</a>
 
+<h4>file download</h4>
+<a href="https://www.techiediaries.com/angular/html-download-attribute-typescript-angular-9-example/">HTML5 Download Attribute with TypeScript and Angular 9</a>
 
+<h4>cookies</h4>
+<textarea name="" id="" cols="30" rows="10">
+  import { CookieService } from "ngx-cookie-service";
+
+  developer_type: string;
+  developer_uuid: string;
+
+  constructor(
+    private cookieService: CookieService 
+  )
+
+  ngOnInit() {
+    this.developer_type = this.cookieService.get('type');
+    this.developer_uuid = this.cookieService.get('emp_id');
+  }
+</textarea>
   
   <script type="text/javascript" src="testing.js"></script>
 </body>
