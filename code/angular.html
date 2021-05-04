@@ -629,6 +629,32 @@ console.log(msg);
   this.editEmployeeForm.controls['NewPassword'].value
   this.editEmployeeForm.get("NewPassword").value  
 </textarea>
+
+<h4>bsdatepicker</h4>
+<a href="https://stackoverflow.com/questions/51200121/ngx-bootstrap-datepicker-option-to-pick-only-month-and-a-year">date picker with month year</a> <br>
+<textarea name="" id="" cols="30" rows="10">
+  <input type="text" placeholder="Enter month and year" class="form-control" bsDatepicker
+                                    
+  [bsConfig]="{dateInputFormat: 'YYYY-MM'}" 
+  (onShown)="onOpenCalendar($event)"
+  >
+
+  onOpenCalendar(container) {
+		container.monthSelectHandler = (event: any): void => {
+		  container._store.dispatch(container._actions.select(event.date));
+      //date conversion
+		  var temp = new Date(event.date);
+		let obj = {
+			month: temp.getMonth() + 1,
+			year: temp.getFullYear()
+		}
+		console.log("date conversion", obj);
+		  this.adjustmentDate = obj.year+ "-"+obj.month;    
+		}; 
+		
+		container.setViewMode('month');
+	   }
+</textarea>
   
   <script type="text/javascript" src="testing.js"></script>
 </body>
