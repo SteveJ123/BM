@@ -655,6 +655,30 @@ console.log(msg);
 		container.setViewMode('month');
 	   }
 </textarea>
+
+<h4>scroll to top when routing angular</h4>
+
+<textarea name="" id="" cols="30" rows="10">
+  import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+
+@Component({
+    selector: 'my-app',
+    template: '<ng-content></ng-content>',
+})
+export class MyAppComponent implements OnInit {
+    constructor(private router: Router) { }
+
+    ngOnInit() {
+        this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            window.scrollTo(0, 0)
+        });
+    }
+}
+</textarea>
   
   <script type="text/javascript" src="testing.js"></script>
 </body>
