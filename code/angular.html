@@ -247,7 +247,21 @@ Reactive Form with Validation in Angular 8<br>
             <div class="clearfix">
                 <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
                 <a href="#" class="pull-right">Forgot Password?</a>
-            </div>        
+            </div> 
+
+             <div class="foot-subscribe form-group position-relative">
+                <label>Write your email <span class="text-danger">*</span></label>
+                <i data-feather="mail" class="fea icon-sm icons"></i>
+                <i-feather name="mail" class="fea icon-sm icons"></i-feather>
+                <input type="email" name="email" id="emailsubscribe" class="form-control pl-5 rounded"
+                  placeholder="Your email : "
+                  [class.invalid]="newsLetterForm.get('emailId').invalid && newsLetterForm.get('emailId').touched"
+                  formControlName="emailId"  required />
+                  <div *ngIf="newsLetterForm.get('emailId').invalid && newsLetterForm.get('emailId').touched">
+                    <small *ngIf="newsLetterForm.get('emailId').invalid && newsLetterForm.get('emailId').touched"
+                      class="text-danger"> *Email id required</small>
+                  </div>
+              </div>       
         </form>
         <p class="text-center"><a href="#">Create an Account</a></p>
     </div>
@@ -263,7 +277,8 @@ Reactive Form with Validation in Angular 8<br>
   ngOnInit(): void {
  this.myForm =  this.formBuilder.group({          
 username:['', Validators.required], //note, can have up to 3 Constructor Params: default value, validators, AsyncValidators
-password:['', Validators.required]
+password:['', Validators.required],
+emailId: ["",[Validators.required, Validators.email]]
 
  })  
   }
