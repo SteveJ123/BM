@@ -506,6 +506,853 @@ formData.append('Emp_first_name', obj.firstname)
           }
         )
       }
+
+
+      <section class="section mt-60">
+        <div class="container mt-lg-3">
+          <div class="row">
+            <div class="col-lg-12 col-15">
+              <div class="card border-0 rounded shadow">
+                <div class="card-body">
+                  <form [formGroup]="userForm" #f="ngForm" (ngSubmit)="onSubmit(f)">
+                    <div class="row mt-4">
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>First Name</label>
+                          <i-feather name="user" class="fea icon-sm icons"></i-feather>
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input required matInput formControlName="firstName" id="first" type="text"
+                              style="margin-left: 10%" placeholder="First Name :" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>Last Name</label>
+                          <i-feather name="user-check" class="fea icon-sm icons"></i-feather>
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input required matInput formControlName="lastName" id="last" type="text" style="margin-left: 10%"
+                              placeholder="Last Name :" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>Your Email</label>
+                          <i-feather name="mail" class="fea icon-sm icons"></i-feather>
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input required matInput formControlName="user" id="email" type="email" style="margin-left: 10%"
+                              placeholder="Your email :" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>Role </label>
+                          <i-feather name="user-check" class="fea icon-sm icons"></i-feather>
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input required matInput formControlName="designation" id="last" type="text"
+                              style="margin-left: 10%" placeholder="Role : (ex: Frontend Developer )" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-6">
+                        <label style="font-size: 14px; font-weight: 700">DOB</label>
+                        <div class="form-group position-relative">
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline" formcon>
+                            <input required matInput [matDatepicker]="picker" formControlName="dob"
+                              placeholder="Date of Birth" />
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <!--end col-->
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>Address</label>
+                          <i-feather name="home" class="fea icon-sm icons"></i-feather>
+                          <!-- <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input required matInput formControlName="address" id="address" type="text"
+                              style="margin-left: 10%;" placeholder="Address :" />
+                          </mat-form-field> -->
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input required matInput formControlName="address" id="address" type="text"
+                              style="margin-left: 11%;width: 90%" placeholder="Address :" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>State </label>
+      
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <mat-select (selectionChange)="stateChange($event.value)" formControlName="state">
+                              <div *ngFor="let item of StateData">
+                                <mat-option [value]="item">
+                                  {{ item }}
+                                </mat-option>
+                              </div>
+                            </mat-select>
+                            <!-- <input
+                    required
+                    matInput
+                    formControlName="city"
+                    id="city"
+                    type="text"
+                    
+                    placeholder="City :"
+                  /> -->
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>City </label>
+      
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <mat-select formControlName="city">
+                              <div *ngFor="let item of CityData">
+                                <mat-option [value]="item">
+                                  {{ item }}
+                                </mat-option>
+                              </div>
+                            </mat-select>
+                            <!-- <input
+                              required
+                              matInput
+                              formControlName="city"
+                              id="city"
+                              type="text"
+                              
+                              placeholder="City :"
+                            /> -->
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>Postal Code</label>
+                          <i-feather name="user-check" class="fea icon-sm icons"></i-feather>
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input required matInput formControlName="postalCode" id="postalCode" type="number"
+                              style="margin-left: 10%" placeholder="Postal Code :" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>Country</label>
+                          <i-feather name="globe" class="fea icon-sm icons"></i-feather>
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input required matInput formControlName="country" id="country" type="text"
+                              style="margin-left: 10%" placeholder="Country :" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>Mobile</label>
+                          <i-feather name="phone" class="fea icon-sm icons"></i-feather>
+                          <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                            <input matInput required formControlName="mobile" id="mobile" type="text" style="margin-left: 10%"
+                              placeholder="Mobile :" />
+                          </mat-form-field>
+                        </div>
+                      </div>
+      
+                      <!-- Qualification  -->
+      
+                      <div formArrayName="qualification" class="col-md-12">
+                        <div class="form-group position-relative">
+                          <label for="Skills">Qualification</label>
+                          &nbsp;
+                        </div>
+                        <div *ngFor="
+                  let project of qualifications.controls;
+                  let i = index
+                  " class="row" formGroupName="{{ i }}">
+                          <div class="card border-0 rounded shadow mb-4" style="width: 95%; padding: 15px; margin-left: 15px">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group position-relative">
+                                  <label style="
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 2%;
+                      ">Degree</label>
+                                  <i-feather name="external-link" class="fea icon-sm icons">
+                                  </i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <input matInput id="title" type="text" style="margin-left: 11%" placeholder="degree :"
+                                      formControlName="degree" />
+                                  </mat-form-field>
+                                </div>
+                              </div>
+      
+                              <div class="col-md-5">
+                                <div class="form-group position-relative">
+                                  <label style="
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 2%;
+                      ">Grade</label>
+                                  <i-feather name="external-link" class="fea icon-sm icons">
+                                  </i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <input matInput id="link" type="text" style="margin-left: 11%"
+                                      placeholder="Grade : ex: 8.9 CGPA or 90 % " formControlName="grade" />
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <span style="float: right">
+                                <i-feather name="delete" class="fea icon-sm icons" style="color: red"
+                                  (click)="deletQualification(i)"></i-feather>
+                              </span>
+                              <div class="col-md-11">
+                                <div class="form-group position-relative">
+                                  <label style="
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 2%;
+                      ">Institute Name</label>
+                                  <i-feather name="external-link" class="fea icon-sm icons">
+                                  </i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <input matInput id="roll" type="text" style="margin-left: 11%"
+                                      placeholder="Institute Name :" formControlName="instituteName" />
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label style="font-size: 12px; font-weight: 500">Start Date</label>
+                                <div class="form-group position-relative">
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline" formcon>
+                                    <input matInput [matDatepicker]="startDatePicker" formControlName="startDate"
+                                      placeholder="Only year should be exact." />
+                                    <mat-datepicker-toggle matSuffix [for]="startDatePicker">
+                                    </mat-datepicker-toggle>
+                                    <mat-datepicker #startDatePicker></mat-datepicker>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-md-5">
+                                <label style="font-size: 12px; font-weight: 500">Date of Completion</label>
+                                <div class="form-group position-relative">
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline" formcon>
+                                    <input matInput [matDatepicker]="picker" formControlName="dateOfCompletion"
+                                      placeholder="Only year should be exact." />
+                                    <mat-datepicker-toggle matSuffix [for]="picker">
+                                    </mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" (click)="addQualification()">
+                          Add Qualification
+                        </button>
+                      </div>
+      
+                      <div style="margin-top: 1%" class="col-md-12">&nbsp;</div>
+      
+                      <!-- Experience -->
+                      <div formArrayName="experience" class="col-md-12">
+                        <div class="form-group position-relative">
+                          <!-- heading -->
+                          <label for="Skills">Experience</label>
+                          &nbsp;
+                        </div>
+                        <!-- lopping -->
+                        <div *ngFor="let project of experiences.controls;
+                  let i = index
+                  " class="row" formGroupName="{{ i }}">
+                          <div class="card border-0 rounded shadow mb-4" style="width: 95%; padding: 15px; margin-left: 15px">
+                            <div class="row">
+                              <!-- content -->
+                              <div class="col-md-6">
+                                <div class="form-group position-relative">
+                                  <label style="
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 2%;
+                      ">Comapany Name</label>
+                                  <i-feather name="external-link" class="fea icon-sm icons">
+                                  </i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <input matInput id="title" type="text" style="margin-left: 11%"
+                                      placeholder="Comapany Name :" formControlName="comapanyName" />
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-md-5">
+                                <div class="form-group position-relative">
+                                  <label style="
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 2%;
+                      ">Job Type</label>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <mat-select formControlName="jobType">
+                                      <div *ngFor="let item of jobList">
+                                        <mat-option [value]="item">
+                                          {{ item }}
+                                        </mat-option>
+                                      </div>
+                                    </mat-select>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <i-feather name="delete" class="fea icon-sm icons" style="color: red"
+                                (click)="deletExperience(i)"></i-feather>
+      
+                              <div class="col-md-6">
+                                <label style="font-size: 12px; font-weight: 500">Start Date</label>
+                                <div class="form-group position-relative">
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline" formcon>
+                                    <input matInput [matDatepicker]="picker" formControlName="startDate"
+                                      placeholder="Start Date:" />
+                                    <mat-datepicker-toggle matSuffix [for]="picker">
+                                    </mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+      
+                              <div class="col-md-5" style="margin-top: -1%">
+                                <label style="font-size: 12px; font-weight: 500">
+                                  End Date &nbsp;&nbsp;
+                                  <mat-checkbox class="example-margin" (change)="clickCheckBox($event)">
+                                    Present
+                                  </mat-checkbox>
+                                </label>
+                                <div class="form-group position-relative" *ngIf="checked === false">
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline" formcon>
+                                    <input matInput [matDatepicker]="EndDatepicker" formControlName="endDate"
+                                      placeholder="End Date:" />
+                                    <mat-datepicker-toggle matSuffix [for]="EndDatepicker">
+                                    </mat-datepicker-toggle>
+                                    <mat-datepicker #EndDatepicker></mat-datepicker>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                              <div class="col-md-11">
+                                <div class="form-group position-relative">
+                                  <label style="
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 2%;
+                      ">Role</label>
+                                  <i-feather name="external-link" class="fea icon-sm icons">
+                                  </i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <input matInput id="link" type="text" style="margin-left: 11%" placeholder="Your Roles :"
+                                      formControlName="roles" />
+                                  </mat-form-field>
+                                </div>
+                              </div>
+      
+                              <div class="col-md-11">
+                                <div class="form-group position-relative">
+                                  <label style="
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-bottom: 2%;
+                      ">Responsibilties</label>
+                                  <i-feather name="external-link" class="fea icon-sm icons">
+                                  </i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <textarea matInput id="responsibility" type="text" style="margin-left: 11%"
+                                      placeholder="Responsibilties :" formControlName="responsibilties"></textarea>
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" (click)="addExperience()">
+                          Add Experience
+                        </button>
+                      </div>
+      
+      
+                      <div class="col-md-6">&nbsp;</div>
+      
+                      <div style="margin-top: 1%" class="col-md-12">&nbsp;</div>
+      
+                      <div class="col-md-6">&nbsp;</div>
+      
+                      <!-- <div class="col-md-6">
+                        <div class="form-group position-relative">
+                          <label>Profile Picture</label>
+                          <i-feather
+                            name="file-text"
+                            class="fea icon-sm icons"
+                          ></i-feather>
+      
+                          <input
+                            required
+                            #profilefile
+                            id="profile"
+                            type="file"
+                            placeholder="PRofile picture :"
+                            class="form-control pl-5"
+                            (change)="profile(profilefile.files, $event)"
+                          />
+                        </div>
+                        <a
+                          *ngIf="profileDownloadUrl"
+                          [href]="profileDownloadUrl"
+                          class="btn btn-outline-primary"
+                          download
+                        >
+                          <i class="mdi mdi-printer"></i> Downlaod Profile
+                        </a>
+                      </div> -->
+      
+                      <!--end col-->
+                      <div class="col-md-12" style="margin-top: 1%">&nbsp;</div>
+      
+                      <!-- Skills -->
+      
+                      <div formArrayName="skills" class="col-md-12">
+                        <div class="form-group position-relative">
+                          <label for="Skills">Skills</label>
+                          &nbsp;
+                        </div>
+                        <div class="row" *ngFor="
+                  let skill of skills.controls;
+                  let i = index
+                  " formGroupName="{{ i }}">
+                          <div class="col-md-5">
+                            <div class="form-group position-relative">
+                              <label style="font-size: 12px; font-weight: 500">Name Of Skill</label>
+                              <i-feather name="edit" class="fea icon-sm icons"></i-feather>
+                              <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                <input matInput formControlName="name" id="name" type="text" style="margin-left: 11%"
+                                  placeholder="Name :" />
+                              </mat-form-field>
+                            </div>
+                          </div>
+      
+                          <div class="col-md-5">
+                            <div class="form-group position-relative">
+                              <label style="font-size: 12px; font-weight: 500">Rating</label>
+                              <i-feather name="database" class="fea icon-sm icons"></i-feather>
+                              <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                <input matInput formControlName="rating" id="rating" type="number" style="margin-left: 11%"
+                                  placeholder="Rating : ( 7 out of 10 )" />
+                              </mat-form-field>
+                            </div>
+                          </div>
+                          <i-feather name="delete" style="color: red" class="fea icon-sm icons" (click)="deletSkills(i)">
+                          </i-feather>
+                        </div>
+      
+                        <button type="button" class="btn btn-outline-primary" (click)="addSkills()">Add Skill
+                        </button>
+                      </div>
+      
+                      <div class="col-md-12" style="margin-top: 1%">&nbsp;</div>
+      
+                      <!-- Projects -->
+      
+                      <div formArrayName="projects" class="col-md-12">
+                        <div class="form-group position-relative">
+                          <label for="Skills">Projects</label>
+                          &nbsp;
+                        </div>
+                        <div *ngFor="
+                            let project of projects.controls;
+                            let i = index
+                          " class="row" formGroupName="{{ i }}">
+                          <div class="card border-0 rounded shadow mb-4" style="width: 95%; padding: 15px; margin-left: 15px">
+                            <div class="row">
+      
+                              <div class="col-md-6">
+                                <div class="form-group position-relative">
+                                  <label style="
+                      font-size: 12px;
+                      font-weight: 500;
+                      margin-bottom: 2%;
+                    ">Project Title</label>
+                                  <i-feather name="edit" class="fea icon-sm icons"></i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <input matInput id="title" type="text" style="margin-left: 11%"
+                                      placeholder="Project Title :" formControlName="title" />
+                                  </mat-form-field>
+                                </div>
+                              </div>
+      
+                              <div class="col-md-11">
+                                <div class="form-group position-relative">
+                                  <label style="
+                      font-size: 12px;
+                      font-weight: 500;
+                      margin-bottom: 2%;
+                    ">Project Link</label>
+                                  <i-feather name="external-link" class="fea icon-sm icons"></i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <input matInput id="link" type="text" style="margin-left: 11%"
+                                      placeholder="Project Link :" formControlName="link" />
+                                  </mat-form-field>
+                                </div>
+                              </div>
+      
+                              <div class="col-md-11">
+                                <div class="form-group position-relative">
+                                  <label style="
+                      font-size: 12px;
+                      font-weight: 500;
+                      margin-bottom: 2%;
+                    ">Your Roll</label>
+                                  <i-feather name="aperture" class="fea icon-sm icons"></i-feather>
+                                  <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                    <input matInput id="roll" type="text" style="margin-left: 11%"
+                                      placeholder="Your Roll in project :" formControlName="roll" />
+                                  </mat-form-field>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                          <i-feather name="delete" class="fea icon-sm icons" style="color: red" (click)="deletProject(i)">
+                          </i-feather>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" (click)="addProject()"> Add Project
+                        </button>
+                      </div>
+      
+                      <div class="col-md-12" style="margin-top: 1%">&nbsp;</div>
+      
+                      <div class="col-md-12" formGroupName="sociallinks">
+                        <div class="form-group position-relative">
+                          <label for="social">Social Links</label>
+                          <div class="row">
+                            <div class="col-md-10">
+                              <div class="form-group position-relative">
+                                <label style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    margin-bottom: 2%;
+                                  ">Instagram</label>
+                                <i-feather name="instagram" class="fea icon-sm icons"></i-feather>
+                                <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                  <input matInput formControlName="instagram" id="first" type="text" style="margin-left: 10%"
+                                    placeholder="Instagram Link :" />
+                                  <mat-hint>https://instagram.com/your-handle</mat-hint>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="col-md-10">
+                              <div class="form-group position-relative">
+                                <label style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    margin-bottom: 2%;
+                                  ">Facebook</label>
+                                <i-feather name="facebook" class="fea icon-sm icons"></i-feather>
+                                <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                  <input matInput formControlName="facebook" id="first" type="text" style="margin-left: 10%"
+                                    placeholder="Facebook Link :" />
+                                  <mat-hint> https://www.facebook.com/your-handle</mat-hint>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="col-md-10">
+                              <div class="form-group position-relative">
+                                <label style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    margin-bottom: 2%;
+                                  ">Twitter</label>
+                                <i-feather name="twitter" class="fea icon-sm icons"></i-feather>
+                                <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                  <input matInput formControlName="twitter" id="first" type="text" style="margin-left: 10%"
+                                    placeholder="Twitter Link :" />
+                                  <mat-hint>https://www.twitter.com/your-hande</mat-hint>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="col-md-10">
+                              <div class="form-group position-relative">
+                                <label style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    margin-bottom: 2%;
+                                  ">LinkedIn</label>
+                                <i-feather name="linkedIn" class="fea icon-sm icons"></i-feather>
+                                <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                  <input matInput formControlName="linkedIn" id="first" type="text" style="margin-left: 10%"
+                                    placeholder="LinkedIn Link :" />
+                                  <mat-hint>https://www.linkedin.com/your-handle</mat-hint>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="col-md-10">
+                              <div class="form-group position-relative">
+                                <label style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    margin-bottom: 2%;
+                                  ">Behance</label>
+                                <img src="assets/images/icon/b1.png" class="fea icon-sm icons" />
+                                <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                  <input matInput formControlName="behance" id="first" type="text" style="margin-left: 10%"
+                                    placeholder="Behance Link :" />
+                                  <mat-hint>https://www.behance.net/your-handle</mat-hint>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="col-md-10">
+                              <div class="form-group position-relative">
+                                <label style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    margin-bottom: 2%;
+                                  ">GitHub</label>
+                                <i-feather name="gitHub" class="fea icon-sm icons"></i-feather>
+                                <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                  <input matInput formControlName="gitHub" id="first" type="text" style="margin-left: 10%"
+                                    placeholder="GitHub Link :" />
+                                  <mat-hint>https://github.com/your-handle</mat-hint>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <div class="col-md-10">
+                              <div class="form-group position-relative">
+                                <label style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    margin-bottom: 2%;
+                                  ">GitLab</label>
+                                <i-feather name="gitLab" class="fea icon-sm icons"></i-feather>
+                                <mat-form-field style="width: 100%; margin-top: -2%" appearance="outline">
+                                  <input matInput formControlName="gitLab" id="first" type="text" style="margin-left: 10%"
+                                    placeholder="GitLab Link :" />
+                                  <mat-hint>https://gitlab.com/your-handle</mat-hint>
+                                </mat-form-field>
+                              </div>
+                            </div>
+                            <!-- <div class="col-md-10">
+                              <div class="form-group position-relative">
+                                <label
+                                  style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    margin-bottom: 2%;
+                                  "
+                                  >Google Drive</label
+                                >
+                                <i-feather
+                                  name="gitLab"
+                                  class="fea icon-sm icons"
+                                ></i-feather>
+                                <mat-form-field
+                                  style="width: 100%; margin-top: -2%"
+                                  appearance="outline"
+                                >
+                                  <input
+                                    matInput
+                                    formControlName="gitLab"
+                                    id="first"
+                                    type="text"
+                                    style="margin-left: 10%"
+                                    placeholder="GitLab Link :"
+                                  />
+                                </mat-form-field>
+                              </div>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="col-lg-12">
+                        <div class="form-group position-relative">
+                          <label>About</label>
+                          <i-feather name="message-circle" class="fea icon-sm icons"></i-feather>
+                          <mat-form-field style="width: 100%" appearance="outline">
+                            <textarea matInput required formControlName="description" id="description" style="margin-top: 8px"
+                              placeholder="Description :"></textarea>
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end row-->
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save Changes" />
+                      </div>
+                      <!--end col-->
+                    </div>
+                    <!--end row-->
+                  </form>
+                  <!--end form-->
+      
+                  <!--end row-->
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end container-->
+      </section>
+
+      this.userForm = new FormGroup({
+        firstName: new FormControl('', [Validators.required]),
+        lastName: new FormControl('', [Validators.required]),
+        user: new FormControl('', [Validators.required]),
+        designation: new FormControl('', [Validators.required]),
+        dob: new FormControl('', [Validators.required]),
+        address: new FormControl('', [Validators.required]),
+        city: new FormControl('', [Validators.required]),
+        state: new FormControl('', [Validators.required]),
+        country: new FormControl('', [Validators.required]),
+        postalCode: new FormControl('', [
+          Validators.required,
+          Validators.maxLength(6),
+          Validators.minLength(6),
+        ]),
+        mobile: new FormControl('', [
+          Validators.required,
+          Validators.maxLength(10),
+          Validators.minLength(10),
+        ]),
+        description: new FormControl(''),
+        experience: new FormArray([]),
+        skills: new FormArray([]),
+        projects: new FormArray([]),
+        qualification: new FormArray([]),
+  
+        sociallinks: new FormGroup({
+          instagram: new FormControl('', [Validators.pattern(this.reg)]),
+          twitter: new FormControl('', [Validators.pattern(this.reg)]),
+          linkedIn: new FormControl('', [Validators.pattern(this.reg)]),
+          behance: new FormControl('', [Validators.pattern(this.reg)]),
+          gitHub: new FormControl('', [Validators.pattern(this.reg)]),
+          gitLab: new FormControl('', [Validators.pattern(this.reg)]),
+          facebook: new FormControl('', [Validators.pattern(this.reg)]),
+        }),
+      });
+
+      onSubmit(f: any) {
+        // console.log('form Data', this.userForm);
+        // // console.log('File', this.resumeFile);
+        const formdata = new FormData();
+    
+        var newDate = new Date(this.userForm.value['dob']);
+    
+        if (newDate.getUTCMonth() > 9) {
+          var chosenDate =
+            newDate.getFullYear() +
+            '-' +
+            (newDate.getMonth() + 1) +
+            '-' +
+            newDate.getDate();
+        } else {
+          var chosenDate =
+            newDate.getFullYear() +
+            '-' +
+            '0' +
+            (newDate.getMonth() + 1) +
+            '-' +
+            newDate.getDate();
+        }
+        // // console.log('skills', JSON.stringify(this.userForm.value['skills']));
+    
+        // // console.log('new DAtae', chosenDate);
+    
+        formdata.append('firstName', this.userForm.value['firstName']);
+        formdata.append('designation', this.userForm.value['designation']);
+        formdata.append('skills', JSON.stringify(this.userForm.value['skills']));
+        formdata.append('lastName', this.userForm.value['lastName']);
+        formdata.append('user', this.userForm.value['user']);
+        formdata.append('dob', chosenDate);
+        formdata.append('address', this.userForm.value['address']);
+        formdata.append('city', this.userForm.value['city']);
+        formdata.append('state', this.userForm.value['state']);
+        formdata.append('country', this.userForm.value['country']);
+        formdata.append('postalCode', this.userForm.value['postalCode']);
+        formdata.append('mobile', this.userForm.value['mobile']);
+        formdata.append('description', this.userForm.value['description']);
+    
+        formdata.append(
+          'sociallinks',
+          JSON.stringify(this.userForm.value['sociallinks'])
+        );
+    
+        formdata.append(
+          'projects',
+          JSON.stringify(this.userForm.value['projects'])
+        );
+    
+        formdata.append(
+          'experience',
+          JSON.stringify(this.userForm.value['experience'])
+        );
+    
+        formdata.append('Resume', this.resumeFile);
+        // console.log(this.resumeFile);
+    
+        if (this.profilePicture) {
+          formdata.append('profilepicture', this.profilePicture);
+        }
+    
+        formdata.append(
+          'qualification',
+          JSON.stringify(this.userForm.value['qualification'])
+        );
+        // // console.log(JSON.stringify(this.userForm.value['qualification']));
+    
+        if (this.userForm.invalid) {
+          //   console.log(this.userForm);
+    
+          this._snackBar.open('Fill the required fields', '', {
+            duration: 3000,
+            panelClass: ['snackbar'],
+          });
+        } else if (this.resumeFile === undefined) {
+          this.resumeClassCondition = true;
+          this._snackBar.open('Resume is required', '', {
+            duration: 3000,
+            panelClass: ['snackbar'],
+          });
+        } else {
+          //   console.log(formdata);
+          //   console.log('submit user form', this.userForm);
+    
+          this.profileService.post_profile(formdata).subscribe((res: any) => {
+            // console.log(res);
+            // console.log('id', res['candidate_id']);
+    
+            this.cookie.set('id', res['candidate_id']);
+            // setTimeout(() => {
+            // }, 3000);
+            this._snackBar.open('Profile Created', '', {
+              duration: 3000,
+              panelClass: ['snackbar'],
+            });
+            this.userForm.reset();
+            f.resetForm();
+            this.authService.refresh()
+            this.router.navigate(['/profile']);
+          });
+        }
+      }
     </textarea>
 
     <h4>edit employee</h4>
