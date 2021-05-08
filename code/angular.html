@@ -694,6 +694,80 @@ export class MyAppComponent implements OnInit {
     }
 }
 </textarea>
+
+<h4>snackbar bottomsheet toastr</h4>
+
+<textarea name="" id="" cols="30" rows="10">
+  import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { ToastrService } from "ngx-toastr";
+
+constructor(   
+    private bottomSheet: MatBottomSheetRef,
+    private _snackBar: MatSnackBar,
+    private toastr: ToastrService
+  ) { }
+
+  close() {
+    this.bottomSheet.dismiss();
+    // let element = document.getElementsByClassName("cdk-overlay-container");    
+    // element[0].classList.remove("feedback_background_image");
+  }
+  submit(f: NgForm) {
+    const data = {
+      name: f.value.name,
+      email: f.value.email,
+      feedback: f.value.feedback,
+    };
+    // console.log('feedback', data);
+
+    this.career.feedback(data).subscribe((res) => {
+      //   console.log(res);
+
+      this.bottomSheet.dismiss();
+      this._snackBar.open('Feedback Submitted.', '', {
+        duration: 3000,
+        panelClass: ['snackbar'],
+      });
+    });
+
+    this.toastr.success("Employeee added sucessfully...!", "Success");
+    this.toastr.error('Check Email Id', "Failed");
+    this.toastr.warning("Shift start time cannot be after Shift end time", "Warning");
+
+  }
+
+  <section style="padding-top:20px; padding-bottom: 20px;">
+    <h1>Feedback Form:
+      <span class="float-right" (click)="close()" style="cursor: pointer;">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </span>
+    </h1>
+    <div class="row">
+      <form (ngSubmit)="submit(f)" #f="ngForm" style="width: 90%;margin-left: 15px; margin-right: 15px;">
+  
+        <label>Name :</label> <br>
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <input matInput type="text" name="name" placeholder="Name :" required ngModel />
+        </mat-form-field>
+  
+        <label>Email :</label> <br>
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <input required matInput name="email" id="email" type="email" placeholder="Email :" ngModel />
+        </mat-form-field>
+  
+        <label>Feedback :</label> <br>
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <textarea required matInput name="feedback" id="problem" placeholder="Feedback :" ngModel></textarea>
+        </mat-form-field>
+  
+        <button class="btn button-outline-primary">
+          Submit
+        </button>
+      </form>
+    </div>
+  </section>
+</textarea>
   
   <script type="text/javascript" src="testing.js"></script>
 </body>
