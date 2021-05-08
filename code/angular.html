@@ -265,6 +265,8 @@ Reactive Form with Validation in Angular 8<br>
         </form>
         <p class="text-center"><a href="#">Create an Account</a></p>
     </div>
+
+
     </textarea>
     <h4>form data add data</h4>
     <textarea name="" id="" cols="80" rows="30">
@@ -296,10 +298,68 @@ emailId: ["",[Validators.required, Validators.email]]
 private formBuilder: FormBuilder
 
 this.addEmployeeForm = this.formBuilder.group({
-			
+			FirstName: ["", [Validators.required]],
+			LastName: ["", [Validators.required]],
+			Password: ["", [Validators.required]],
+			ConfirmPassword: ["", [Validators.required]],
+			Email: ["", [Validators.required, Validators.email]],
+			PhoneNumber: ["", [Validators.required,
+			Validators.maxLength(10), Validators.minLength(10),
+			Validators.pattern("^[0-9]*$")]],
+			JoinDate: ["", [Validators.required]],
+			DOB: ["", [Validators.required]],
+			Address: ["", [Validators.required]],
+			City: ["", [Validators.required]],
+			State: ["", [Validators.required]],
+			Pincode: ["", [Validators.required,
+			Validators.maxLength(6), Validators.minLength(6),
+			Validators.pattern("^[0-9]*$")]],
+			Gender: ["", [Validators.required]],
+			Position: ["", [Validators.required]],
+			EmploymentType: ["", Validators.required],
+			CompanyName: ["", Validators.required],
+			ReportTo: [""],
+			StandardWorkingHours: [""],
+			ShiftStartingTime: [""],
+			ShiftEndingTime: ["", [Validators.required]],
+			Admin: ["no"],
+			Hr: ["no"],
+			Seo: ["no"],
+			Employee: ["yes"],
 		});
 
 submit method
+
+addEmployee() {
+  if (this.checkClients() == false) {
+    this.toastr.error('Check Email Id', "Failed");
+    return;
+  }
+  let formData = new FormData()
+  // to check if the entered start shift time is less than end shift time
+  let flag = validateTime(this.addEmployeeForm.value.ShiftStartingTime, this.addEmployeeForm.value.ShiftEndingTime);
+  if (!flag) {
+    this.toastr.warning("Shift start time cannot be after Shift end time", "Warning");
+    return;
+  }
+  if (this.addEmployeeForm.value.Password !== this.addEmployeeForm.value.ConfirmPassword) {
+    this.toastr.warning("Password mismatched", "Warning");
+    return;
+  }
+  // if (!this.addEmployeeForm.valid) {
+  //   this.toastr.warning("Mandatory fields required", "Warning");
+  //   return
+  // }
+  let DateJoin = this.pipe.transform(
+    this.addEmployeeForm.value.JoinDate,
+    "yyyy-MM-dd"
+  );
+  let DOB = this.pipe.transform(
+    this.addEmployeeForm.value.DOB,
+    "yyyy-MM-dd"
+  )
+  console.log(this.addEmployeeForm);
+
 let formData = new FormData();
 
 let obj = {
@@ -356,6 +416,157 @@ formData.append('Emp_first_name', obj.firstname)
 			console.log("photo type", typeof this.profilePicture.name);
 
 		}
+
+    this.auth.registerEmployee(employeeReg).subscribe(result => {
+			//   // console.log(result);
+			this.auth.addEmployee(formData).subscribe(empId => {
+				shiftDataEntry.Emp_Id = empId["success"];
+				console.log("shiftDataEntry\n", shiftDataEntry);
+				//third call shift Data Entry
+				this.auth.shiftDataEntry(shiftDataEntry).subscribe(result => {
+					//   console.log("ADDED")
+					this.loadEmployee();
+				},
+					error => {
+						// console.log("Unable to set shifts of  employee");
+						console.error(error);
+						this.toastr.warning("Unable to set shifts of  employee, Kindly Contact Technical Team", "");
+					})
+			}, error => {
+				// console.log("Unable to add Employee Details");
+				console.error(error);
+				this.toastr.warning("Unable to add Employee Details & Shift Entries, Kindly Contact Technical Team", "");
+			})
+		}, error => {
+			//   console.log("Unable to register employee");
+			console.error(error);
+			this.toastr.warning("Unable to register employee, Kindly Contact Technical Team", "");
+		});
+		$("#add_employee").modal("hide");
+		this.addEmployeeForm.reset();
+		this.toastr.success("Employeee added sucessfully...!", "Success");
+	}
+
+    }
+    </textarea>
+
+    <h4>edit employee</h4>
+
+    <textarea name="" id="" cols="30" rows="10">
+      editEmployee() {
+        console.log(this.editEmployeeForm);
+    
+        let formData = new FormData()
+    
+        let flag = validateTime(this.editEmployeeForm.value.ShiftStartingTime, this.editEmployeeForm.value.ShiftEndingTime);
+        if (!flag) {
+          this.toastr.warning("Shift start time cannot be after Shift end time", "Warning");
+          return;
+        }
+    
+        if(this.passwordCheck){
+          this.toastr.warning("Password mismatch");
+          return;
+        }
+    
+        if (this.editEmployeeForm.invalid) {
+          this.toastr.warning("Mandatory fields required", "Warning");
+          return
+        }
+
+        let DateJoin = this.pipe.transform(
+			this.editEmployeeForm.value.JoinDate,
+			"yyyy-MM-dd"
+		);
+		// let dob = new Date(this.editEmployeeForm.value.DOB);
+		let DOB = this.pipe.transform(
+			this.editEmployeeForm.value.DOB,
+			"yyyy-MM-dd"
+			// "dd-MM-yyyy"
+		)
+		console.log(DateJoin, DOB)
+		console.log("edit picture profile picture", this.profilePicture);
+		let obj = {
+			// photo: this.profilePicture,   //added	
+			emp: this.editId,
+			firstname: this.editEmployeeForm.value.FirstName,
+			lastname: this.editEmployeeForm.value.LastName,
+			email: this.editEmployeeForm.value.Email,
+			joindate: DateJoin,
+			dob: DOB,
+			phone: this.editEmployeeForm.value.PhoneNumber,
+			address: this.editEmployeeForm.value.Address,
+			city: this.editEmployeeForm.value.City,
+			state: this.editEmployeeForm.value.State,
+			pincode: this.editEmployeeForm.value.Pincode,
+			gender: this.editEmployeeForm.value.Gender,
+			position: this.editEmployeeForm.value.Position,
+			employmentType: this.editEmployeeForm.value.EmploymentType,
+			companyName: this.editEmployeeForm.value.CompanyName,
+			reportTo: this.editEmployeeForm.value.ReportTo,
+			standardWorkingHours: this.editEmployeeForm.value.StandardWorkingHours,
+			shiftStartingTime: this.editEmployeeForm.value.ShiftStartingTime,
+			shiftEndingTime: this.editEmployeeForm.value.ShiftEndingTime,
+			admin: this.editEmployeeForm.value.Admin,
+			hr: this.editEmployeeForm.value.Hr,
+			seo: this.editEmployeeForm.value.Seo,
+			employee: "yes",
+		};
+		// this.getEmpEmail(obj.reportTo);
+		// console.log(obj.position)
+
+		// console.log("EDIT FORM\n");
+		// console.log(obj);
+		// console.log(this.lstEmployee)
+
+		formData.append("emp", this.editId);
+		formData.append('Emp_first_name', obj.firstname)   //added
+		formData.append('Emp_last_name', obj.lastname)
+		formData.append('phone_no', obj.phone)
+		formData.append('Email', obj.email)
+		formData.append('address', obj.address)
+		formData.append('city', obj.city)
+		formData.append('state', obj.state)
+		formData.append('pincode', obj.pincode)
+		formData.append('gender', obj.gender)
+		formData.append('date_of_birth', obj.dob)
+		formData.append('join_date', obj.joindate)
+		formData.append('position', obj.position)
+		formData.append('report_to', obj.reportTo)
+		formData.append('employment_type', obj.employmentType)
+		formData.append('comp_name', obj.companyName)
+
+		if (this.profilePicture) {
+			console.log("picture name", this.profilePicture);
+			console.log("path", "http://161.35.229.33:8002/media/accounts/profile_photos/" + obj.email + "/" + this.profilePicture.name);
+
+			formData.append('photo', this.profilePicture);
+
+			console.log("photo type", typeof this.profilePicture.name);
+
+		}
+
+		let newPasswordUpdate = this.editEmployeeForm.controls['NewPassword'].value;
+		console.log("password new", this.editEmployeeForm.get("NewPassword"));
+	
+		if(!this.passwordCheck && newPasswordUpdate){
+			console.log("password form", newPasswordUpdate);
+			formData.append('password', newPasswordUpdate);
+    }
+
+    this.auth.updateEmployee(formData).subscribe(   //formData added
+			result => {
+				// console.log(result);
+				this.loadEmployee();
+				$("#edit_employee").modal("hide");
+				this.toastr.success("Employeee Updated sucessfully...!", "Success");
+			},
+			error => {
+				this.toastr.error("Employeee cannot Update...!", "Error");
+				// console.log(error);
+			}
+		)
+        
     </textarea>
 
     <h4>edit modal getting id of employ</h4>
