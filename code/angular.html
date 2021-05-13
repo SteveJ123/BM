@@ -230,6 +230,7 @@ Reactive Form with Validation in Angular 8<br>
     <a href="https://www.youtube.com/watch?v=JEGz8hOeGBY&ab_channel=TechieOcean">ANGULAR 10 :TYPES OF FORMS</a>
     <a href="https://www.youtube.com/watch?v=nofXAkAz05Q&ab_channel=TechieOcean">ANGULAR 10 REACTIVE FORM : USING FORMGROUP AND FORM CONTROL</a> <br>
     <a href="https://www.youtube.com/watch?v=iyabqUWYsz4">Angular Forms Tutorial - 5 - Binding Data with ngForm</a> <br>
+    <a href="https://www.youtube.com/watch?v=kFHkztHm8xA">Angular Forms Tutorial - 8 - Validation with Visual Feedback</a> <br>
 
     <textarea name="" id="" cols="80" rows="30">
       <div class="login-form">
@@ -1884,6 +1885,87 @@ constructor(
       </form>
     </div>
   </section>
+</textarea>
+
+<h4>multiple select checkbox</h4>
+
+<textarea name="" id="" cols="80" rows="80">
+
+  <th><input #checkboxes type="checkbox" (change)="selectAll($event)"></th>
+
+  <td> <input type="checkbox" name="{{manageJobs.id}}" [value]="manageJobs.id"
+    [checked]="checks" (change)="getManageJobId($event, manageJobs.id)"></td>
+
+    selectAll(event) {
+      if (event.target.checked === true) {
+        this.checks = true;
+        this.selectedManageJobsId = this.allManageJobs.map(element => element.id);
+      } else {
+        this.checks = false;
+        this.selectedManageJobsId = [];
+      }
+  
+      console.log(this.selectedManageJobsId);
+    }
+
+    getManageJobId(event, id) {
+      console.log("manage job id", event, id);
+  
+      if (event.target.checked) {
+        this.selectedManageJobsId.push(id);
+      } else {
+        this.selectedManageJobsId = this.selectedManageJobsId.filter(m => m != id);
+      }
+  
+      console.log(this.selectedManageJobsId);
+    }
+
+    @ViewChildren("checkboxes") checkboxes: QueryList<ElementRef>;
+      leteSelectedJobs() {
+        console.log(this.selectedManageJobsId);
+        this.auth.deleteSelectedJob({ "ap_ids": this.selectedManageJobsId }).subscribe((data) => {
+    
+          this.toastr.success("Jobs are deleted", "Success");
+          $("#delete_multi_job").modal("hide");
+          console.log("checkbox", this.checkboxes);
+          this.checkboxes.forEach((element) => {
+            element.nativeElement.checked = false;
+            this.selectedManageJobsId.length = 0;
+          });
+    
+          this.dtElement.dtInstance.then((dtInstance: DataTables.Api) => {
+            dtInstance.destroy();
+          });
+          this.getManageJobs();
+          // this.allManageJobs.splice(index, 1)
+    
+        },
+          (error) => {
+            this.toastr.error('Something went wrong', "Failed");
+          })
+      }
+    
+</textarea>
+
+
+<h4>styling input type file</h4>
+<textarea name="" id="" cols="40" rows="20">
+
+  <label class="custom-file-upload">
+    <input type="file"/>
+    Custom Upload
+</label>
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
 </textarea>
   
   <script type="text/javascript" src="testing.js"></script>
