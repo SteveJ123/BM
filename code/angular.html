@@ -1495,8 +1495,115 @@ formData.append('Emp_first_name', obj.firstname)
         // console.log("set edit policy", this.setEditPolicy);
       }
     </textarea>
-    
 
+    <h4>dynamic form field formarray</h4>
+
+    <textarea name="" id="" cols="80" rows="40">
+
+      <form [formGroup]="addPromotionForm" (ngSubmit)="onPromotionFormSubmit()">
+        <div class="form-scroll" formArrayName="promotions">
+          <div class="card" *ngFor="let promotion of promotions().controls;let i=index"
+            [formGroupName]="i">
+            <div class="card-body">
+              <h3 class="card-title">Promotion Information <a class="delete-icon"
+                  (click)="removePromotion(i)"><i class="fa fa-trash-o"></i></a></h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group form-focus focused">
+                    <input type="text" class="form-control floating"
+                      formControlName="positionName">
+                    <label class="focus-label">Position</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group form-focus focused">
+                    <input type="text" class="form-control floating" formControlName="updatedSalary">
+                    <label class="focus-label">Updated Salary</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group form-focus focused">
+                    <div class="cal-icon">
+                      <!-- [maxDate]="this.addPromotionForm.value.promotions[i].promotionCompleteDate" -->
+                      <input class="form-control datetimepicker" type="text" bsDatepicker													
+                        [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY',  returnFocusToInput: true }"
+                        formControlName="promotionStartingDate">
+                    </div>
+                    <label class="focus-label">Starting Date</label>
+                  </div>
+                </div>
+                <!-- <div class="col-md-6">
+                  <div class="form-group form-focus focused">
+                    <div class="cal-icon">
+                      <input class="form-control datetimepicker" type="text" bsDatepicker
+                        [minDate]="this.addPromotionForm.value.promotions[i].promotionStartingDate"
+                        [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY',  returnFocusToInput: true }"
+                        formControlName="promotinoCompleteDate">
+                    </div>
+                    <label class="focus-label">Complete Date</label>
+                  </div>
+                </div> -->
+                <!-- <div class="col-md-6">
+                  <div class="form-group form-focus focused">
+                    <input type="text" formControlName="Degree" class="form-control floating">
+                    <label class="focus-label">Degree</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group form-focus focused">
+                    <input type="text" formControlName="Grade" class="form-control floating">
+                    <label class="focus-label">Grade</label>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="add-more">
+            <a (click)="addPromotion()"><i class="fa fa-plus-circle"></i> Add</a>
+          </div>
+        </div>
+        <div class="submit-section">
+          <button class="btn btn-primary submit-btn">Submit</button>
+        </div>
+      </form>
+
+
+      public addPromotionForm: FormGroup;
+
+      constructor(private formBuilder: FormBuilder){}
+
+      ngOnInit(){
+        this.addPromotionForm = this.formBuilder.group({
+          promotions: this.formBuilder.array([])
+        });
+      }
+
+      promotions():FormArray{
+        return this.addPromotionForm.get("promotions") as FormArray
+      }
+
+      newPromotion(): FormGroup {
+        return this.formBuilder.group({
+          positionName: '',
+          updatedSalary:'',
+          promotionStartingDate: '',
+          id: ''
+            
+        })
+      }
+
+      addPromotion() {
+        this.promotions().push(this.newPromotion());
+      }
+
+      removePromotion(i: number) {
+                this.promotions().removeAt(i);
+    
+    
+      }
+    </textarea>
+    
+  
     <a href="https://www.youtube.com/watch?v=Ux9zUbQ9fTg&ab_channel=TECHWITHAli">how to save image with angular</a> <br>
     
 
@@ -2024,6 +2131,63 @@ msec -= mm * 1000 * 60;
 var ss = Math.floor(msec / 1000);
 msec -= ss * 1000;
 // diff = 28800000 => hh = 8, mm = 0, ss = 0, msec = 0
+</textarea>
+
+<h4>ngClass</h4>
+
+<textarea name="" id="" cols="30" rows="10">
+  [ngClass]="{
+    timeline1: interviewItem.review,
+    timeline3: interviewItem.review === null,
+    timeline2: interviewItem.recomendation === 'reject'
+    }"
+
+    [class]="text-color"
+    [class.text-color]="condition"
+
+    [ngClass]="colorSelector"
+
+    public colorSelector ={
+      text-blue: true,
+      text-green: false,
+      text-yellow: false
+    }
+
+</textarea>
+
+<h4>ngx spinner</h4>
+
+<textarea name="" id="" cols="80" rows="40">
+  <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="timer" [fullScreen]="true">
+    <p style="color: white"> Loading... </p>
+  </ngx-spinner>
+
+
+import { NgxSpinnerService } from 'ngx-spinner';
+
+constructor(
+    private spinner: NgxSpinnerService
+  ) { }
+
+ngOnInit(){
+
+this.spinner.show();
+
+this.route.params.pipe(map(id => {
+      this.clientId = id.id;
+    }), mergeMap(() => this.auth.getClients())).subscribe(data => {
+      this.allClients = data;
+      this.client = this.allClients.filter(client => client.id == this.clientId);
+      this.clientName = this.client[0].fname + " " + this.client[0].lname
+      console.log(this.clientName);
+      this.spinner.hide();
+    },
+      (error) => {
+        console.log(error);
+        this.spinner.hide();
+      });
+
+}
 </textarea>
   
   <script type="text/javascript" src="testing.js"></script>
