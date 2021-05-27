@@ -181,6 +181,23 @@ this.pageSlice = this.listItemsAdded.slice(startIndex, endIndex);
 
 
     </textarea>
+
+    <h4>mat table filter</h4>
+
+    <a href="https://www.youtube.com/watch?v=ZhcYPXLGr_E">Angular Material Tutorial - 29 - Data table Filtering</a>
+
+    <textarea name="" id="" cols="30" rows="10">
+      import { MatTableDataSource } from '@angular/material/table';
+
+
+      dataSource;
+
+      this.dataSource = new MatTableDataSource<any>(this.rows);
+
+        searchFilter(val) {
+          this.dataSource.filter = val.trim().toLowerCase();	
+        }
+    </textarea>
     
     
     <!-- lazy loading -->
@@ -2189,6 +2206,7 @@ this.route.params.pipe(map(id => {
 
 }
 </textarea>
+
   
   <script type="text/javascript" src="testing.js"></script>
 </body>
