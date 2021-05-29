@@ -1623,7 +1623,12 @@ formData.append('Emp_first_name', obj.firstname)
     <h4>reset form to initial state</h4>
 
     <textarea name="" id="" cols="30" rows="10">
-      nInit(){
+
+      this.myForm.reset();
+			this.myFormValues();
+			this.myForm.reset(this.myForm.value);
+
+      ngOnInit(){
         myFormValues();
       }
       
