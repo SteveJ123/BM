@@ -2207,6 +2207,23 @@ this.route.params.pipe(map(id => {
 }
 </textarea>
 
+<h4>check inputbox empty or not</h4>
+
+<textarea name="" id="" cols="30" rows="10">
+
+  <input type="text"  [(ngModel)]="txtValue" (ngModelChange)="onTextChange($event)" />
+
+  onTextChange(value)
+  {
+    this.txtValue = value;
+    if(this.txtValue == '')
+    {
+      this.message="Textbox is empty !!!";
+    }
+    
+  }
+</textarea>
+
   
   <script type="text/javascript" src="testing.js"></script>
 </body>
