@@ -1619,6 +1619,27 @@ formData.append('Emp_first_name', obj.firstname)
     
       }
     </textarea>
+
+    <h4>reset form to initial state</h4>
+
+    <textarea name="" id="" cols="30" rows="10">
+      nInit(){
+        myFormValues();
+      }
+      
+      myFormValues() {
+        this.myForm= this.fb.group({
+            id: ['', Validators.required],
+            name: ['', Validators.required],
+          });
+      }
+      
+      submitForm() {
+        // save data
+        myFormValues();
+        this.myForm.reset(this.myForm.value)
+      }
+    </textarea>
     
   
     <a href="https://www.youtube.com/watch?v=Ux9zUbQ9fTg&ab_channel=TECHWITHAli">how to save image with angular</a> <br>
