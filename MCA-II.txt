@@ -116,4 +116,5 @@ Curve Fitting Straight Line & Second Degree Parabola By Least Square - https://w
 Curve fitting method || least square method - https://www.youtube.com/watch?v=lA-LVn5Rczo
 Correlation Coefficient | Correlation Coefficient Example | Statistics - https://www.youtube.com/watch?v=lBB4stn3exM
 Statistics: Karl Pearson's Coefficient of correlation - https://www.youtube.com/watch?v=2CEGh1emkzM
+Correlation Statistics 1: Spearman's Rank Correlation Coefficient(Untied Ranks) - https://www.youtube.com/watch?v=zkgnpdp9vTI
 Correlation Statistics 2: Spearman's Rank Correlation Coefficient(Tied Ranks) - https://www.youtube.com/watch?v=zhTtjBvvOcM
