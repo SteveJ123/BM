@@ -118,3 +118,5 @@ Correlation Coefficient | Correlation Coefficient Example | Statistics - https:/
 Statistics: Karl Pearson's Coefficient of correlation - https://www.youtube.com/watch?v=2CEGh1emkzM
 Correlation Statistics 1: Spearman's Rank Correlation Coefficient(Untied Ranks) - https://www.youtube.com/watch?v=zkgnpdp9vTI
 Correlation Statistics 2: Spearman's Rank Correlation Coefficient(Tied Ranks) - https://www.youtube.com/watch?v=zhTtjBvvOcM
+Rank Correlation | Rank Correlation Coefficient | Spearman Rank Correlation - https://www.youtube.com/watch?v=0WejW9MiTGg
+Rank Correlation | Repeated Rank Correlation | Spearman Rank Correlation - https://www.youtube.com/watch?v=G0H340p97YE
