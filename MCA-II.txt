@@ -109,3 +109,5 @@ Symbol table | Compiler Design | Lec-45 | bhanu Priya - https://www.youtube.com/
 stasitics
 Introduction to Conditional Probability Hindi - https://www.youtube.com/watch?v=lEni2--XK_A
 Addition theorem of Probability and its examples - https://www.youtube.com/watch?v=QqqrmTepxnc
+
+Curve Fitting Straight Line & Second Degree Parabola By Least Square - https://www.youtube.com/watch?v=Qy1YAKZDA7k
