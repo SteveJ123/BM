@@ -2267,6 +2267,21 @@ this.route.params.pipe(map(id => {
 'fullTime': equivalent to 'h:mm:ss a zzzz' (9:03:01 AM GMT+01:00).
 </textarea>
 
+<h4>passing value through url param</h4>
+
+<textarea name="" id="" cols="30" rows="10">
+
+  [routerLink]="['/payroll','salary-slip', row.emp, row.salary_slip_date]">View Payslip</a>
+
+  constructor(private auth: AuthService, private route: ActivatedRoute, private router: Router, private toastr: ToastrService){
+
+    this.route.params.subscribe((params) => {
+			this.employeeID = params.empID;
+			this.salaryMY = params.period;
+    })
+  }
+</textarea>
+
   
   <script type="text/javascript" src="testing.js"></script>
 </body>
