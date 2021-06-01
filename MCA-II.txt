@@ -125,3 +125,4 @@ BIVARIATE FREQUENCY DISTRIBUTION||BTECH||4TH SEM||APPLIED MATHEMATICS -4||LECT 1
 How to find the regression line by Hand - https://www.youtube.com/watch?v=T7LauV6AnRg
 MGF BINOMIAL DISTRIBUTION - https://www.youtube.com/watch?v=G9YbcAIAp8A
 MGF POISSON DISTRIBUTION - https://www.youtube.com/watch?v=axcgbewDr1o
+MGF GEOMETRIC DISTRIBUTION - https://www.youtube.com/watch?v=guvi-f9JE6I
