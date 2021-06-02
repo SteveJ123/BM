@@ -123,6 +123,8 @@ Rank Correlation | Repeated Rank Correlation | Spearman Rank Correlation - https
 Coefficient of Correlation for a bivariate frequency distribution - https://www.youtube.com/watch?v=wUIJ5oLI2Os
 BIVARIATE FREQUENCY DISTRIBUTION||BTECH||4TH SEM||APPLIED MATHEMATICS -4||LECT 19 - https://www.youtube.com/watch?v=TIbPJCyHwYU
 How to find the regression line by Hand - https://www.youtube.com/watch?v=T7LauV6AnRg
+REGRESSION EQUATIONS PROBLEM 1 - https://www.youtube.com/watch?v=9fslNUkKeaI
+BINOMIAL DISTRIBUTION PROBLEM 2 - https://www.youtube.com/watch?v=ZWetAKPeSws
 MGF BINOMIAL DISTRIBUTION - https://www.youtube.com/watch?v=G9YbcAIAp8A
 MGF POISSON DISTRIBUTION - https://www.youtube.com/watch?v=axcgbewDr1o
 MGF GEOMETRIC DISTRIBUTION - https://www.youtube.com/watch?v=guvi-f9JE6I
