@@ -131,3 +131,4 @@ MGF GEOMETRIC DISTRIBUTION - https://www.youtube.com/watch?v=guvi-f9JE6I
 Extra Math Lecture 3: Mean and Variance for the uniform distribution - https://www.youtube.com/watch?v=hzb7u3lEtHA  - continuous
 Deriving a formula for the variance of the uniform distribution - https://www.youtube.com/watch?v=2_zorN_0W2o
 The mean and variance of a continuous uniform distribution - https://www.youtube.com/watch?v=R1DILVALlBM
+Simple trick to learn Karl Pearson's Coefficient of correlation - https://www.youtube.com/watch?v=Ysi4YAsKexE
