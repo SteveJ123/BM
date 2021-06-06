@@ -106,6 +106,14 @@ SYMBOL TABLE DATA STRUCTURE IN COMPILER - https://www.youtube.com/watch?v=gxorCO
 Symbol table | Compiler Design | Lec-45 | bhanu Priya - https://www.youtube.com/watch?v=QPs6Vkt8C5I
 
 
+SP 4.5 What is mean by Grammar in System Programming - https://www.youtube.com/watch?v=m3mtcsq5nDU
+Regular Grammar - https://www.youtube.com/watch?v=WgEsPTAL55Q
+Derivations from a Grammar - https://www.youtube.com/watch?v=ejXgLRSIxsA
+ambiguity in grammar | TOC | Lec-59 | Bhanu Priya - https://www.youtube.com/watch?v=MdI2TI7zefY
+unambiguous grammar example 1 | TOC | Lec-63 | Bhanu Priya - https://www.youtube.com/watch?v=BQ2rPI9gp3A
+unambiguous grammar example 2 | TOC | Lec-64 | Bhanu Priya - https://www.youtube.com/watch?v=Bbr3u5bNnYY
+
+
 stasitics
 Introduction to Conditional Probability Hindi - https://www.youtube.com/watch?v=lEni2--XK_A
 Addition theorem of Probability and its examples - https://www.youtube.com/watch?v=QqqrmTepxnc
