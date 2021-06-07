@@ -117,6 +117,11 @@ Principles of programming languages : Binding and binding time - https://www.you
 21. Introduction to LEX & YACC - https://www.youtube.com/watch?v=-qX1m8iD6UE
 
 
+
+
+System Software|Assembler|Chapter 3|Part 1|Elements of assembly language processing| - https://www.youtube.com/watch?v=krwx-hFxGvU
+
+
 stasitics
 Introduction to Conditional Probability Hindi - https://www.youtube.com/watch?v=lEni2--XK_A
 Addition theorem of Probability and its examples - https://www.youtube.com/watch?v=QqqrmTepxnc
