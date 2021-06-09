@@ -115,6 +115,7 @@ unambiguous grammar example 2 | TOC | Lec-64 | Bhanu Priya - https://www.youtube
 
 Principles of programming languages : Binding and binding time - https://www.youtube.com/watch?v=nYR_eqc3QpI
 21. Introduction to LEX & YACC - https://www.youtube.com/watch?v=-qX1m8iD6UE
+Introduction to parsers and LL(1) parsing | L 5 | Compiler Design | GATE CS/IT  - https://www.youtube.com/watch?v=N9UuAPU6DAg
 
 
 
