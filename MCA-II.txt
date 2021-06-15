@@ -126,6 +126,8 @@ Introduction to parsers and LL(1) parsing | L 5 | Compiler Design | GATE CS/IT  
 
 System Software|Assembler|Chapter 3|Part 1|Elements of assembly language processing| - https://www.youtube.com/watch?v=krwx-hFxGvU
 
+Compilers Lecture 1: Compiler Overview (1): Structure and Major Components - https://www.youtube.com/watch?v=mH0XqOZ6Yjk
+
 
 stasitics
 Introduction to Conditional Probability Hindi - https://www.youtube.com/watch?v=lEni2--XK_A
