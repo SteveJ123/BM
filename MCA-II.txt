@@ -128,6 +128,9 @@ System Software|Assembler|Chapter 3|Part 1|Elements of assembly language process
 
 Compilers Lecture 1: Compiler Overview (1): Structure and Major Components - https://www.youtube.com/watch?v=mH0XqOZ6Yjk
 
+Finite State Machine (Finite Automata) - https://www.youtube.com/watch?v=Qa6csfkK7_I
+transition diagrams, table and function | finite automata | TOC | Lec-7 | Bhanu Priya - https://www.youtube.com/watch?v=oaD7zcjGU28
+
 
 stasitics
 Introduction to Conditional Probability Hindi - https://www.youtube.com/watch?v=lEni2--XK_A
