@@ -132,6 +132,8 @@ Finite State Machine (Finite Automata) - https://www.youtube.com/watch?v=Qa6csfk
 transition diagrams, table and function | finite automata | TOC | Lec-7 | Bhanu Priya - https://www.youtube.com/watch?v=oaD7zcjGU28
 deterministic finite automata (DFA) | TOC | Lec-9 | Bhanu Priya - https://www.youtube.com/watch?v=OqknGBJqchc
 
+Single Pass Assembler in detail explanation - https://www.youtube.com/watch?v=DUaO8XT6SRo
+
 
 stasitics
 Introduction to Conditional Probability Hindi - https://www.youtube.com/watch?v=lEni2--XK_A
