@@ -161,3 +161,7 @@ Extra Math Lecture 3: Mean and Variance for the uniform distribution - https://w
 Deriving a formula for the variance of the uniform distribution - https://www.youtube.com/watch?v=2_zorN_0W2o
 The mean and variance of a continuous uniform distribution - https://www.youtube.com/watch?v=R1DILVALlBM
 Simple trick to learn Karl Pearson's Coefficient of correlation - https://www.youtube.com/watch?v=Ysi4YAsKexE
+
+
+data structure
+Array Operation:(Traversing,Deletion,Inserting) - https://www.youtube.com/watch?v=hx_xwRl74Vw
