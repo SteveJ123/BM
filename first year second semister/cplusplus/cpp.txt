@@ -1,1 +1,53 @@
 https://www.slideshare.net/nileshdalvi01/basics-concepts-of-oops
+
+
+var session ="AM";
+if(hours>=12){
+session="PM";
+}
+ if(hours<10){
+hours="0"+hours;
+}
+var session ="AM";
+if(hours>=12){
+session="PM";
+}
+ if(hours<10){
+hours="0"+hours;
+}
+function digitalClock(format) {
+
+  var date = new Date();
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+  var time = "";
+  var session = hours >= 12 ? "PM" : "AM";
+  if (format == 12) {
+    hours = hours > 12 ? hours - 12 : hours;
+  }
+  hours = (hours < 10 ? "0" : "") + hours;
+  minutes = (minutes < 10 ? "0" : "") + minutes;
+  seconds = (seconds < 10 ? "0" : "") + seconds;
+  if (format == 12) {
+    time = hours + ":" + minutes + ":" + seconds + " " + session;
+  } else {
+    time = hours + ":" + minutes + ":" + seconds;
+  }
+  console.log(time);
+}
+
+digitalClock("24");
+
+
+1. **Use the for loop to output even numbers from 2 to 10.**
+2. **Rewrite the code changing the for loop to while without altering its behavior (the output should stay same).**
+
+```jsx
+for (let i = 0; i < 3; i++) {
+  alert(i);
+}
+
+
+
+
