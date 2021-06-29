@@ -49,5 +49,9 @@ for (let i = 0; i < 3; i++) {
 }
 
 
+Create a program to calculate Tip based on Ratings(Food,Ambiance & Qualtiy) given by customer.
+
+
+
 
 
